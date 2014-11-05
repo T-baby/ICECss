@@ -1,6 +1,6 @@
 /*
  IceCSS-grid
- 2014年6月21日
+ 2014年11月05日
  作者T-baby
  */
 .ice-common, .ice-widescreen {
@@ -30,7 +30,7 @@
 .ice-div-last {
 	margin: 0;
 }
-.ice-div-1-1 { width: 100%; }
+.ice-div-1-1 { width: 100%; margin: 0; }
 .ice-div-1-2 { width: 48.5%; }
 .ice-div-1-3 { width: 31.3%; }
 .ice-div-2-3{ width: 65%; }
@@ -47,13 +47,13 @@
 .ice-div-1-12 { width: 5.58%; }
 
 /* IMG */
-.icecss .ice-div img {
+.ice-div img {
 	width: 100%;
 	height: auto;
 	display: block;
 }
 /* PHONE CLEAR */
-.icecss .onerow {
+.onerow {
 	clear: both;
 	padding: 0 10px;
 }
