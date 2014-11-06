@@ -18,6 +18,21 @@
     -o-transition: padding .05s linear;
     transition: padding .05s linear;
 }
+.ice-menu .ice-menu-logo {
+     float: left;
+   line-height: 60px;
+    padding: 0 20px;
+    min-height: 60px;
+    color: #fff;
+     background-color: #297fb8;
+
+    -webkit-transition: all .1s ease-out;
+    -moz-transition: all .1s ease-out;
+    -ms-transition: all .1s ease-out;
+    -o-transition: all .1s ease-out;
+    transition: all .1s ease-out;
+   
+}
 .ice-menu ul li.drop {
     position: relative;
 }
@@ -40,32 +55,34 @@
 }
 
 .ice-menu-drop-out .ice-menu-triangle {
-    width: 0;
-    height: 0;
     position: absolute;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 8px solid white;
     top: -17px;
     left: 50%;
     margin-left: -8px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid white;
+    
 }
 .ice-menu-drop {
-    width: 160px;
     position: absolute;
     z-index: 2;
-    left: 50%;
     margin-left: -80px; /* half of width */
     top: -200px;
+    width: 160px;
+    left: 50%;
+    
 }
 .ice-menu-drop-out {
-    width: 160px;
-    background: white;
     float: left;
     position: relative;
     margin-top: 0px;
     opacity: 0;
+    width: 160px;
     border: 1px solid #2c3d4f;
+    background: white;
     -webkit-transition: all .1s ease-out;
     -moz-transition: all .1s ease-out;
     -ms-transition: all .1s ease-out;
@@ -78,8 +95,8 @@
     padding: 10px 0;
 }
 .ice-menu-drop-out ul li {
-    text-align: left;
     float: left;
+    text-align: left;
     width: 125px;
     padding: 12px 0 10px 15px;
     margin: 0px 10px;
