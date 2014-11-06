@@ -25,14 +25,16 @@ ICECSS是由设计师带领着的一群可爱的小男孩们组成的开发小�
 ICECSS是开源性质的，开发组也都是没有工资的哦，所以体验组也木有工资。
 
 【现在进度？】
+已上传规范：
+元素设计规范
+CSS书写规范
 
-ICECSS-布局框架第一版：http://t-baby.lofter.com/post/2dc774_1647d04
+已上传组件：
+布局管理
+导航栏
+颜色
 
-ICECSS效果预览图：http://www.myts.tk/post/2dc774_16eeb95
 
-ICECSS按钮规范草图：http://www.myts.tk/post/2dc774_178125e
-
-ICECSS社交分享按钮草图：http://www.myts.tk/post/2dc774_178d2fe
 
 【预计时间？】
 
