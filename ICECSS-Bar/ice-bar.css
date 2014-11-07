@@ -1,0 +1,11 @@
+.ice-bar{ 
+	position: relative;
+	width: 100%; 
+	background:#a5a5a5;
+	}
+.ice-bar div { 
+	display: block; 
+	position: relative; 
+	background:#297fb8;
+    height: 2%;
+}
