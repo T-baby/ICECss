@@ -1,0 +1,43 @@
+.ice-button{
+		cursor:pointer;
+		outline:none;
+		display: inline-block;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		vertical-align: middle;
+		text-decoration: none;
+		text-align: center;
+		border: none;
+		line-height: 28px;
+		min-height: 30px;
+		font-size: 0.9rem;
+		padding: 0 40px;
+		background: #297fb8;
+		color: #fff;
+
+
+	}
+	.ice-button:hover{
+		filter:alpha(opacity=85);
+		-moz-opacity:0.85; 
+		opacity:0.85;  
+	}
+
+	.ice-button-mini{
+		line-height: 20px;
+		min-height: 20px;
+		font-size: 10px;
+		padding: 0 20px;
+	}
+
+	.ice-button-big{
+		line-height: 38px;
+		min-height: 40px;
+		font-size: 18px;
+		padding: 0 80px;
+	}
+	.ice-button-ghost{
+		color: #297fb8;
+		background: none;
+		border: 2px solid #297fb8;
+	}

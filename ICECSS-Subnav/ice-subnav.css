@@ -1,0 +1,19 @@
+.ice-subnav {
+	padding: 0;
+	list-style: none;
+}
+.ice-subnav li{
+	color:#297fb8;
+	font-size: 12px;
+	display:inline-block;
+	line-height: 15px;
+	padding: 3px 15px;
+
+}
+.ice-subnav .active{
+	color:#fff;
+	background-color:#297fb8; 
+}
+.ice-subnav-line>li:nth-child(n+2){
+	border-left: 1px solid #e5e5e5;
+}

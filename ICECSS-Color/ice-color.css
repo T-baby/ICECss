@@ -1,61 +1,148 @@
-.ice-color-white{
-	color: #000;
+.white{
+	color: #297fb8;
 	background-color: #fff;
 }
-.ice-color-geen-1{
+
+.green-1{
 	color: #fff;
 	background-color: #1bbc9d;
 }
-.ice-color-geen-2{
+
+.green-2{
 	color: #fff;
 	background-color: #16A086;
 }
-.ice-color-geen-3{
+
+.green-3{
 	color: #fff;
 	background-color: #2FCC71;
 }
-.ice-color-geen-4{
+
+.green-4{
 	color: #fff;
 	background-color: #27AE61;
 }
-.ice-color-yellow-1{
+
+.yellow-1{
 	color: #fff;
 	background-color: #F1C40F;
 }
-.ice-color-yellow-2{
+
+.yellow-2{
 	color: #fff;
 	background-color: #F49C14;
 }
-.ice-color-orange-1{
+
+.orange-1{
 	color: #fff;
 	background-color: #E77E23;
 }
-.ice-color-orange-2{
+
+.orange-2{
 	color: #fff;
 	background-color: #D55401;
 }
-.ice-color-blue-1{
+
+.blue-1{
 	color: #fff;
 	background-color: #3598DC;
 }
-.ice-color-blue-2{
+.blue-2{
 	color: #fff;
 	background-color: #2A80B9;
 }
-.ice-color-red-1{
+
+.red-1{
 	color: #fff;
 	background-color: #E84C3D;
 }
-.ice-color-red-2{
+
+.red-2{
 	color: #fff;
 	background-color: #C1392B;
 }
-
-.ice-color-purple-1{
+.purple-1{
 	color: #fff;
 	background-color: #9C59B8;
 }
-.ice-color-purple-2{
+.purple-2{
 	color: #fff;
 	background-color: #8F44AD;
+}
+
+/*上面是背景色，下面是边框色*/
+
+.bwhite{
+	color: #297fb8;
+	border-color:#297fb8;
+}
+
+.bgreen-1{
+	color: #1bbc9d;
+	border-color:#1bbc9d;
+}
+
+.bgreen-2{
+
+	color: #16A086;
+	border-color:#16A086;
+}
+
+.bgreen-3{
+	color: #2FCC71;
+	border-color:#2FCC71;
+}
+
+.bgreen-4{
+	color: #27AE61;
+	border-color:#27AE61;
+}
+
+.byellow-1{
+	color: #F1C40F;
+	border-color:#F1C40F;
+}
+
+.byellow-2{
+	color: #F49C14;
+	border-color:#F49C14;
+}
+
+.borange-1{
+	color: #E77E23;
+	border-color:#E77E23;
+}
+
+.borange-2{
+	color: #D55401;
+	border-color:#D55401;
+}
+
+.bblue-1{
+	color: #3598DC;
+	border-color:#3598DC;
+}
+.bblue-2{
+	color: #2A80B9;
+	border-color:#2A80B9;
+}
+
+.bred-1{
+	color: #E84C3D;
+	border-color:#E84C3D;
+}
+
+.bred-2{
+	color: #C1392B;
+	border-color:#C1392B;
+
+}
+.bpurple-1{
+	color: #9C59B8;
+	border-color:#9C59B8;
+	
+}
+.bpurple-2{
+	color: #8F44AD;
+	border-color:#8F44AD;
 }
