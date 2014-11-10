@@ -51,7 +51,7 @@
     transition: all .1s ease-out;
 }
 .ice-menu ul li a:hover {
-    color: #eee;
+    color: #3598db;
 }
 
 .ice-menu-drop-out .ice-menu-triangle {
@@ -109,7 +109,8 @@
 }
 
 .ice-menu-drop-out ul li:hover {
-    background: #f6f6f6;
+    color: #fff;
+    background: #3598db;
 }
 
 .ice-menu ul li:hover a { color: white; }

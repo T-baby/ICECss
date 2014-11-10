@@ -1,148 +1,149 @@
-.white{
+
+.ice-color-white{
 	color: #297fb8;
 	background-color: #fff;
 }
 
-.green-1{
+.ice-color-green-1{
 	color: #fff;
 	background-color: #1bbc9d;
 }
 
-.green-2{
+.ice-color-green-2{
 	color: #fff;
 	background-color: #16A086;
 }
 
-.green-3{
+.ice-color-green-3{
 	color: #fff;
 	background-color: #2FCC71;
 }
 
-.green-4{
+.ice-color-green-4{
 	color: #fff;
 	background-color: #27AE61;
 }
 
-.yellow-1{
+.ice-color-yellow-1{
 	color: #fff;
 	background-color: #F1C40F;
 }
 
-.yellow-2{
+.ice-color-yellow-2{
 	color: #fff;
 	background-color: #F49C14;
 }
 
-.orange-1{
+.ice-color-orange-1{
 	color: #fff;
 	background-color: #E77E23;
 }
 
-.orange-2{
+.ice-color-orange-2{
 	color: #fff;
 	background-color: #D55401;
 }
 
-.blue-1{
+.ice-color-blue-1{
 	color: #fff;
 	background-color: #3598DC;
 }
-.blue-2{
+.ice-color-blue-2{
 	color: #fff;
 	background-color: #2A80B9;
 }
 
-.red-1{
+.ice-color-red-1{
 	color: #fff;
 	background-color: #E84C3D;
 }
 
-.red-2{
+.ice-color-red-2{
 	color: #fff;
 	background-color: #C1392B;
 }
-.purple-1{
+.ice-color-purple-1{
 	color: #fff;
 	background-color: #9C59B8;
 }
-.purple-2{
+.ice-color-purple-2{
 	color: #fff;
 	background-color: #8F44AD;
 }
 
 /*上面是背景色，下面是边框色*/
 
-.bwhite{
+.ice-color-bwhite{
 	color: #297fb8;
 	border-color:#297fb8;
 }
 
-.bgreen-1{
+.ice-color-bgreen-1{
 	color: #1bbc9d;
 	border-color:#1bbc9d;
 }
 
-.bgreen-2{
+.ice-color-bgreen-2{
 
 	color: #16A086;
 	border-color:#16A086;
 }
 
-.bgreen-3{
+.ice-color-bgreen-3{
 	color: #2FCC71;
 	border-color:#2FCC71;
 }
 
-.bgreen-4{
+.ice-color-bgreen-4{
 	color: #27AE61;
 	border-color:#27AE61;
 }
 
-.byellow-1{
+.ice-color-byellow-1{
 	color: #F1C40F;
 	border-color:#F1C40F;
 }
 
-.byellow-2{
+.ice-color-byellow-2{
 	color: #F49C14;
 	border-color:#F49C14;
 }
 
-.borange-1{
+.ice-color-borange-1{
 	color: #E77E23;
 	border-color:#E77E23;
 }
 
-.borange-2{
+.ice-color-borange-2{
 	color: #D55401;
 	border-color:#D55401;
 }
 
-.bblue-1{
+.ice-color-bblue-1{
 	color: #3598DC;
 	border-color:#3598DC;
 }
-.bblue-2{
+.ice-color-bblue-2{
 	color: #2A80B9;
 	border-color:#2A80B9;
 }
 
-.bred-1{
+.ice-color-bred-1{
 	color: #E84C3D;
 	border-color:#E84C3D;
 }
 
-.bred-2{
+.ice-color-bred-2{
 	color: #C1392B;
 	border-color:#C1392B;
 
 }
-.bpurple-1{
+.ice-color-bpurple-1{
 	color: #9C59B8;
 	border-color:#9C59B8;
 	
 }
-.bpurple-2{
+.ice-color-bpurple-2{
 	color: #8F44AD;
 	border-color:#8F44AD;
 }

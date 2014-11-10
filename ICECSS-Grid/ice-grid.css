@@ -48,9 +48,11 @@
 
 /* IMG */
 .ice-div img {
-	width: 100%;
-	height: auto;
-	display: block;
+	-moz-box-sizing: border-box;
+box-sizing: border-box;
+max-width: 100%;
+height: auto;
+vertical-align: middle;
 }
 /* PHONE CLEAR */
 .onerow {
@@ -58,8 +60,33 @@
 	padding: 0 10px;
 }
 
-
-
+.ice-div-center-absolute{
+	margin: 0px auto;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	display: -moz-box;
+	-moz-box-orient: vertical;
+	-moz-box-pack: center;
+	-moz-box-align: center;
+	display: -o-box;
+	-o-box-orient: vertical;
+	-o-box-pack: center;
+	-o-box-align: center;
+	display: -ms-box;
+	-ms-box-orient: vertical;
+	-ms-box-pack: center;
+	-ms-box-align: center;
+	display: box;
+	box-orient: vertical;
+	box-pack: center;
+	box-align: center;
+}
+.ice-div-center-plane{
+	text-align:center;
+	margin: 0px auto;
+}
 
 /*ADAPTIVE*/
 @media all and (min-width: 1024px) {

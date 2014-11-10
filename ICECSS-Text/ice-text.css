@@ -1,0 +1,39 @@
+
+.ice-text-left {
+text-align: left!important;
+}
+
+.ice-text-right {
+text-align: right!important;
+}
+
+.ice-text-center {
+text-align: center!important;
+}
+
+.ice-text-top {
+vertical-align: top!important;
+}
+.ice-text-middle {
+vertical-align: middle!important;
+}
+.ice-text-bottom {
+vertical-align: bottom!important;
+}
+
+.ice-text-break {
+word-wrap: break-word;
+-webkit-hyphens: auto;
+-ms-hyphens: auto;
+-moz-hyphens: auto;
+hyphens: auto;
+}
+.ice-text-truncate {
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+
+.ice-text-nowrap {
+white-space: nowrap;
+}
