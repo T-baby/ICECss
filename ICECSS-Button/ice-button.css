@@ -1,4 +1,5 @@
 .ice-button{
+
 		cursor:pointer;
 		outline:none;
 		display: inline-block;
@@ -37,6 +38,18 @@
 		padding: 0 80px;
 	}
 	.ice-button-ghost{
+		color: #297fb8;
+		background: none;
+		border: 2px solid #297fb8;
+	}
+	.ice-button-ghost:hover{
+		color: #fff;
+		background: #297fb8;
+		border: 2px solid #297fb8;
+	}
+	.ice-button-ghost-custom{
+		cursor:pointer;
+		outline:none;
 		color: #297fb8;
 		background: none;
 		border: 2px solid #297fb8;

@@ -3,9 +3,12 @@
  2014年11月05日
  作者T-baby
  */
-.ice-common, .ice-widescreen {
+.ice-common, .ice-widescreen,.ice-full {
 	margin: 0 auto;
 	height: auto;
+}
+.ice-full {
+	width: 100%;
 }
 
 .ice-common {
@@ -110,6 +113,6 @@ vertical-align: middle;
 
 	.ice-div {
 		float: none;
-		width: 99%;
+		width: 100%;
 	}
 }
