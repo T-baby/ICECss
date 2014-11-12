@@ -1,14 +1,11 @@
-
 .ice-menu {
     width: 100%;
     min-height: 40px;
     background: #2c3d4f;
 }
-
 .ice-menu ul {
     text-align: right;
 }
-
 .ice-menu ul li {
     font: 13px Verdana, 'Lucida Grande';
     cursor: pointer;
@@ -19,19 +16,17 @@
     transition: padding .05s linear;
 }
 .ice-menu .ice-menu-logo {
-     float: left;
-   line-height: 60px;
+    float: left;
+    line-height: 60px;
     padding: 0 20px;
     min-height: 60px;
     color: #fff;
-     background-color: #297fb8;
-
+    background-color: #297fb8;
     -webkit-transition: all .1s ease-out;
     -moz-transition: all .1s ease-out;
     -ms-transition: all .1s ease-out;
     -o-transition: all .1s ease-out;
     transition: all .1s ease-out;
-   
 }
 .ice-menu ul li.drop {
     position: relative;
@@ -53,7 +48,6 @@
 .ice-menu ul li a:hover {
     color: #3598db;
 }
-
 .ice-menu-drop-out .ice-menu-triangle {
     position: absolute;
     top: -17px;
@@ -64,16 +58,16 @@
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     border-bottom: 8px solid white;
-    
 }
 .ice-menu-drop {
     position: absolute;
     z-index: 2;
-    margin-left: -80px; /* half of width */
+    margin-left: -80px;
+    /* half of width */
+    
     top: -200px;
     width: 160px;
     left: 50%;
-    
 }
 .ice-menu-drop-out {
     float: left;
@@ -89,7 +83,6 @@
     -o-transition: all .1s ease-out;
     transition: all .1s ease-out;
 }
-
 .ice-menu-drop-out ul {
     float: left;
     padding: 10px 0;
@@ -107,13 +100,20 @@
     -o-transition: background .1s ease-out;
     transition: background .1s ease-out;
 }
-
 .ice-menu-drop-out ul li:hover {
     color: #fff;
     background: #3598db;
 }
-
-.ice-menu ul li:hover a { color: white; }
-.ice-menu ul li:hover .ice-menu-drop { top: 60px; }
-.ice-menu ul li:hover .underline { border-bottom-color: #777; }
-.ice-menu ul li:hover .ice-menu-drop-out { opacity: 1; margin-top: 8px; }
+.ice-menu ul li:hover a {
+    color: white;
+}
+.ice-menu ul li:hover .ice-menu-drop {
+    top: 60px;
+}
+.ice-menu ul li:hover .underline {
+    border-bottom-color: #777;
+}
+.ice-menu ul li:hover .ice-menu-drop-out {
+    opacity: 1;
+    margin-top: 8px;
+}

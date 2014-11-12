@@ -1,33 +1,22 @@
- @charset "utf-8";
-html {
-  font-family: 'Verdana',"微软雅黑","microsoft yahei";  /*声明字体*/
-   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-body {
-  margin: 0;
-  padding: 0;
-}
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-nav,
-section,
-summary {
-  display: block;
-}
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-  vertical-align: baseline;
-}
-a{
-	cursor:pointer;
-}
+ @charset"utf-8";
+ html {
+     font-family: 'Verdana', "微软雅黑", "microsoft yahei";
+     /*声明字体*/
+     
+     -webkit-text-size-adjust: 100%;
+     -ms-text-size-adjust: 100%;
+ }
+ body {
+     margin: 0;
+     padding: 0;
+ }
+ article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+     display: block;
+ }
+ audio, canvas, progress, video {
+     display: inline-block;
+     vertical-align: baseline;
+ }
+ a {
+     cursor: pointer;
+ }

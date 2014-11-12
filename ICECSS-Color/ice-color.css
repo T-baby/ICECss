@@ -1,149 +1,122 @@
-
-.ice-color-white{
-	color: #297fb8;
-	background-color: #fff;
+.ice-color-white {
+    color: #297fb8;
+    background-color: #fff;
 }
-
-.ice-color-green-1{
-	color: #fff;
-	background-color: #1bbc9d;
+.ice-color-green-1 {
+    color: #fff;
+    background-color: #1bbc9d;
 }
-
-.ice-color-green-2{
-	color: #fff;
-	background-color: #16A086;
+.ice-color-green-2 {
+    color: #fff;
+    background-color: #16A086;
 }
-
-.ice-color-green-3{
-	color: #fff;
-	background-color: #2FCC71;
+.ice-color-green-3 {
+    color: #fff;
+    background-color: #2FCC71;
 }
-
-.ice-color-green-4{
-	color: #fff;
-	background-color: #27AE61;
+.ice-color-green-4 {
+    color: #fff;
+    background-color: #27AE61;
 }
-
-.ice-color-yellow-1{
-	color: #fff;
-	background-color: #F1C40F;
+.ice-color-yellow-1 {
+    color: #fff;
+    background-color: #F1C40F;
 }
-
-.ice-color-yellow-2{
-	color: #fff;
-	background-color: #F49C14;
+.ice-color-yellow-2 {
+    color: #fff;
+    background-color: #F49C14;
 }
-
-.ice-color-orange-1{
-	color: #fff;
-	background-color: #E77E23;
+.ice-color-orange-1 {
+    color: #fff;
+    background-color: #E77E23;
 }
-
-.ice-color-orange-2{
-	color: #fff;
-	background-color: #D55401;
+.ice-color-orange-2 {
+    color: #fff;
+    background-color: #D55401;
 }
-
-.ice-color-blue-1{
-	color: #fff;
-	background-color: #3598DC;
+.ice-color-blue-1 {
+    color: #fff;
+    background-color: #3598DC;
 }
-.ice-color-blue-2{
-	color: #fff;
-	background-color: #2A80B9;
+.ice-color-blue-2 {
+    color: #fff;
+    background-color: #2A80B9;
 }
-
-.ice-color-red-1{
-	color: #fff;
-	background-color: #E84C3D;
+.ice-color-red-1 {
+    color: #fff;
+    background-color: #E84C3D;
 }
-
-.ice-color-red-2{
-	color: #fff;
-	background-color: #C1392B;
+.ice-color-red-2 {
+    color: #fff;
+    background-color: #C1392B;
 }
-.ice-color-purple-1{
-	color: #fff;
-	background-color: #9C59B8;
+.ice-color-purple-1 {
+    color: #fff;
+    background-color: #9C59B8;
 }
-.ice-color-purple-2{
-	color: #fff;
-	background-color: #8F44AD;
+.ice-color-purple-2 {
+    color: #fff;
+    background-color: #8F44AD;
 }
-
 /*上面是背景色，下面是边框色*/
 
-.ice-color-bwhite{
-	color: #fff;
-	border-color:#fff;
+.ice-color-bwhite {
+    color: #fff;
+    border-color: #fff;
 }
-
-.ice-color-bgreen-1{
-	color: #1bbc9d;
-	border-color:#1bbc9d;
+.ice-color-bgreen-1 {
+    color: #1bbc9d;
+    border-color: #1bbc9d;
 }
-
-.ice-color-bgreen-2{
-
-	color: #16A086;
-	border-color:#16A086;
+.ice-color-bgreen-2 {
+    color: #16A086;
+    border-color: #16A086;
 }
-
-.ice-color-bgreen-3{
-	color: #2FCC71;
-	border-color:#2FCC71;
+.ice-color-bgreen-3 {
+    color: #2FCC71;
+    border-color: #2FCC71;
 }
-
-.ice-color-bgreen-4{
-	color: #27AE61;
-	border-color:#27AE61;
+.ice-color-bgreen-4 {
+    color: #27AE61;
+    border-color: #27AE61;
 }
-
-.ice-color-byellow-1{
-	color: #F1C40F;
-	border-color:#F1C40F;
+.ice-color-byellow-1 {
+    color: #F1C40F;
+    border-color: #F1C40F;
 }
-
-.ice-color-byellow-2{
-	color: #F49C14;
-	border-color:#F49C14;
+.ice-color-byellow-2 {
+    color: #F49C14;
+    border-color: #F49C14;
 }
-
-.ice-color-borange-1{
-	color: #E77E23;
-	border-color:#E77E23;
+.ice-color-borange-1 {
+    color: #E77E23;
+    border-color: #E77E23;
 }
-
-.ice-color-borange-2{
-	color: #D55401;
-	border-color:#D55401;
+.ice-color-borange-2 {
+    color: #D55401;
+    border-color: #D55401;
 }
-
-.ice-color-bblue-1{
-	color: #3598DC;
-	border-color:#3598DC;
+.ice-color-bblue-1 {
+    color: #3598DC;
+    border-color: #3598DC;
 }
-.ice-color-bblue-2{
-	color: #2A80B9;
-	border-color:#2A80B9;
+.ice-color-bblue-2 {
+    color: #2A80B9;
+    border-color: #2A80B9;
 }
-
-.ice-color-bred-1{
-	color: #E84C3D;
-	border-color:#E84C3D;
+.ice-color-bred-1 {
+    color: #E84C3D;
+    border-color: #E84C3D;
 }
-
-.ice-color-bred-2{
-	color: #C1392B;
-	border-color:#C1392B;
-
+.ice-color-bred-2 {
+    color: #C1392B;
+    border-color: #C1392B;
 }
-.ice-color-bpurple-1{
-	color: #9C59B8;
-	border-color:#9C59B8;
-	
+.ice-color-bpurple-1 {
+    color: #9C59B8;
+    border-color: #9C59B8;
 }
-.ice-color-bpurple-2{
-	color: #8F44AD;
-	border-color:#8F44AD;
+.ice-color-bpurple-2 {
+    color: #8F44AD;
+    border-color: #8F44AD;
 }

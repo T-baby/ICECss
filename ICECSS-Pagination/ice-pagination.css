@@ -1,27 +1,27 @@
-.ice-page{
-	margin: 15px;
-	padding: 0;
-
-list-style: none;
-text-align: center;
-	color: #297fb8;
+.ice-page {
+    margin: 15px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    color: #297fb8;
 }
-.ice-page li{
-	cursor:hand;
-		display: inline-block;
-	width: 20px;
-	height: 20px;
+.ice-page li {
+    cursor: hand;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
 }
-.ice-page li:hover{
-		text-decoration:underline ;
+.ice-page li:hover {
+    text-decoration: underline;
 }
-.ice-page .active{
-	color:#fff;
-		background-color:#297fb8  ;
+.ice-page .active {
+    color: #fff;
+    background-color: #297fb8;
 }
-.ice-page .disabled{
-	color:#a5a5a5;
+.ice-page .disabled {
+    color: #a5a5a5;
 }
-.ice-page .disabled:hover{
-	text-decoration:none; ;
+.ice-page .disabled:hover {
+    text-decoration: none;
+    ;
 }
