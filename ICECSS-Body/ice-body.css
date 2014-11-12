@@ -1,6 +1,6 @@
  @charset "utf-8";
 html {
-  font-family: 'Verdana',"微软雅黑","microsoft yahei";
+  font-family: 'Verdana',"微软雅黑","microsoft yahei";  /*声明字体*/
    -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }

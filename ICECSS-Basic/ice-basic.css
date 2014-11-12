@@ -1,4 +1,8 @@
-	
+.ice-div p{
+	font-weight: 400;
+line-height: 20px;
+}	
+
 .ice-div *+h1, *+h2, *+h3, *+h4, *+h5, *+h6 {
 margin-top: 25px;
 }
@@ -28,7 +32,7 @@ line-height: 22px;
 font-size: 14px;
 line-height: 20px;
 }
-.ice-div h6, .uk-h6 {
+.ice-div h6, .ice-h6 {
 font-size: 12px;
 line-height: 18px;
 }
@@ -53,7 +57,6 @@ margin-bottom: 15px;
 padding-left: 10px;
 border-left:3px solid #297fb8;
 line-height: 22px;
-margin-left: 25px;
 }
 .ice-div pre {
 	margin:0 15px; 

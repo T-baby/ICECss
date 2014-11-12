@@ -177,3 +177,10 @@ a {
   background: #297fb8;
 
 }
+.ice-menu-lucency{
+  background: none;
+}
+
+.ice-menu-lucency .ice-menu-logo{
+  background: none;
+}
