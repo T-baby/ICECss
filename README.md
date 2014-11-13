@@ -17,6 +17,8 @@ ICECSS是一个以冰山为灵感开源高效的CSS框架，由设计师为主�
 
 `<script src="icecss.js"></script>`
 
+因为ICECSS各组件耦合度较低，所以您可以根据需求只使用ICECSS的某一个组件而不是一整套。
+
 **说明文档**
 
 请看GitHub自带的Wiki：https://github.com/T-baby/ICECSS/wiki
