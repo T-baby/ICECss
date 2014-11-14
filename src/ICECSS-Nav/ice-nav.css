@@ -1,0 +1,27 @@
+.ice-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.9em;
+    line-height: 2em;
+}
+
+.ice-nav ~ li:hover{
+    background: #f7f7f7;
+}
+.ice-nav .active {
+    color: #fff;
+    background: #297fb8;
+}
+.ice-nav .active:hover {
+	color: #fff;
+    background: #297fb8;
+ 
+}
+.ice-nav li ul li{
+	padding-left: 10px;
+}
+.ice-nav li ul li:hover {
+	color: #297fb8;
+	background: #fff;
+}
