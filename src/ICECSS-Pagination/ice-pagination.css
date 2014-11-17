@@ -10,6 +10,7 @@
     display: inline-block;
     width: 20px;
     height: 20px;
+    line-height: 18px;
 }
 .ice-page li:hover {
     text-decoration: underline;
