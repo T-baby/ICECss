@@ -81,7 +81,6 @@
     vertical-align: middle;
 }
 .ice-div ul, .ice-div dir {
-    display: block;
     list-style-type: disc;
     -webkit-margin-before: 1em;
     -webkit-margin-after: 1em;
@@ -118,12 +117,10 @@
 tt, code, kbd, samp {
     font-family: "Î¢ÈíÑÅºÚ", "microsoft yahei";
 }
-.ice-div a {
-    color: #297fb8;
-    text-decoration: underline;
+.ice-div a{
+    color: inherit;
 }
 .ice-panel {
-    margin: 15px 15px;
     padding: 10px;
     margin-bottom: 15px;
     font-size: 14px;
@@ -142,7 +139,7 @@ tt, code, kbd, samp {
     tab-size: 4;
 }
 .ice-panel-point {
-    padding: 5px;
+    padding: 10px;
     margin-bottom: 15px;
     font-size: 14px;
     line-height: 14px;

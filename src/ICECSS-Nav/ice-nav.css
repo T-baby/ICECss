@@ -1,4 +1,4 @@
-.ice-nav {
+.ice-nav li{
     margin: 0;
     padding: 0;
     list-style: none;
@@ -6,7 +6,7 @@
     line-height: 2em;
 }
 
-.ice-nav ~ li:hover{
+.ice-nav li:hover{
     background: #f7f7f7;
 }
 .ice-nav .active {
