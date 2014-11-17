@@ -25,7 +25,7 @@ ICECSS是一个以冰山为灵感开源高效的CSS框架，由设计师为主�
 
 **DEMO**
 
-还没开发出来的说
+http://besdlab.cn/ICECSS/
 
 **您可以加入用户体验小组**
 
