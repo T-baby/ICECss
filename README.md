@@ -1,4 +1,4 @@
-![](http://cdn.besdlab.cn/ICECSS-Logo.jpg)
+![](http://cdn.besdlab.cn/icecss-yqh.jpg)
 ======
 
 **什么是ICECSS？**
