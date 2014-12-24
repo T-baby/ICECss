@@ -9,15 +9,30 @@ ICECSS是一个以冰山为灵感开源高效的CSS框架，由设计师为主�
 
 在html文件头部引用ICECSS的CSS
 
-`<link rel="stylesheet" href="icecss.css">`
+`<link rel="stylesheet/less" href="css/icecss.css">`
 
 在html文件尾部引用ICECSS的JS（注意，ICECSS是基于Jquery的，所以在引用ICECSS的JS文件前请先导入Jquery）
 
-`<script src="jquery.js"></script>`
+`<script src="js/jquery.min.js"></script>`
 
-`<script src="icecss.js"></script>`
+`<script src="js/icecss.js"></script>`
 
-因为ICECSS各组件耦合度较低，所以您可以根据需求只使用ICECSS的某一个组件而不是一整套。
+
+------------------------
+
+ICECSS也支持Less
+
+在html头部引用less
+
+`<link rel="stylesheet/less" type="text/css" href="styles.less" />`
+
+然后在尾部引用less的js文件
+
+`<script src="js/less.min.js"></script>`
+
+`<script src="js/jquery.min.js"></script>`
+
+`<script src="js/icecss.js"></script>`
 
 **说明文档**
 
