@@ -36,7 +36,7 @@ ICECSS也支持Less
 
 **说明文档**
 
-请看GitHub自带的Wiki：https://github.com/T-baby/ICECSS/wiki
+新版文档请到官网查看：<a href="http://besdlab.cn/ICECSS/">http://besdlab.cn/ICECSS/</a>
 
 **DEMO**
 
