@@ -38,6 +38,8 @@ ICECSS也支持Less
 
 新版文档请到官网查看：<a href="http://besdlab.cn/ICECSS/">http://besdlab.cn/ICECSS/</a>
 
+中国区分发：<a href="https://coding.net/u/besd/p/ICECSS/">https://coding.net/u/besd/p/ICECSS/</a>
+
 **DEMO**
 
 http://besdlab.cn/ICECSS/
