@@ -9,55 +9,70 @@ jQuery(document).ready(function($) {
     $('.ice-close').click(function() {
         this.parentNode.style.display = 'none';
     });
+    //手风琴
+  $(".ice-nav-accordion li").click(function(){
+  $(this).next().toggle('slow');
+  });
+
+    //抽屉式导航
+    $(".ice-sp-left").click(function() {
+        var spWidth = $('.ice-menu-sp').width();
+        var temp = $("<div class='ice-menu-sp-w' onclick=hyleft()></div>");
+        $("body").append(temp);
+        $(".ice-menu-sp-w").fadeIn();
+        $("body").attr("style", "position:absolute");
+        $("body").animate({
+            left: spWidth
+        });
+        $(".ice-menu-sp-left").animate({
+            left: '0'
+        });
+    });
+
+    $(".ice-sp-right").click(function() {
+        var spWidth = $('.ice-menu-sp').width();
+        var temp = $("<div class='ice-menu-sp-w' onclick=hyright()></div>");
+        $("body").append(temp);
+        $(".ice-menu-sp-w").fadeIn();
+        $("body").attr("style", "position:absolute");
+        $("body").animate({
+            left: -spWidth
+        });
+        $(".ice-menu-sp-right").animate({
+            right: '0'
+        });
+    });
 
 });
-//弹出式画布
+
+//弹出式画布插件
 
 (function($) {
     $.fn.extend({
-        IceModal: function(options) {
-            var defaults = {
-                top: 100,
-                overlay: 0.5,
-                closeButton: null
-            };
-            var overlay = $("<div id='ice_overlay'></div>");
-            $("body").append(overlay);
-            options = $.extend(defaults, options);
+        ice_eject: function() {
+            var temp = $("<div class='ice-eject'></div>");
+            $("body").append(temp);
             return this.each(function() {
-                var o = options;
                 $(this).click(function(e) {
-                    var modal_id = $(this).attr("href");
-                    $("#ice_overlay").click(function() {
-                        close_modal(modal_id)
+                    var wid = $(this).attr("href");
+                    $(".ice-eject").click(function() {
+                        close_w(wid)
                     });
-                    $(o.closeButton).click(function() {
-                        close_modal(modal_id)
+                    $(".ice-eject-close").click(function() {
+                        close_w(wid)
                     });
-                    var modal_height = $(modal_id).outerHeight();
-                    var modal_width = $(modal_id).outerWidth();
-                    $("#ice_overlay").css({
+                    $(".ice-eject").fadeIn();
+                    $(wid).css({
                         "display": "block",
-                        opacity: 0
                     });
-                    $("#ice_overlay").fadeTo(200, o.overlay);
-                    $(modal_id).css({
-                        "display": "block",
-                        "position": "fixed",
-                        "opacity": 0,
-                        "z-index": 11000,
-                        "left": 50 + "%",
-                        "margin-left": -(modal_width / 2) + "px",
-                        "top": o.top + "px"
-                    });
-                    $(modal_id).fadeTo(200, 1);
+                    $(wid).fadeTo(200, 1);
                     e.preventDefault()
                 })
             });
 
-            function close_modal(modal_id) {
-                $("#ice_overlay").fadeOut(200);
-                $(modal_id).css({
+            function close_w(wid) {
+                $(".ice-eject").fadeOut(200);
+                $(wid).css({
                     "display": "none"
                 })
             }
@@ -68,7 +83,7 @@ jQuery(document).ready(function($) {
 //平滑移动插件
 (function($) {
     $.extend($.fn, {
-        scrollto: function(time, to) {
+        ice_scroll: function(time, to) {
             time = time || 800;
             to = to || 1;
             $('a[href*=#]', this).click(function() {
@@ -85,7 +100,7 @@ jQuery(document).ready(function($) {
                                 scrollLeft: $target.offset().left
                             }, time);
                         } else {
-                            alert('argument error！');
+                            alert('error！');
                         }
                         return false;
                     }
@@ -571,3 +586,471 @@ jQuery(document).ready(function($) {
         })
     })
 }).call(this);
+
+
+
+
+
+
+//抽屉式导航所需方法
+
+function hyleft() {
+    var spWidth = $('.ice-menu-sp').width();
+    $(".ice-menu-sp-w").fadeOut();
+    $("body").animate({
+        left: '0'
+    });
+    
+    $(".ice-menu-sp-left").animate({
+        left: -1 * spWidth
+    });
+         $("body").attr("style", "inherit:");
+};
+
+function hyright() {
+    var spWidth = $('.ice-menu-sp').width();
+    $(".ice-menu-sp-w").fadeOut();
+    $("body").animate({
+        left: '0'
+    });
+    $(".ice-menu-sp-right").animate({
+        right: -1 * spWidth
+    });
+     $("body").attr("style", "inherit:");
+};
+
+//模板引擎
+ ! function() {
+    function a(a) {
+        return a.replace(t, "").replace(u, ",").replace(v, "").replace(w, "").replace(x, "").split(y)
+    }
+
+    function b(a) {
+        return "'" + a.replace(/('|\\)/g, "\\$1").replace(/\r/g, "\\r").replace(/\n/g, "\\n") + "'"
+    }
+
+    function c(c, d) {
+        function e(a) {
+            return m += a.split(/\n/).length - 1, k && (a = a.replace(/\s+/g, " ").replace(/<!--[\w\W]*?-->/g, "")), a && (a = s[1] + b(a) + s[2] + "\n"), a
+        }
+
+        function f(b) {
+            var c = m;
+            if (j ? b = j(b, d) : g && (b = b.replace(/\n/g, function() {
+                    return m++, "$line=" + m + ";"
+                })), 0 === b.indexOf("=")) {
+                var e = l && !/^=[=#]/.test(b);
+                if (b = b.replace(/^=[=#]?|[\s;]*$/g, ""), e) {
+                    var f = b.replace(/\s*\([^\)]+\)/, "");
+                    n[f] || /^(include|print)$/.test(f) || (b = "$escape(" + b + ")")
+                } else b = "$string(" + b + ")";
+                b = s[1] + b + s[2]
+            }
+            return g && (b = "$line=" + c + ";" + b), r(a(b), function(a) {
+                if (a && !p[a]) {
+                    var b;
+                    b = "print" === a ? u : "include" === a ? v : n[a] ? "$utils." + a : o[a] ? "$helpers." + a : "$data." + a, w += a + "=" + b + ",", p[a] = !0
+                }
+            }), b + "\n"
+        }
+        var g = d.debug,
+            h = d.openTag,
+            i = d.closeTag,
+            j = d.parser,
+            k = d.compress,
+            l = d.escape,
+            m = 1,
+            p = {
+                $data: 1,
+                $filename: 1,
+                $utils: 1,
+                $helpers: 1,
+                $out: 1,
+                $line: 1
+            },
+            q = "".trim,
+            s = q ? ["$out='';", "$out+=", ";", "$out"] : ["$out=[];", "$out.push(", ");", "$out.join('')"],
+            t = q ? "$out+=text;return $out;" : "$out.push(text);",
+            u = "function(){var text=''.concat.apply('',arguments);" + t + "}",
+            v = "function(filename,data){data=data||$data;var text=$utils.$include(filename,data,$filename);" + t + "}",
+            w = "'use strict';var $utils=this,$helpers=$utils.$helpers," + (g ? "$line=0," : ""),
+            x = s[0],
+            y = "return new String(" + s[3] + ");";
+        r(c.split(h), function(a) {
+            a = a.split(i);
+            var b = a[0],
+                c = a[1];
+            1 === a.length ? x += e(b) : (x += f(b), c && (x += e(c)))
+        });
+        var z = w + x + y;
+        g && (z = "try{" + z + "}catch(e){throw {filename:$filename,name:'Render Error',message:e.message,line:$line,source:" + b(c) + ".split(/\\n/)[$line-1].replace(/^\\s+/,'')};}");
+        try {
+            var A = new Function("$data", "$filename", z);
+            return A.prototype = n, A
+        } catch (B) {
+            throw B.temp = "function anonymous($data,$filename) {" + z + "}", B
+        }
+    }
+    var d = function(a, b) {
+        return "string" == typeof b ? q(b, {
+            filename: a
+        }) : g(a, b)
+    };
+    d.version = "3.0.0", d.config = function(a, b) {
+        e[a] = b
+    };
+    var e = d.defaults = {
+            openTag: "<%",
+            closeTag: "%>",
+            escape: !0,
+            cache: !0,
+            compress: !1,
+            parser: null
+        },
+        f = d.cache = {};
+    d.render = function(a, b) {
+        return q(a, b)
+    };
+    var g = d.renderFile = function(a, b) {
+        var c = d.get(a) || p({
+            filename: a,
+            name: "Render Error",
+            message: "Template not found"
+        });
+        return b ? c(b) : c
+    };
+    d.get = function(a) {
+        var b;
+        if (f[a]) b = f[a];
+        else if ("object" == typeof document) {
+            var c = document.getElementById(a);
+            if (c) {
+                var d = (c.value || c.innerHTML).replace(/^\s*|\s*$/g, "");
+                b = q(d, {
+                    filename: a
+                })
+            }
+        }
+        return b
+    };
+    var h = function(a, b) {
+            return "string" != typeof a && (b = typeof a, "number" === b ? a += "" : a = "function" === b ? h(a.call(a)) : ""), a
+        },
+        i = {
+            "<": "&#60;",
+            ">": "&#62;",
+            '"': "&#34;",
+            "'": "&#39;",
+            "&": "&#38;"
+        },
+        j = function(a) {
+            return i[a]
+        },
+        k = function(a) {
+            return h(a).replace(/&(?![\w#]+;)|[<>"']/g, j)
+        },
+        l = Array.isArray || function(a) {
+            return "[object Array]" === {}.toString.call(a)
+        },
+        m = function(a, b) {
+            var c, d;
+            if (l(a))
+                for (c = 0, d = a.length; d > c; c++) b.call(a, a[c], c, a);
+            else
+                for (c in a) b.call(a, a[c], c)
+        },
+        n = d.utils = {
+            $helpers: {},
+            $include: g,
+            $string: h,
+            $escape: k,
+            $each: m
+        };
+    d.helper = function(a, b) {
+        o[a] = b
+    };
+    var o = d.helpers = n.$helpers;
+    d.onerror = function(a) {
+        var b = "Template Error\n\n";
+        for (var c in a) b += "<" + c + ">\n" + a[c] + "\n\n";
+        "object" == typeof console && console.error(b)
+    };
+    var p = function(a) {
+            return d.onerror(a),
+                function() {
+                    return "{Template Error}"
+                }
+        },
+        q = d.compile = function(a, b) {
+            function d(c) {
+                try {
+                    return new i(c, h) + ""
+                } catch (d) {
+                    return b.debug ? p(d)() : (b.debug = !0, q(a, b)(c))
+                }
+            }
+            b = b || {};
+            for (var g in e) void 0 === b[g] && (b[g] = e[g]);
+            var h = b.filename;
+            try {
+                var i = c(a, b)
+            } catch (j) {
+                return j.filename = h || "anonymous", j.name = "Syntax Error", p(j)
+            }
+            return d.prototype = i.prototype, d.toString = function() {
+                return i.toString()
+            }, h && b.cache && (f[h] = d), d
+        },
+        r = n.$each,
+        s = "break,case,catch,continue,debugger,default,delete,do,else,false,finally,for,function,if,in,instanceof,new,null,return,switch,this,throw,true,try,typeof,var,void,while,with,abstract,boolean,byte,char,class,const,double,enum,export,extends,final,float,goto,implements,import,int,interface,long,native,package,private,protected,public,short,static,super,synchronized,throws,transient,volatile,arguments,let,yield,undefined",
+        t = /\/\*[\w\W]*?\*\/|\/\/[^\n]*\n|\/\/[^\n]*$|"(?:[^"\\]|\\[\w\W])*"|'(?:[^'\\]|\\[\w\W])*'|\s*\.\s*[$\w\.]+/g,
+        u = /[^\w$]+/g,
+        v = new RegExp(["\\b" + s.replace(/,/g, "\\b|\\b") + "\\b"].join("|"), "g"),
+        w = /^\d[^,]*|,\d[^,]*/g,
+        x = /^,+|,+$/g,
+        y = /^$|,+/;
+    e.openTag = "{{", e.closeTag = "}}";
+    var z = function(a, b) {
+        var c = b.split(":"),
+            d = c.shift(),
+            e = c.join(":") || "";
+        return e && (e = ", " + e), "$helpers." + d + "(" + a + e + ")"
+    };
+    e.parser = function(a) {
+        a = a.replace(/^\s/, "");
+        var b = a.split(" "),
+            c = b.shift(),
+            e = b.join(" ");
+        switch (c) {
+            case "if":
+                a = "if(" + e + "){";
+                break;
+            case "else":
+                b = "if" === b.shift() ? " if(" + b.join(" ") + ")" : "", a = "}else" + b + "{";
+                break;
+            case "/if":
+                a = "}";
+                break;
+            case "each":
+                var f = b[0] || "$data",
+                    g = b[1] || "as",
+                    h = b[2] || "$value",
+                    i = b[3] || "$index",
+                    j = h + "," + i;
+                "as" !== g && (f = "[]"), a = "$each(" + f + ",function(" + j + "){";
+                break;
+            case "/each":
+                a = "});";
+                break;
+            case "echo":
+                a = "print(" + e + ");";
+                break;
+            case "print":
+            case "include":
+                a = c + "(" + b.join(",") + ");";
+                break;
+            default:
+                if (/^\s*\|\s*[\w\$]/.test(e)) {
+                    var k = !0;
+                    0 === a.indexOf("#") && (a = a.substr(1), k = !1);
+                    for (var l = 0, m = a.split("|"), n = m.length, o = m[l++]; n > l; l++) o = z(o, m[l]);
+                    a = (k ? "=" : "=#") + o
+                } else a = d.helpers[c] ? "=#" + c + "(" + b.join(",") + ");" : "=" + a
+        }
+        return a
+    }, "function" == typeof define ? define(function() {
+        return d
+    }) : "undefined" != typeof exports ? module.exports = d : this.ice_tmpl = d
+}();
+
+
+//云服务SDK
+function ice_cloud() {
+
+    var ice = this;
+
+    //云中心地址
+    this.url = "http://cloud.besdlab.cn/";
+    this.link = "";
+    //初始化变量
+    this.username = "null";
+    this.password = "null";
+    this.email = "null";
+    this.num = 0;
+    this.value1 = "null";
+    this.value2 = "null";
+    this.value3 = "null";
+    this.value4 = "null";
+    this.id = 0;
+
+    //初始化用于存储结果的变量
+    this.result = "null";
+
+
+    //请将开发者ID填写在这
+    this.devid = "null";
+
+
+    //设置开发者ID
+    this.setDevid = function(d) {
+        ice.devid = d;
+    };
+
+    //调用api接口登录
+    this.login = function(u, p) {
+        ice.link = ice.url + "api/login";
+        ice.username = u;
+        ice.password = p;
+        return ice.cloud_ajax();
+    };
+
+    //调用api接口注册
+    this.register = function(u, p, e) {
+        ice.link = ice.url + "api/register";
+        ice.username = u;
+        ice.password = p;
+        ice.email = e;
+        return ice.cloud_ajax();
+    };
+
+    //调用api接口退出登录
+    this.logout = function() {
+        ice.link = ice.url + "manage/account/logout";
+        return ice.cloud_ajax();
+    };
+
+    //验证登录，如果已登录返回账户名和开发者ID
+    this.loged = function() {
+        ice.link = ice.url + "manage/account/loged";
+        return ice.cloud_ajax();
+    };
+
+    //调用api向数据仓库增加数据
+    this.storeAdd = function(v1, v2, v3, v4) {
+        ice.link = ice.url + "api/store/add";
+        ice.value1 = v1;
+        ice.value2 = v2;
+        ice.value3 = v3;
+        ice.value4 = v4;
+        return ice.cloud_ajax();
+    };
+
+    //调用api删除数据仓库中指定ID的数据
+    this.storeDelete = function(i) {
+        ice.link = ice.url + "api/store/delete"
+        ice.id = i;
+        return ice.cloud_ajax();
+    };
+
+    //根据条件查找数据仓库
+    this.storeSearch = function(n, v1, v2, v3, v4) {
+        ice.link = ice.url + "api/store/search";
+        ice.num = n;
+        ice.value1 = v1;
+        ice.value2 = v2;
+        ice.value3 = v3;
+        ice.value4 = v4;
+        return ice.cloud_ajax();
+    };
+
+    //调用api修改数据
+    this.storeUp = function(id, v1, v2, v3, v4) {
+        ice.link = ice.url + "api/store/up";
+        ice.id = id;
+        ice.value1 = v1;
+        ice.value2 = v2;
+        ice.value3 = v3;
+        ice.value4 = v4;
+        return ice.cloud_ajax();
+    };
+
+    //开发者授权
+    this.manageLogin = function(u, p) {
+        ice.link = ice.url + "manage/login";
+        ice.username = u;
+        ice.password = p;
+        return ice.cloud_ajax();
+    };
+
+    //增加public数据
+    this.addPublic = function(v1, v2, v3, v4) {
+        ice.link = ice.url + "api/store_public/addpublic";
+        ice.value1 = v1;
+        ice.value2 = v2;
+        ice.value3 = v3;
+        ice.value4 = v4;
+        return ice.cloud_ajax();
+    };
+    //删除public数据
+    this.delPublic = function(i) {
+        ice.link = ice.url + "api/store_public/delpublic";
+        ice.id = i;
+        return ice.cloud_ajax();
+    };
+
+    //修改public数据
+    this.upPublic = function(id, v1, v2, v3, v4) {
+        ice.link = ice.url + "api/store_public/uppublic";
+        ice.id = id;
+        ice.value1 = v1;
+        ice.value2 = v2;
+        ice.value3 = v3;
+        ice.value4 = v4;
+        return ice.cloud_ajax();
+    };
+
+    //获取public数据
+    this.serPublic = function() {
+        ice.link = ice.url + "api/store_public/serpublic";
+        return ice.cloud_ajax();
+    };
+
+    //获取result
+    this.getResult = function() {
+        return ice.result;
+    };
+
+
+    //AJAX方法
+    this.cloud_ajax = function() {
+        $.ajax(ice.link, {
+
+            type: "POST",
+
+            xhrFields: {
+
+                withCredentials: true,
+                useDefaultXhrHeader: false
+
+            },
+            async: false,
+            data: {
+                id: ice.id,
+                username: ice.username,
+                password: ice.password,
+                email: ice.email,
+                devid: ice.devid,
+                num: ice.num,
+                value1: ice.value1,
+                value2: ice.value2,
+                value3: ice.value3,
+                value4: ice.value4
+
+
+            },
+
+            crossDomain: true,
+
+            success: function(data, status, xhr) {
+                ice.result = data["result"];
+
+            }
+
+        });
+
+    }
+
+
+
+
+}

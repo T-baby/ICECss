@@ -1,5 +1,5 @@
 <!--CSS-->
-<link rel="stylesheet" href="../css/icecss.css">
+<link rel="stylesheet" type="text/css" href="../css/icecss.css" />
 <link rel="stylesheet" href="custom.css">
 <!--/CSS-->
 
@@ -18,7 +18,8 @@
 </head>
 
 <body>
-<div class="ding sll"><a href="#rhsy">顶</a></div>
+    <div class="ding sll"><a href="#rhsy">顶</a>
+    </div>
 
     <!--导航栏-->
     <header class="ice-menu  ice-menu-hover">
@@ -44,40 +45,93 @@
 
         <!--导航菜单-->
         <div class="ice-div ice-div-2-10">
-            <ul class="ice-nav ice-text-left sll">
-                <a href="#rhsy"><li>如何使用</li></a>
-                <a href="#jcys"><li>基础元素</li></a>
-               <a href="#yzys"> <li>预置颜色</li></a>
-               <a href="#bj"> <li>布局</li></a></a>
+            <p> </p>
+        </div>
+        <div class="ice-div ice-div-2-10" style="position: fixed;">
+            <ul class="ice-nav ice-nav-accordion ice-text-left sll">
+                <a href="#rhsy">
+                    <li>如何使用</li>
+                </a>
+                <a href="#jcys">
+                    <li>基础元素</li>
+                </a>
+                <a href="#yzys">
+                    <li>预置颜色</li>
+                </a>
+                <a href="#bj">
+                    <li>布局</li>
+                </a>
+                </a>
                 <li>组件</li>
                 <li>
                     <ul>
-                       <a href="#wz"> <li>文字</li></a>
-                       <a href="#an"> <li>按钮</li></a>
-                        <a href="#kg"><li>开关</li></a>
-                        <a href="#jdt"><li>进度条</li></a>
-                        <a href="#fy"><li>分页</li></a>
+                        <a href="#wz">
+                            <li>文字</li>
+                        </a>
+                        <a href="#an">
+                            <li>按钮</li>
+                        </a>
+                        <a href="#kg">
+                            <li>开关</li>
+                        </a>
+                        <a href="#jdt">
+                            <li>进度条</li>
+                        </a>
+                        <a href="#fy">
+                            <li>分页</li>
+                        </a>
                     </ul>
                 </li>
                 <li>导航</li>
                 <li>
                     <ul>
-                        <a href="#dhl"><li>导航栏</li></a>
-                        <a href="#dhcd"><li>导航菜单</li></a>
-                       <a href="#ejdh"> <li>二级导航</li></a>
+                        <a href="#dhl">
+                            <li>导航栏</li>
+                        </a>
+                        <a href="#dhcd">
+                            <li>导航菜单</li>
+                        </a>
+                        <a href="#ejdh">
+                            <li>二级导航</li>
+                        </a>
                     </ul>
                 </li>
-                <a href="#bg"><li>表格</li></a>
-                <a href="#bd"><li>表单</li></a>
-                <a href="#gn"><li>功能</li></a>
+                <a href="#bg">
+                    <li>表格</li>
+                </a>
+                <a href="#bd">
+                    <li>表单</li>
+                </a>
+                <li>功能</li>
                 <li>
                     <ul>
-                        <a href="#cdn"><li>CDN服务</li></a>
-                        <a href="#phyd"><li>平滑移动</li></a>
-                        <a href="#gdjk"><li>滚动监控</li></a>
+                        <a href="#cdn">
+                            <li>CDN服务</li>
+                        </a>
+                        <a href="#yfw">
+                            <li>云服务</li>
+                        </a>
+                         <a href="#mbyq">
+                            <li>模板引擎</li>
+                        </a>
+                        <a href="#phyd">
+                            <li>平滑移动</li>
+                        </a>
+                        <a href="#gdjk">
+                            <li>滚动监控</li>
+                        </a>
+                        <a href="#tcshb">
+                            <li>弹出式画布</li>
+                        </a>
+                        <a href="#ctsdh">
+                            <li>抽屉式导航</li>
+                        </a>
+
                     </ul>
                 </li>
-                <a href="#tb"><li>图标</li></a>
+                <a href="#tb">
+                    <li>图标</li>
+                </a>
             </ul>
         </div>
         <!--/导航菜单-->
@@ -364,7 +418,7 @@
 &lt/ul&gt
 &lt/nav&gt
 &lt/header&gt </code></pre>
-                <p>（3）自定义 1.在导航栏左侧增加LOGO：</p>
+                <p>（3）在导航栏左侧增加LOGO：</p>
                 <pre><code>&ltdiv class="ice-menu-logo"&gtLOGO名字&lt/div&gt</code></pre>
                 <p>把代码增加到header下面的第一行。 使导航栏固定： 在ice-menu后面追加 ice-fixed</p>
                 <pre><code>&ltheader class="ice-menu ice-fixed"&gt</code></pre>
@@ -395,6 +449,8 @@
 &ltli&gt这是个一级菜单项&lt/li&gt
 &ltli&gt这是个一级菜单项&lt/li&gt
 &lt/ul&gt</code></pre>
+
+                <p>您也可以通过增加iice-nav-accordion使导航菜单具有手风琴的功能。</p>
 
             </div>
             <!--/导航菜单-->
@@ -568,18 +624,36 @@
                     <p class="ice-title">CDN服务</p>
                     <p>BESD本身有提供CDN服务：</p>
                     <p>http://cdn.besdlab.cn/icecss/icecss.css</p>
-                    <p>http://cdn.besdlab.cn/icecss/icecss.min.css</p>
+                    <p>http://cdn.besdlab.cn/icecss/icecss.less</p>
                     <p>http://cdn.besdlab.cn/icecss/icecss.js</p>
-                    <p>http://cdn.besdlab.cn/icecss/icecss.min.js</p>
                     <p>http://cdn.besdlab.cn/icecss/less.min.js</p>
                 </div>
                 <!--/CDN服务-->
+
+
+                <!--云服务-->
+                <div class="ice-panel-original" id="yfw">
+                    <p class="ice-title">云服务</p>
+                    <p>BESD云服务是用于帮助快速开发DEMO和测试用的云服务平台，ICECSS0.8版本后已经附带了JS版的SDK。通过BESD云服务可以在不写后端代码的情况下快速完成DEMO或简单程序的开发。</p>
+                    <p>说明文档：<a href="https://github.com/T-baby/BesdCloud" target="_blank">https://github.com/T-baby/BesdCloud</a>
+                    </p>
+                </div>
+                <!--/云服务-->
+
+                  <!--模板引擎-->
+                <div class="ice-panel-original" id="mbyq">
+                    <p class="ice-title">模板引擎</p>
+                    <p>ICECSS自带一个简单的模板引擎，可以使用户界面与业务数据（内容）分离，从而在前端开发出动态渲染的网站。同时可以更好的帮助前端处理json数据。</p>
+                    <p>文档地址：<a href="https://github.com/T-baby/ICECSS/tree/master/Docs/ice_tmpl/readme.md" target="_blank">https://github.com/T-baby/ICECSS/tree/master/Docs/ice_tmpl/readme.md</a></p>
+
+                </div>
+                <!--/模板引擎-->
 
                 <!--平滑移动-->
                 <div class="ice-panel-original" id="phyd">
                     <p class="ice-title">平滑移动</p>
                     <p>在需要平滑移动效果的超链接的父类那里增加<b>sll</b>,然后在script里增加：</p>
-                    <code><pre> $(".sll").scrollTo(700)</pre></code>
+                    <code><pre> $(".sll").ice_scroll(700)</pre></code>
 
                 </div>
                 <!--/平滑移动-->
@@ -591,8 +665,8 @@
                     <pre><code> $('监控对象').waypoint(function() {
 });
 });</code></pre>
-<p>可以使用下面的代码进行设置：</p>
-<pre><code>$.fn.waypoint.defaults = {
+                    <p>可以使用下面的代码进行设置：</p>
+                    <pre><code>$.fn.waypoint.defaults = {
 context: window,
 continuous: true,
 enabled: true,
@@ -605,7 +679,51 @@ triggerOnce: false
                 </div>
                 <!--/滚动监控-->
 
-  <!--图标-->
+                <!--弹出式画布-->
+                <div class="ice-panel-original" id="tcshb">
+                    <p class="ice-title">弹出式画布</p>
+                    <p>现在js中使用</p>
+                    <code><pre> $('a[rel*=ice-eject]').ice_eject()</pre></code>
+                    <p>然后在html中增加弹出式画布所需要显示的内容</p>
+                    <code><pre>&ltdiv class="ice-div ice-eject-w ice-center-abs" id="窗口的ID"&gt
+&ltdiv class="ice-close ice-eject-close"&gt&lt/div&gt
+&lt/div&gt</pre></code>
+                    <p>使用时非常简单</p>
+                    <code><pre>&lta href="#login" rel="ice-eject"&gt</pre></code>
+                    <br/>
+                    <a href="#hbtest" rel="ice-eject">
+                        <button>测试</button>
+                    </a>
+                </div>
+                <!--/弹出式画布-->
+
+                <!--抽屉式导航-->
+                <div class="ice-panel-original" id="ctsdh">
+                    <p class="ice-title">抽屉式导航</p>
+                    <p>首先在html中增加一个nav</p>
+                    <code><pre> &ltnav class="ice-menu-sp ice-menu-sp-right"&gt</pre></code>
+                    <p>你可以用h3标签在里面增加一个标题栏，可以用ul li向抽屉式导航中增加内容：</p>
+                    <code><pre>&lth3&gt标题&lt/h3&gt
+&ltul&gt
+&ltli&gttest1&lt/li&gt
+&ltli&gttest2&lt/li&gt
+&ltli&gttest3&lt/li&gt
+&ltli&gttest4&lt/li&gt
+&ltli&gttest5&lt/li&gt
+&lt/ul&gt</pre></code>
+                    <p>可以用ice-sp-right来打开抽屉式导航</p>
+                    <code><pre>&ltbutton class="ice-sp-right"&gt打开导航&lt/button&gt</pre></code>
+                    <p>如果需要导航菜单从左边打开的话，可以将抽屉式导航nav和打开导航的button中的ice-sp-right改为ice-sp-left</p>
+                    <p>我们建议将抽屉式导航独立出来而不是放在布局系统下。</p>
+                    <br/>
+                    <button class="ice-sp-right">测试</button>
+                </div>
+                <!--/抽屉式导航-->
+
+
+
+
+                <!--图标-->
                 <div class="ice-panel-original" id="tb">
                     <p class="ice-title">图标</p>
                     <p>你可以这么使用图标：</p>
@@ -918,17 +1036,36 @@ triggerOnce: false
         </div>
         <!--/宽度限制-->
 
+        <!--测试例-->
+        <!--弹出式画布-->
+        <div class="ice-div ice-eject-w ice-center-abs" id="hbtest">
+            <div class="ice-close ice-eject-close"></div>
+            <p>我是一个高冷的弹出式画布</p>
+        </div>
+        <!--抽屉式导航-->
+        <nav class="ice-menu-sp ice-menu-sp-right">
+            <ul>
+                <li>test1</li>
+                <li>test2</li>
+                <li>test3</li>
+                <li>test4</li>
+                <li>test5</li>
+            </ul>
+        </nav>
+
+
+
 </body>
 
 </html>
 
 <!--JS-->
-<script src="../js/jquery.min.js"></script>
 
+<script src="../js/jquery.min.js"></script>
 <script src="../js/icecss.js"></script>
 
 <script>
-	$(".sll").scrollto(700);
+$(".sll").ice_scroll(700);
+$('a[rel*=ice-eject]').ice_eject();
 </script>
 <!--/JS-->
-
