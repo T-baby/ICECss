@@ -568,7 +568,7 @@ jQuery(document).ready(function($) {
 //抽屉式导航
 
 (function ($) {
-    $.fn.spmenu = function () {
+    $.fn.ice_spmenu = function () {
         $(".ice-sp-left").click(function () {
             var spWidth = $('.ice-menu-sp').width();
             var temp = $("<div class='ice-menu-sp-w'></div>");
