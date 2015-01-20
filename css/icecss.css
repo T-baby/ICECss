@@ -691,6 +691,7 @@ body {
 }
 .ice-intro-big {
   /*全屏大图*/
+
   height: 100%;
   width: 100%;
   background: url([object Object]) no-repeat center fixed;
@@ -2991,7 +2992,7 @@ body {
   opacity: 0;
   display: none;
 }
-/*抽屉式菜单*/
+/*抽屉式菜单 开始*/
 .ice-menu-sp-w {
   position: fixed;
   z-index: 100;
@@ -3072,4 +3073,5 @@ body {
 }
 
 }
+/*抽屉式菜单 结束*/
 /*插件所需样式 结束*/

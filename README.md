@@ -3,7 +3,9 @@
 
 **什么是ICECSS？**
 
-ICECSS是一个以冰山为灵感开源高效的CSS框架，由设计师为主的团队进行开发。基于Jquery并且支持自适应。
+ICECSS是一个以冰山为灵感开源高效的CSS框架，由设计师为主的团队进行开发。基于jQuery并且支持自适应。
+
+注意：为确保最好的效果，IE浏览器需要11以上。
 
 **如何使用？**
 
@@ -11,9 +13,9 @@ ICECSS是一个以冰山为灵感开源高效的CSS框架，由设计师为主�
 
 `<link rel="stylesheet/less" href="css/icecss.css">`
 
-在html文件尾部引用ICECSS的JS（注意，ICECSS是基于Jquery的，所以在引用ICECSS的JS文件前请先导入Jquery）
+在html文件尾部引用ICECSS的JS（注意，ICECSS是基于jQuery的，所以在引用ICECSS的JS文件前请先导入jQuery）
 
-`<script src="js/jquery.min.js"></script>`
+`<script src="js/jQuery.min.js"></script>`
 
 `<script src="js/icecss.js"></script>`
 
@@ -30,7 +32,7 @@ ICECSS也支持Less
 
 `<script src="js/less.min.js"></script>`
 
-`<script src="js/jquery.min.js"></script>`
+`<script src="js/jQuery.min.js"></script>`
 
 `<script src="js/icecss.js"></script>`
 
@@ -62,6 +64,12 @@ http://besdlab.cn/ICECSS/
 
 ------------------------
 **更新历史**
+
+****2015年01月20日****
+
+感谢 一路向阳 帮助封装了抽屉式导航的相关代码
+
+对抽屉式导航效果进行了调整
 
 ****2015年01月17日****
 

@@ -14,36 +14,9 @@ jQuery(document).ready(function($) {
   $(this).next().toggle('slow');
   });
 
-    //抽屉式导航
-    $(".ice-sp-left").click(function() {
-        var spWidth = $('.ice-menu-sp').width();
-        var temp = $("<div class='ice-menu-sp-w' onclick=hyleft()></div>");
-        $("body").append(temp);
-        $(".ice-menu-sp-w").fadeIn();
-        $("body").attr("style", "position:absolute");
-        $("body").animate({
-            left: spWidth
-        });
-        $(".ice-menu-sp-left").animate({
-            left: '0'
-        });
-    });
-
-    $(".ice-sp-right").click(function() {
-        var spWidth = $('.ice-menu-sp').width();
-        var temp = $("<div class='ice-menu-sp-w' onclick=hyright()></div>");
-        $("body").append(temp);
-        $(".ice-menu-sp-w").fadeIn();
-        $("body").attr("style", "position:absolute");
-        $("body").animate({
-            left: -spWidth
-        });
-        $(".ice-menu-sp-right").animate({
-            right: '0'
-        });
-    });
 
 });
+
 
 //弹出式画布插件
 
@@ -592,32 +565,50 @@ jQuery(document).ready(function($) {
 
 
 
-//抽屉式导航所需方法
+//抽屉式导航
 
-function hyleft() {
-    var spWidth = $('.ice-menu-sp').width();
-    $(".ice-menu-sp-w").fadeOut();
-    $("body").animate({
-        left: '0'
-    });
-    
-    $(".ice-menu-sp-left").animate({
-        left: -1 * spWidth
-    });
-         $("body").attr("style", "inherit:");
-};
+(function ($) {
+    $.fn.spmenu = function () {
+        $(".ice-sp-left").click(function () {
+            var spWidth = $('.ice-menu-sp').width();
+            var temp = $("<div class='ice-menu-sp-w'></div>");
+            $("body").append(temp);
+            temp.click(function () {
+                var spWidth = $('.ice-menu-sp').width();
+                $(".ice-menu-sp-w").fadeOut();
 
-function hyright() {
-    var spWidth = $('.ice-menu-sp').width();
-    $(".ice-menu-sp-w").fadeOut();
-    $("body").animate({
-        left: '0'
-    });
-    $(".ice-menu-sp-right").animate({
-        right: -1 * spWidth
-    });
-     $("body").attr("style", "inherit:");
-};
+                $(".ice-menu-sp-left").animate({
+                    left: -1 * spWidth
+                });
+             
+            })
+            $(".ice-menu-sp-w").fadeIn();
+            $(".ice-menu-sp-left").animate({
+                left: '0'
+            });
+        })
+        $(".ice-sp-right").click(function () {
+            var spWidth = $('.ice-menu-sp').width();
+            var temp = $("<div class='ice-menu-sp-w'></div>");
+            $("body").append(temp);
+            temp.click(function () {
+                var spWidth = $('.ice-menu-sp').width();
+                $(".ice-menu-sp-w").fadeOut();
+                $(".ice-menu-sp-right").animate({
+                    right: -1 * spWidth
+                })
+            })
+            $(".ice-menu-sp-w").fadeIn();
+            $(".ice-menu-sp-right").animate({
+                right: '0'
+            });
+        })
+
+
+    }
+})(jQuery);
+
+
 
 //模板引擎
  ! function() {

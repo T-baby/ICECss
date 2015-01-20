@@ -21,6 +21,18 @@
     <div class="ding sll"><a href="#rhsy">顶</a>
     </div>
 
+        <!--抽屉式导航-->
+        <nav class="ice-menu-sp ice-menu-sp-right">
+            <ul>
+                <li>test1</li>
+                <li>test2</li>
+                <li>test3</li>
+                <li>test4</li>
+                <li>test5</li>
+            </ul>
+        </nav>
+
+
     <!--导航栏-->
     <header class="ice-menu  ice-menu-hover">
         <div class="ice-menu-logo">ICECSS</div>
@@ -698,7 +710,9 @@ triggerOnce: false
                 <!--抽屉式导航-->
                 <div class="ice-panel-original" id="ctsdh">
                     <p class="ice-title">抽屉式导航</p>
-                    <p>首先在html中增加一个nav</p>
+                    <p>首先先在js中添加</p>
+                    <code><pre>$().spmenu();</pre></code>
+                    <p>然后在html中增加一个nav</p>
                     <code><pre> &ltnav class="ice-menu-sp ice-menu-sp-right"&gt</pre></code>
                     <p>你可以用h3标签在里面增加一个标题栏，可以用ul li向抽屉式导航中增加内容：</p>
                     <code><pre>&lth3&gt标题&lt/h3&gt
@@ -712,7 +726,7 @@ triggerOnce: false
                     <p>可以用ice-sp-right来打开抽屉式导航</p>
                     <code><pre>&ltbutton class="ice-sp-right"&gt打开导航&lt/button&gt</pre></code>
                     <p>如果需要导航菜单从左边打开的话，可以将抽屉式导航nav和打开导航的button中的ice-sp-right改为ice-sp-left</p>
-                    <p>我们建议将抽屉式导航独立出来而不是放在布局系统下。</p>
+                    <p>我们建议将抽屉式导航独立出来而不是放在布局系统下。另外抽屉式导航应当再header上面，如果在header下面就会默认与header结合展示。</p>
                     <br/>
                     <button class="ice-sp-right">测试</button>
                 </div>
@@ -1040,17 +1054,7 @@ triggerOnce: false
             <div class="ice-close ice-eject-close"></div>
             <p>我是一个高冷的弹出式画布</p>
         </div>
-        <!--抽屉式导航-->
-        <nav class="ice-menu-sp ice-menu-sp-right">
-            <ul>
-                <li>test1</li>
-                <li>test2</li>
-                <li>test3</li>
-                <li>test4</li>
-                <li>test5</li>
-            </ul>
-        </nav>
-
+    
 
 
 </body>
@@ -1063,7 +1067,12 @@ triggerOnce: false
 <script src="../js/icecss.js"></script>
 
 <script>
-$(".sll").ice_scroll(700);
+    jQuery(document).ready(function($) {
+       $(".sll").ice_scroll(700);
 $('a[rel*=ice-eject]').ice_eject();
+$().spmenu();
+
+    });
+
 </script>
 <!--/JS-->
