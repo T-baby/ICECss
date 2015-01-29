@@ -136,6 +136,18 @@
                         <a href="#ctsdh">
                             <li>抽屉式导航</li>
                         </a>
+                        <a href="#tpycjz">
+                            <li>图片延迟加载</li>
+                        </a>
+                        <a href="#cljyz">
+                            <li>超链接预载</li>
+                        </a>
+                        <a href="#qpgd">
+                            <li>全屏滚动</li>
+                        </a>
+                        <a href="#scxg">
+                            <li>视差效果</li>
+                        </a>
 
                     </ul>
                 </li>
@@ -425,6 +437,8 @@
 &ltul&gt
 &ltli&gt&lta href="#0"&gtHome&lt/a&gt
 &lt/li&gt
+&ltli&gt&lta href="#0"&gtHome&lt/a&gt
+&lt/li&gt
 &lt/ul&gt
 &lt/nav&gt
 &lt/header&gt </code></pre>
@@ -633,10 +647,13 @@
                 <div class="ice-panel-original" id="cdn">
                     <p class="ice-title">CDN服务</p>
                     <p>BESD本身有提供CDN服务：</p>
+                    <p>http://cdn.besdlab.cn/jquery/2.1.1/jquery.2.1.1.min.js</p>
                     <p>http://cdn.besdlab.cn/icecss/icecss.css</p>
+                    <p>http://cdn.besdlab.cn/icecss/icecss.min.css</p>
                     <p>http://cdn.besdlab.cn/icecss/icecss.less</p>
                     <p>http://cdn.besdlab.cn/icecss/icecss.js</p>
                     <p>http://cdn.besdlab.cn/icecss/less.min.js</p>
+                    <p>http://cdn.besdlab.cn/icecss/plugin/插件文件名</p>
                 </div>
                 <!--/CDN服务-->
 
@@ -644,7 +661,7 @@
                 <!--云服务-->
                 <div class="ice-panel-original" id="yfw">
                     <p class="ice-title">云服务</p>
-                    <p>BESD云服务是用于帮助快速开发DEMO和测试用的云服务平台，ICECSS0.8版本后已经附带了JS版的SDK。通过BESD云服务可以在不写后端代码的情况下快速完成DEMO或简单程序的开发。</p>
+                    <p>BESD云服务是用于帮助快速开发DEMO和测试用的云服务平台，ICECSS0.8版本后已经附带了JS版的SDK。通过BESD云服务可以在不写后端代码的情况下快速完成DEMO或简单程序的开发。如果您是要在ICECSS中使用，请将将plugin/ice_cloud.js引入</p>
                     <p>说明文档：<a href="https://github.com/T-baby/BesdCloud" target="_blank">https://github.com/T-baby/BesdCloud</a>
                     </p>
                 </div>
@@ -653,7 +670,7 @@
                   <!--模板引擎-->
                 <div class="ice-panel-original" id="mbyq">
                     <p class="ice-title">模板引擎</p>
-                    <p>ICECSS自带一个简单的模板引擎，可以使用户界面与业务数据（内容）分离，从而在前端开发出动态渲染的网站。同时可以更好的帮助前端处理json数据。</p>
+                    <p>ICECSS自带一个简单的模板引擎，可以使用户界面与业务数据（内容）分离，从而在前端开发出动态渲染的网站。同时可以更好的帮助前端处理json数据。如果您是要在ICECSS中使用，请将将plugin/ice_tmpl.js引入</p>
                     <p>文档地址：<a href="https://github.com/T-baby/ICECSS/tree/master/Docs/ice_tmpl/readme.md" target="_blank">https://github.com/T-baby/ICECSS/tree/master/Docs/ice_tmpl/readme.md</a></p>
 
                 </div>
@@ -673,7 +690,6 @@
                     <p class="ice-title">滚动监控</p>
                     <p>在script中使用这个命令来监控：</p>
                     <pre><code> $('监控对象').waypoint(function() {
-});
 });</code></pre>
                     <p>可以使用下面的代码进行设置：</p>
                     <pre><code>$.fn.waypoint.defaults = {
@@ -731,6 +747,56 @@ triggerOnce: false
                     <button class="ice-sp-right">测试</button>
                 </div>
                 <!--/抽屉式导航-->
+
+                   <!--图片延迟加载-->
+                <div class="ice-panel-original" id="tpycjz">
+                    <p class="ice-title">图片延迟加载</p>
+                    <p>图片延迟加载可以让网页在载入的时候不载入图片，当看到图片所在的部分的时候再载入。使用前需要引入plugin/ice_image.js。图片按照下面的方式加入到网页中，ajax.gif是等待加载的动画，后面的属性是需要加载的图片</p>
+                    <code><pre>&ltimg src="../img/ajax.gif" alt="" data-echo="../img/album-1.jpg"&gt</pre></code>
+                    <img src="../img/ajax.gif" alt="" data-echo="../img/logo.png" >
+                     <p>然后在js中添加方法</p>
+                    <code><pre>ice_echo.init()</pre></code>
+                 
+                </div>
+                <!--/图片延迟加载-->
+
+                <!--超链接预载-->
+                <div class="ice-panel-original" id="cljyz">
+                    <p class="ice-title">超链接预载</p>
+                    <p>超链接预载可以在鼠标悬浮在超链接上时提前加载网页，可以减少网页加载的等待时间。使用前需要引入plugin/ice_click.js。如果在导入脚本的script标签添加data-no-instant属性的话，超链接预载只会使用一次，去掉的话则每次都会使用。</p>
+                    <code><pre>&ltscript src="ice_click.js" data-no-instant&gt&lt/script&gt</pre></code>
+                     <p>然后在js中添加方法</p>
+                    <code><pre>ice_click.init();</pre></code>
+                 
+                </div>
+                <!--/超链接预载-->
+
+                  <!--全屏滚动-->
+                    <div class="ice-panel-original" id="qpgd">
+                    <p class="ice-title">全屏滚动</p>
+                    <p>使用前需要引入plugin/ice_fullpage下的js和css。</p>
+                    <code><pre>&ltdiv id="fullpage"&gt
+&ltdiv class="section"&gtSome section&lt/div&gt
+&ltdiv class="section"&gtSome section&lt/div&gt
+&ltdiv class="section"&gtSome section&lt/div&gt
+&ltdiv class="section"&gtSome section&lt/div&gt
+&lt/div&gt</pre></code>
+                     <p>然后在js中添加方法</p>
+                    <code><pre>$('#fullpage').ice_fullpage();</pre></code>
+                 
+                </div>
+                  <!--/全屏滚动-->
+
+                   <!--视差效果-->
+                    <div class="ice-panel-original" id="scxg">
+                    <p class="ice-title">视差效果</p>
+                    <p>使用前需要引入plugin/ice_scrolly/ice_scrolly.js。</p>
+                    <code><pre>具体使用方法请自行查看plugin/ice_scrolly下的example</pre></code>
+                 
+                 
+                </div>
+
+                  <!--/视差效果-->
 
 
 
@@ -1065,13 +1131,17 @@ triggerOnce: false
 
 <script src="../js/jquery.min.js"></script>
 <script src="../js/icecss.js"></script>
+<script src="../plugin/ice_image.js"></script>
+<script src="../plugin/ice_click.js"></script>
+
 
 <script>
     jQuery(document).ready(function($) {
        $(".sll").ice_scroll(700);
 $('a[rel*=ice-eject]').ice_eject();
 $().ice_spmenu();
-
+ice_echo.init();
+ice_click.init();
     });
 
 </script>

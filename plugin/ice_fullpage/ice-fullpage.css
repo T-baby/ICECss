@@ -1,0 +1,195 @@
+/**
+ * fullPage 2.4.6
+ * https://github.com/alvarotrigo/fullPage.js
+ * MIT licensed
+ *
+ * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ */
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	/*Avoid flicker on slides transitions for mobile phones #336 */
+	
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+#superContainer {
+	height: 100%;
+	position: relative;
+	/* Touch detection for Windows 8 */
+	
+	-ms-touch-action: none;
+	/* IE 11 on Windows Phone 8.1*/
+	
+	touch-action: none;
+}
+.ice-fp-section {
+	position: relative;
+	-webkit-box-sizing: border-box;
+	/* Safari<=5 Android<=3 */
+	
+	-moz-box-sizing: border-box;
+	/* <=28 */
+	
+	box-sizing: border-box;
+
+}
+.ice-fp-slide {
+	float: left;
+}
+.ice-fp-slide,
+.ice-fp-slidesContainer {
+	height: 100%;
+	display: block;
+}
+.ice-fp-slides {
+	z-index: 1;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	-webkit-transition: all 0.3s ease-out;
+	/* Safari<=6 Android<=4.3 */
+	
+	transition: all 0.3s ease-out;
+}
+.ice-fp-section.ice-fp-table,
+.ice-fp-slide.ice-fp-table {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	height: 100%;
+}
+.ice-fp-tableCell {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	height: 100%;
+}
+.ice-fp-slidesContainer {
+	float: left;
+	position: relative;
+}
+.ice-fp-controlArrow {
+	position: absolute;
+	z-index: 4;
+	top: 50%;
+	cursor: pointer;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	margin-top: -38px;
+}
+.ice-fp-controlArrow.ice-fp-prev {
+	left: 15px;
+	width: 0;
+	border-width: 15px 20px 15px 0;
+	border-color: transparent #297FB8 transparent transparent;
+	border-radius: 5px;
+}
+.ice-fp-controlArrow.ice-fp-next {
+	right: 15px;
+	border-width: 15px 0 15px 20px;
+	border-color: transparent transparent transparent #297FB8;
+	border-radius: 5px;
+}
+.ice-fp-scrollable {
+	overflow: scroll;
+}
+.ice-fp-notransition {
+	-webkit-transition: none !important;
+	transition: none !important;
+}
+#ice-fp-nav {
+	position: fixed;
+	z-index: 100;
+	margin-top: -32px;
+	top: 50%;
+	opacity: 1;
+}
+#ice-fp-nav.right {
+	right: 17px;
+}
+#ice-fp-nav.left {
+	left: 17px;
+}
+.ice-fp-slidesNav {
+	position: absolute;
+	z-index: 4;
+	left: 50%;
+	opacity: 1;
+}
+.ice-fp-slidesNav.bottom {
+	bottom: 17px;
+}
+.ice-fp-slidesNav.top {
+	top: 17px;
+}
+#ice-fp-nav ul,
+.ice-fp-slidesNav ul {
+	margin: 0;
+	padding: 0;
+}
+#ice-fp-nav ul li,
+.ice-fp-slidesNav ul li {
+	display: block;
+	width: 14px;
+	height: 13px;
+	margin: 7px;
+	position: relative;
+}
+.ice-fp-slidesNav ul li {
+	display: inline-block;
+}
+#ice-fp-nav ul li a,
+.ice-fp-slidesNav ul li a {
+	display: block;
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	text-decoration: none;
+}
+#ice-fp-nav ul li a.active span,
+.ice-fp-slidesNav ul li a.active span {
+	background: #333;
+}
+#ice-fp-nav ul li a span,
+.ice-fp-slidesNav ul li a span {
+	top: 2px;
+	left: 2px;
+	width: 8px;
+	height: 8px;
+	border: 1px solid #000;
+	background: rgba(0, 0, 0, 0);
+	border-radius: 50%;
+	position: absolute;
+	z-index: 1;
+}
+#ice-fp-nav ul li .ice-fp-tooltip {
+	position: absolute;
+	top: -2px;
+	color: #fff;
+	font-size: 14px;
+	font-family: arial, helvetica, sans-serif;
+	white-space: nowrap;
+	max-width: 220px;
+	overflow: hidden;
+	display: block;
+	opacity: 0;
+	width: 0;
+}
+#ice-fp-nav ul li:hover .ice-fp-tooltip {
+	-webkit-transition: opacity 0.2s ease-in;
+	transition: opacity 0.2s ease-in;
+	width: auto;
+	opacity: 1;
+}
+#ice-fp-nav ul li .ice-fp-tooltip.right {
+	right: 20px;
+}
+#ice-fp-nav ul li .ice-fp-tooltip.left {
+	left: 20px;
+}

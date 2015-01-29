@@ -249,7 +249,7 @@ body {
   margin: 0;
 }
 .ice-div-1-1 {
-  width: 99%;
+  width: 100%;
   margin: 0;
 }
 .ice-div-1-2 {
@@ -667,6 +667,7 @@ body {
   font-family: 'Microsoft Yahei';
 }
 .ice-menu-logo {
+  height: 100%;
   font-weight: bold;
   top: 0;
   left: 0;
@@ -694,7 +695,9 @@ body {
 
   height: 100%;
   width: 100%;
-  background: url([object Object]) no-repeat center fixed;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 .ice-menu-hover a:hover {
@@ -704,6 +707,7 @@ body {
   /*使导航栏透明*/
 
   background: none;
+  position: absolute;
 }
 .ice-menu-lucency .ice-menu-logo {
   background: none;

@@ -1,11 +1,16 @@
+![](http://cdn.besdlab.cn/icecss/compatible.gif)
 ![](http://cdn.besdlab.cn/icecss-yqh.jpg)
 ======
 
 **什么是ICECSS？**
 
-ICECSS是一个以冰山为灵感开源高效的CSS框架，由设计师为主的团队进行开发。基于jQuery并且支持自适应。
+ICECSS是一个以冰山为灵感的开源高效的基于Jquery的CSS框架，不仅有着开发快速、美观易用等特点，官方本身还提供CDN服务、快速开发demo和测试的云服务等等。
 
-注意：为确保最好的效果，IE浏览器需要11以上。
+注意：为确保最好的效果，IE浏览器最好是在9以上。
+
+**ICECSS 主题**
+
+ICECSS for HEXO:<a href="https://github.com/T-baby/ICE-HEXO">https://github.com/T-baby/ICE-HEXO</a>
 
 **如何使用？**
 
@@ -18,7 +23,6 @@ ICECSS是一个以冰山为灵感开源高效的CSS框架，由设计师为主�
 `<script src="js/jQuery.min.js"></script>`
 
 `<script src="js/icecss.js"></script>`
-
 
 ------------------------
 
@@ -40,7 +44,11 @@ ICECSS也支持Less
 
 新版文档请到官网查看：<a href="http://besdlab.cn/ICECSS/">http://besdlab.cn/ICECSS/</a>
 
-中国区分发：<a href="https://coding.net/u/besd/p/ICECSS/">https://coding.net/u/besd/p/ICECSS/</a>
+中国区分发：
+
+<a href="https://coding.net/u/besd/p/ICECSS/">https://coding.net/u/besd/p/ICECSS/</a>
+
+<a href="http://git.oschina.net/t-baby/ICECSS">http://git.oschina.net/t-baby/ICECSS</a>
 
 **DEMO**
 
@@ -64,6 +72,26 @@ http://besdlab.cn/ICECSS/
 
 ------------------------
 **更新历史**
+
+****2015年01月29日****
+
+******-修改/修复-******
+
+修正了文档上的一些问题
+
+修复ice-intro-big固定背景图片失效的问题
+
+******-增加-******
+
+ice-menu-lucency增加浮动
+
+增加视差效果插件
+
+增加全屏滚动插件
+
+增加预加载超链接插件
+
+增加图片延迟载入插件
 
 ****2015年01月20日****
 
