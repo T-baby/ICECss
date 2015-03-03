@@ -499,7 +499,7 @@
      /*基本样式 结束*/
      /*按钮样式 开始*/
      
-     button, [type=button] {
+     .ice-button,button, [type=button] {
          cursor: pointer;
          outline: none;
          display: inline-block;
@@ -512,31 +512,26 @@
          line-height: 25px;
          min-height: 25px;
          font-size: 0.9rem;
-         padding: 0 20px;
+         padding: .5em 1em;
          margin-bottom: 5px;
          background: @color-common;
          color: @color-white;
      }
-     button:hover, [type=button]:hover {
-         filter: alpha(opacity=85);
-         -moz-opacity: 0.85;
-         opacity: 0.85;
+     .ice-button:hover,button:hover, [type=button]:hover {
+         background: @color-blue-1;
      }
      .ice-button-mini {
-         line-height: 20px;
          min-height: 20px;
-         font-size: 10px;
+         font-size: 85%;
          padding: 0 20px;
      }
      .ice-button-big {
-         line-height: 38px;
          min-height: 40px;
-         font-size: 18px;
+         font-size: 125%;
          padding: 0 80px;
      }
      .ice-button-ghost {
          /*幽灵按钮*/
-         
          color: @color-common;
          background: none;
          border: 2px solid @color-common;
@@ -868,17 +863,16 @@
      }
      th {
          text-align: left;
-         padding: 8px;
+         padding: 0.5em 1em;
          border-bottom: 1px solid #e5e5e5;
      }
      td {
-         padding: 8px;
+         padding: 0.5em 1em;
          border-bottom: 1px solid #e5e5e5;
-         vertical-align: top;
      }
  }
  .ice-table-striped tr:nth-child(odd) > td {
-     background-color: #e5e5e5;
+     background-color: #f2f2f2;
  }
  .ice-table-hover tbody tr:hover {
      color: @color-white;

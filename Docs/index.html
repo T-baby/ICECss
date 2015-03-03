@@ -148,6 +148,9 @@
                         <a href="#scxg">
                             <li>视差效果</li>
                         </a>
+                        <a href="#bdcc">
+                            <li>本地存储</li>
+                        </a>
 
                     </ul>
                 </li>
@@ -513,7 +516,7 @@
                 <p>可以通过添加ice-table-striped来达到斑马纹效果。</p>
                 <pre><code>&lttable class="ice-table ice-table-striped"&gt&lt/table&gt</code></pre>
                 <p>在没有使用ice-table-striped的情况下，可以增加ice-table-hover使表单在鼠标悬浮时有效果。</p>
-                <pre><code>&lttable class="ice-table ice-table-striped"&gt&lt/table&gt</code></pre>
+                <pre><code>&lttable class="ice-table ice-table-hover"&gt&lt/table&gt</code></pre>
                 <table class="ice-table ice-table-striped">
                     <thead>
                         <tr>
@@ -797,6 +800,65 @@ triggerOnce: false
                 </div>
 
                   <!--/视差效果-->
+
+                  <!--本地存储-->
+                    <div class="ice-panel-original" id="bdcc">
+                    <p class="ice-title">本地存储</p>
+                    <p>ice_storedb是一个基于localStorage的本地储存库，通过模拟MongoDB的一些API和概念（如“集(collection)”和“文档(document)”），使你能使用 localStorage 储存复杂数据。使用前需要引入plugin/ice_storedb.js。</p>
+                    <p>插入（Insert）</p>
+                    <p>向名为players的集合中插入一条文档：</p>
+                    <code><pre>
+storedb('players').insert({"name":"Randy","sex":"male","score":20},function(err,result){
+  if(!err){
+    //do sth...
+  } else{} //do sth...
+})</pre></code>
+                 <p>查询（Find）</p>
+                 <p>查询players集合中name为Randy的文档：</p>
+<code><pre>
+storedb('players').find({"name":"Randy"},function(err,result){
+  if(!err){
+    //use result to do sth...
+  } else{} //do sth...
+})
+</pre></code>
+<p>如果需要查询集合中所有文档，将参数设置为空即可：</p>
+<code><pre>
+storedb('players').find()
+</pre></code>
+<p>函数将返回一个数组类型。</p>
+
+<p>更新（Update）</p>
+
+<p>为players集合中name为Randy的score增加10：</p>
+<code><pre>
+storedb('players').update({"name":"Randy"},{"$inc":{"score":"10"}},function(err){
+  if(!err){
+    //do sth...
+  } else{} //do sth...
+})
+</pre></code>
+<p>你可能已经注意到，StoreDB拥有和MongoDB一样的修改器！关于修改器类型请查看API。</p>
+<p>如果修改器为空，则默认为$set修改器：</p>
+<code><pre>
+storedb('players').update({"name":"Randy"}, {"sex":"male","name":"kriss"})
+</pre></code>
+<p>删除（Remove）</p>
+<p>删除在players集合中name为Randy的一条文档：</p>
+<code><pre>
+storedb('players').remove({"name":"Randy"},function(err){
+  if(!err){
+    //do sth...
+  } else{} //do sth...
+})</pre></code>
+<p>如果要把整个集合删除，把参数设置为空：</p>
+<code><pre>
+storedb('players').remove()</pre></code>
+                 
+                 
+                </div>
+
+                  <!--/本地存储-->
 
 
 
