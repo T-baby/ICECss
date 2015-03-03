@@ -808,7 +808,7 @@ triggerOnce: false
                     <p>插入（Insert）</p>
                     <p>向名为players的集合中插入一条文档：</p>
                     <code><pre>
-storedb('players').insert({"name":"Randy","sex":"male","score":20},function(err,result){
+ice_storedb('players').insert({"name":"Randy","sex":"male","score":20},function(err,result){
   if(!err){
     //do sth...
   } else{} //do sth...
@@ -816,7 +816,7 @@ storedb('players').insert({"name":"Randy","sex":"male","score":20},function(err,
                  <p>查询（Find）</p>
                  <p>查询players集合中name为Randy的文档：</p>
 <code><pre>
-storedb('players').find({"name":"Randy"},function(err,result){
+ice_storedb('players').find({"name":"Randy"},function(err,result){
   if(!err){
     //use result to do sth...
   } else{} //do sth...
@@ -824,7 +824,7 @@ storedb('players').find({"name":"Randy"},function(err,result){
 </pre></code>
 <p>如果需要查询集合中所有文档，将参数设置为空即可：</p>
 <code><pre>
-storedb('players').find()
+ice_storedb('players').find()
 </pre></code>
 <p>函数将返回一个数组类型。</p>
 
@@ -832,28 +832,28 @@ storedb('players').find()
 
 <p>为players集合中name为Randy的score增加10：</p>
 <code><pre>
-storedb('players').update({"name":"Randy"},{"$inc":{"score":"10"}},function(err){
+ice_storedb('players').update({"name":"Randy"},{"$inc":{"score":"10"}},function(err){
   if(!err){
     //do sth...
   } else{} //do sth...
 })
 </pre></code>
-<p>你可能已经注意到，StoreDB拥有和MongoDB一样的修改器！关于修改器类型请查看API。</p>
+<p>你可能已经注意到，ice_StoreDB拥有和MongoDB一样的修改器！关于修改器类型请查看API。</p>
 <p>如果修改器为空，则默认为$set修改器：</p>
 <code><pre>
-storedb('players').update({"name":"Randy"}, {"sex":"male","name":"kriss"})
+ice_storedb('players').update({"name":"Randy"}, {"sex":"male","name":"kriss"})
 </pre></code>
 <p>删除（Remove）</p>
 <p>删除在players集合中name为Randy的一条文档：</p>
 <code><pre>
-storedb('players').remove({"name":"Randy"},function(err){
+ice_storedb('players').remove({"name":"Randy"},function(err){
   if(!err){
     //do sth...
   } else{} //do sth...
 })</pre></code>
 <p>如果要把整个集合删除，把参数设置为空：</p>
 <code><pre>
-storedb('players').remove()</pre></code>
+ice_storedb('players').remove()</pre></code>
                  
                  
                 </div>
