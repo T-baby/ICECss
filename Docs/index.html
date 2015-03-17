@@ -81,6 +81,9 @@
                         <a href="#an">
                             <li>按钮</li>
                         </a>
+                        <a href="#buttoncolor">
+                            <li>按钮颜色</li>
+                        </a>
                         <a href="#kg">
                             <li>开关</li>
                         </a>
@@ -250,6 +253,8 @@
  @color-purple-2: #8F44AD;</code></pre>
                 <p>而主体颜色都是通过引用@color-common这个变量的，如果需要改变主题颜色可以直接将颜色代码替换到变量后面。</p>
                 <p>如我要替换成黄色：@color-common: #F1C40F;</p>
+                <p>当然你也可以直接通过CSS来使用，我们在CSS中提前准了一些类，可以通过ice-color-颜色名来使用。如果是边框请用ice-color-b+颜色名。</p>
+                <p>如.ice-color-blue-1和.ice-color-bblue-1</p>
             </div>
             <!--/预置颜色-->
             <!--布局-->
@@ -334,6 +339,17 @@
 
             </div>
             <!--/按钮-->
+
+                        <!--按钮颜色-->
+            <div class="ice-panel-original" id="buttoncolor">
+                <p class="ice-title">按钮颜色</p>
+                <button class="ice-button-green">green</button>
+                <button class="ice-button-red">red</button>
+                <button class="ice-button-yellow">yellow</button>
+                <button class="ice-button-orange">orange</button>
+
+            </div>
+            <!--/颜色-->
 
             <!--开关-->
             <div class="ice-panel-original" id="kg">
@@ -673,8 +689,8 @@
                   <!--模板引擎-->
                 <div class="ice-panel-original" id="mbyq">
                     <p class="ice-title">模板引擎</p>
-                    <p>ICECSS自带一个简单的模板引擎，可以使用户界面与业务数据（内容）分离，从而在前端开发出动态渲染的网站。同时可以更好的帮助前端处理json数据。如果您是要在ICECSS中使用，请将将plugin/ice_tmpl.js引入</p>
-                    <p>文档地址：<a href="https://github.com/T-baby/ICECSS/tree/master/Docs/ice_tmpl/readme.md" target="_blank">https://github.com/T-baby/ICECSS/tree/master/Docs/ice_tmpl/readme.md</a></p>
+                    <p>ICECSS自带一个简单的模板引擎，可以使用户界面与业务数据（内容）分离，从而在前端开发出动态渲染的网站。同时可以更好的帮助前端处理json数据。如果您是要在ICECSS中使用，请将将plugin/ice_tmpl/ice_tmpl.js引入</p>
+                    <p>文档地址：<a href="https://github.com/T-baby/ICECSS/tree/master/plugin/ice_tmpl/help.md" target="_blank">https://github.com/T-baby/ICECSS/tree/master/Docs/ice_tmpl/readme.md</a></p>
 
                 </div>
                 <!--/模板引擎-->

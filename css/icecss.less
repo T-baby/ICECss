@@ -191,7 +191,7 @@
      font-style: normal;
  }
  body {
-     font-family: 'Microsoft Yahei';
+     font-family: 'Helvetica Neue', 'Microsoft Yahei', 'Hiragino Sans GB', 'Microsoft Sans Serif', 'WenQuanYi Micro Hei', sans-serif;
      -webkit-text-size-adjust: 100%;
      -ms-text-size-adjust: 100%;
  }
@@ -414,6 +414,7 @@
          font-size: 14px;
      }
      li {
+         margin-bottom:1.8em;
          display: list-item;
          text-align: -webkit-match-parent;
      }
@@ -501,40 +502,43 @@
      
      .ice-button,button, [type=button] {
          cursor: pointer;
-         outline: none;
          display: inline-block;
-         -moz-box-sizing: border-box;
-         box-sizing: border-box;
-         vertical-align: middle;
-         text-decoration: none;
-         text-align: center;
-         border: none;
-         line-height: 25px;
-         min-height: 25px;
-         font-size: 0.9rem;
-         padding: .5em 1em;
-         margin-bottom: 5px;
-         background: @color-common;
-         color: @color-white;
+        min-width: 120px;
+        padding: 10px 25px;
+        margin-bottom: 16px;
+        border: none;
+        font-size: 1em;
+        line-height: 1.4em;
+        text-align: center;
+        text-decoration: none;
+        -webkit-transition: border-color 0.25s, background-color 0.25s, color 0.25s;
+        transition: border-color 0.25s, background-color 0.25s, color 0.25s;
+        background:@color-blue-2;
+        color: #fff;
      }
      .ice-button:hover,button:hover, [type=button]:hover {
          background: @color-blue-1;
      }
      .ice-button-mini {
-         min-height: 20px;
-         font-size: 85%;
-         padding: 0 20px;
+        padding: 5px 15px;
+        min-width: 30px;
+        font-size: 0.8em;
+        line-height: 1.2em;
      }
      .ice-button-big {
-         min-height: 40px;
-         font-size: 125%;
-         padding: 0 80px;
+        padding: 12px 45px;
+        min-width: 200px;
+        font-size: 1.4em;
+
      }
      .ice-button-ghost {
          /*幽灵按钮*/
-         color: @color-common;
-         background: none;
-         border: 2px solid @color-common;
+        background: transparent;
+        border: 2px solid #4378a7;
+        padding: 8px 25px;
+        border: 2px solid #4378a7;
+        color: #297fb8;
+        background: none;
      }
      .ice-button-ghost:hover {
          color: @color-white;
@@ -595,6 +599,8 @@
          transform: translateY(-100%);
      }
      a {
+         -webkit-transition: border-color 0.25s, background-color 0.25s, color 0.25s;
+         transition: border-color 0.25s, background-color 0.25s, color 0.25s;
          display: block;
          font-size: 13px;
          height: 50px;
@@ -729,6 +735,8 @@
          list-style: none;
          font-size: 0.9em;
          line-height: 2em;
+         -webkit-transition: border-color 0.25s, background-color 0.25s, color 0.25s;
+         transition: border-color 0.25s, background-color 0.25s, color 0.25s;
      }
      li:hover {
          background: #f7f7f7;
@@ -872,7 +880,7 @@
      }
  }
  .ice-table-striped tr:nth-child(odd) > td {
-     background-color: #f2f2f2;
+     background-color: #f7f7f7;
  }
  .ice-table-hover tbody tr:hover {
      color: @color-white;
@@ -917,61 +925,21 @@
  /*文字排版 结束*/
  /*表单 开始*/
  
- .ice-form {
-     legend {
-         width: 100%;
-         padding-bottom: 15px;
-         font-size: 18px;
-         line-height: 30px;
-     }
-     input:focus, textarea:focus {
-         outline: 2px solid @color-common;
-     }
-     select:focus {
-         outline: 2px solid @color-common;
-     }
-     input[type=radio], input[type=checkbox] {
-         display: inline-block;
-         height: 13px;
-         width: 13px;
-         border: 1px solid #e5e5e5;
-         overflow: hidden;
-         vertical-align: middle;
-         text-align: center;
-         -webkit-appearance: none;
-         outline: 0;
-         background: 0 0;
-     }
-     input[type=checkbox]:checked:before {
-         content: "\f00c";
-         font-family: 'iconfont';
-         font-size: 12px;
-         -webkit-font-smoothing: antialiased;
-         text-align: center;
-         line-height: 11px;
-         color: @color-common;
-     }
-     input[type=radio]:checked:before {
-         content: "■";
-         font-family: 'iconfont';
-         font-size: 12px;
-         -webkit-font-smoothing: antialiased;
-         text-align: center;
-         line-height: 11px;
-         color: @color-common;
-     }
-     textarea {
-         min-height: 80px;
-     }
- }
+ 
  .ice-form select, .ice-form textarea, .ice-form input:not([type]), .ice-form input[type=text], .ice-form input[type=password], .ice-form input[type=datetime], .ice-form input[type=datetime-local], .ice-form input[type=date], .ice-form input[type=month], .ice-form input[type=time], .ice-form input[type=week], .ice-form input[type=number], .ice-form input[type=email], .ice-form input[type=url], .ice-form input[type=search], .ice-form input[type=tel], .ice-form input[type=color] {
-     height: 30px;
+     height: 2.625em;
+     width: 50%;
      max-width: 100%;
-     padding: 4px 6px;
-     border: 1px solid #e5e5e5;
-     background: #fff;
-     color: #666;
-     transition: all linear .2s;
+     padding: 0.5em;
+     margin-bottom: 16px;
+     font-weight: normal;
+     color: #555;
+     font-size: 1em;
+     border: 2px solid #ddd;
+     -webkit-font-smoothing: antialiased;
+     -webkit-appearance: none;
+     -webkit-transition: border-color 0.25s, color 0.25s;
+     transition: border-color 0.25s, color 0.25s;
  }
  .ice-onerow:before, .ice-onerow:after {
      content: " ";
@@ -985,14 +953,13 @@
  }
  .ice-form-icon {
      position: relative;
-     display: inline-block;
      max-width: 100%;
  }
  .ice-form-icon>[class*=ice-icon-] {
      position: absolute;
      top: 50%;
      width: 30px;
-     margin-top: -7px;
+     margin-top: -13px;
      font-size: 14px;
      color: #999;
      text-align: center;
@@ -1012,8 +979,57 @@
  }
  .ice-form-label {
      width: 150px;
-     margin-top: 5px;
+     margin-top: 13px;
      float: left;
+ }
+
+ .ice-form {
+     legend {
+         width: 100%;
+         padding-bottom: 15px;
+         font-size: 18px;
+         line-height: 30px;
+     }
+     input:focus, textarea:focus {
+         outline: none; 
+         border: 2px solid @color-blue-2;
+     }
+     select:focus {
+         outline: 2px solid @color-common;
+     }
+     input[type=radio], input[type=checkbox] {
+         display: inline-block;
+         height: 16px;
+         width: 16px;
+         border: 1px solid #e5e5e5;
+         overflow: hidden;
+         vertical-align: middle;
+         text-align: center;
+         -webkit-appearance: none;
+         outline: 0;
+         background: 0 0;
+     }
+     input[type=checkbox]:checked:before {
+         content: "\f00c";
+         font-family: 'iconfont';
+         font-size: 13.5px;
+         -webkit-font-smoothing: antialiased;
+         text-align: center;
+         line-height: 13.5px;
+         color: @color-common;
+     }
+     input[type=radio]:checked:before {
+         content: "■";
+         font-family: 'iconfont';
+         font-size: 13.5px;
+         -webkit-font-smoothing: antialiased;
+         text-align: center;
+         line-height: 13.5px;
+         color: @color-common;
+     }
+     textarea {
+         min-height: 80px;
+     }
  }
  /*表单 结束*/
  /*布局自适应 开始*/
@@ -2702,6 +2718,115 @@
      content: "\f20c";
  }
  /*预置图标 结束*/
+
+ /*插件所需样式 开始*/
+ /*弹出式画布*/
+ 
+ .ice-eject {
+     position: fixed;
+     z-index: 100;
+     top: 0px;
+     left: 0px;
+     height: 100%;
+     width: 100%;
+     background: #000;
+     display: none;
+     opacity: 0.4;
+ }
+ .ice-eject-w {
+     width: 40%;
+     padding: 20px;
+     position: fixed;
+     z-index: 1100;
+     top: 100px;
+     left: 28%;
+     border: 1px solid #CCCCCC;
+     background: #FFFFFF;
+     opacity: 0;
+     display: none;
+ }
+ /*抽屉式菜单 开始*/
+ 
+ .ice-menu-sp-w {
+     position: fixed;
+     z-index: 100;
+     top: 0px;
+     left: 0px;
+     height: 100%;
+     width: 100%;
+     background: #000;
+     display: none;
+     opacity: 0.1;
+ }
+ .ice-menu-sp {
+     /*开启硬件加速*/
+     
+     -webkit-backface-visibility: hidden;
+     -moz-backface-visibility: hidden;
+     -ms-backface-visibility: hidden;
+     backface-visibility: hidden;
+     -webkit-perspective: 1000;
+     -moz-perspective: 1000;
+     -ms-perspective: 1000;
+     perspective: 1000;
+     color: white;
+     width: 260px;
+     height: 100%;
+     position: fixed;
+     z-index: 999;
+     background: #2c3d4f;
+ }
+ .ice-menu-sp h3 {
+     color: #FFFFFF;
+     font-size: 1.9em;
+     padding: 20px;
+     margin: 0;
+     font-weight: 300;
+     background: #297fb8;
+ }
+ .ice-menu-sp ul {
+     width: 100%;
+     margin: 0;
+     padding: 0;
+     list-style-type: none;
+ }
+ .ice-menu-sp ul li {
+     display: block;
+     height: 40px;
+     line-height: 2.5em;
+     padding: 10px;
+     font-size: 1em;
+     border-bottom: 1px solid #283646;
+     cursor: hand;
+ }
+ .ice-menu-sp ul li:hover {
+     background: #297fb8;
+ }
+ .ice-menu-sp-right {
+     right: -260px;
+ }
+ .ice-menu-sp-left {
+     left: -260px;
+ }
+ @media screen and (max-width: 55.1875em) {
+     .ice-menu-sp {
+         width: 190px;
+     }
+     .ice-menu-sp-right {
+         right: -190px;
+     }
+     .ice-menu-sp-left {
+         left: -190px;
+     }
+ }
+ @media screen and (max-height: 26.375em) {
+     .ice-menu-sp ul li {
+         line-height: 2em;
+         height: 30px;
+     }
+ }
+ /*抽屉式菜单 结束*/
+ /*插件所需样式 结束*/
  /*预置颜色 开始*/
  
  .ice-color-white {
@@ -2827,111 +2952,42 @@
      border-color: @color-purple-2;
  }
  /*预置颜色 结束*/
- /*插件所需样式 开始*/
- /*弹出式画布*/
- 
- .ice-eject {
-     position: fixed;
-     z-index: 100;
-     top: 0px;
-     left: 0px;
-     height: 100%;
-     width: 100%;
-     background: #000;
-     display: none;
-     opacity: 0.4;
- }
- .ice-eject-w {
-     width: 40%;
-     padding: 20px;
-     position: fixed;
-     z-index: 1100;
-     top: 100px;
-     left: 28%;
-     border: 1px solid #CCCCCC;
-     background: #FFFFFF;
-     opacity: 0;
-     display: none;
- }
- /*抽屉式菜单 开始*/
- 
- .ice-menu-sp-w {
-     position: fixed;
-     z-index: 100;
-     top: 0px;
-     left: 0px;
-     height: 100%;
-     width: 100%;
-     background: #000;
-     display: none;
-     opacity: 0.1;
- }
- .ice-menu-sp {
-     /*开启硬件加速*/
-     
-     -webkit-backface-visibility: hidden;
-     -moz-backface-visibility: hidden;
-     -ms-backface-visibility: hidden;
-     backface-visibility: hidden;
-     -webkit-perspective: 1000;
-     -moz-perspective: 1000;
-     -ms-perspective: 1000;
-     perspective: 1000;
-     color: white;
-     width: 260px;
-     height: 100%;
-     position: fixed;
-     z-index: 999;
-     background: #2c3d4f;
- }
- .ice-menu-sp h3 {
-     color: #FFFFFF;
-     font-size: 1.9em;
-     padding: 20px;
-     margin: 0;
-     font-weight: 300;
-     background: #297fb8;
- }
- .ice-menu-sp ul {
-     width: 100%;
-     margin: 0;
-     padding: 0;
-     list-style-type: none;
- }
- .ice-menu-sp ul li {
-     display: block;
-     height: 40px;
-     line-height: 2.5em;
-     padding: 10px;
-     font-size: 1em;
-     border-bottom: 1px solid #283646;
-     cursor: hand;
- }
- .ice-menu-sp ul li:hover {
-     background: #297fb8;
- }
- .ice-menu-sp-right {
-     right: -260px;
- }
- .ice-menu-sp-left {
-     left: -260px;
- }
- @media screen and (max-width: 55.1875em) {
-     .ice-menu-sp {
-         width: 190px;
-     }
-     .ice-menu-sp-right {
-         right: -190px;
-     }
-     .ice-menu-sp-left {
-         left: -190px;
-     }
- }
- @media screen and (max-height: 26.375em) {
-     .ice-menu-sp ul li {
-         line-height: 2em;
-         height: 30px;
-     }
- }
- /*抽屉式菜单 结束*/
- /*插件所需样式 结束*/
+
+/*按钮颜色 开始*/
+.ice-div{
+    .ice-button-green{
+    background-color: @color-green-1;
+    color: @color-white;
+}
+.ice-button-green:hover{
+    background-color:@color-green-2;
+    color: @color-white;
+}
+.ice-button-red{
+    background-color: @color-red-1;
+    color: @color-white;
+}
+.ice-button-red:hover{
+    background-color: @color-red-2;
+    color: @color-white;
+}
+.ice-button-yellow{
+    background-color: @color-yellow-1;
+    color: @color-white;
+}
+.ice-button-yellow:hover{
+    background-color: @color-yellow-2;
+    color: @color-white;
+}
+.ice-button-orange{
+    background-color: @color-orange-1;
+    color: @color-white;
+}
+.ice-button-orange:hover{
+    background-color: @color-orange-2;
+    color: @color-white;
+}
+
+}
+
+/*按钮颜色 结束*/
