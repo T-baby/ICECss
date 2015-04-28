@@ -1,0 +1,21 @@
+{
+  "name": "ICECSS",
+  "version": "1.1.0",
+  "homepage": "http://besdlab.cn/ICECSS",
+  "authors": [
+    "T-baby <t-baby@besdlab.cn>"
+  ],
+  "description": "一个以冰山为灵感的开源高效的基于JQuery的CSS框架",
+  "keywords": [
+    "icecss",
+    "besd-icecss"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

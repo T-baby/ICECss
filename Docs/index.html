@@ -1,241 +1,164 @@
 <!--CSS-->
-<link rel="stylesheet" type="text/css" href="../css/icecss.css" />
-<link rel="stylesheet" href="custom.css">
-<!--/CSS-->
-
-<!DOCTYPE html>
-
 <html>
-
-<head>
-
-    <meta charset="utf-8" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>ICECSS</title>
-
-</head>
-
-<body>
-    <div class="ding sll"><a href="#rhsy">顶</a>
-    </div>
-
-        <!--抽屉式导航-->
-        <nav class="ice-menu-sp ice-menu-sp-right">
-            <ul>
-                <li>test1</li>
-                <li>test2</li>
-                <li>test3</li>
-                <li>test4</li>
-                <li>test5</li>
-            </ul>
-        </nav>
-
-
-    <!--导航栏-->
-    <header class="ice-menu  ice-menu-hover">
-        <div class="ice-menu-logo">ICECSS</div>
-        <nav class="ice-main-nav">
-            <ul>
-                <li><a href="#0">Docs</a>
-                </li>
-                <li><a href="https://github.com/T-baby/ICECSS/">GitHub</a>
-                </li>
-                <li><a href="https://github.com/T-baby/ICECSS/archive/master.zip">Download</a>
-                </li>
-                <li><a href="http://besdlab.cn">Contact</a>
-                </li>
-                <li><a href="http://besdlab.cn/cdn">CDN</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <!--/导航栏-->
-    <!--宽度限制-->
-    <div class="ice-widescreen">
-
-        <!--导航菜单-->
-
-        <div class="ice-div ice-div-2-10" >
-            <ul class="ice-nav ice-nav-accordion ice-text-left sll">
-                <a href="#rhsy">
-                    <li>如何使用</li>
-                </a>
-                <a href="#jcys">
-                    <li>基础元素</li>
-                </a>
-                <a href="#yzys">
-                    <li>预置颜色</li>
-                </a>
-                <a href="#bj">
-                    <li>布局</li>
-                </a>
-                </a>
-                <li>组件</li>
-                <li>
-                    <ul>
-                        <a href="#wz">
-                            <li>文字</li>
-                        </a>
-                        <a href="#an">
-                            <li>按钮</li>
-                        </a>
-                        <a href="#buttoncolor">
-                            <li>按钮颜色</li>
-                        </a>
-                        <a href="#kg">
-                            <li>开关</li>
-                        </a>
-                        <a href="#jdt">
-                            <li>进度条</li>
-                        </a>
-                        <a href="#fy">
-                            <li>分页</li>
-                        </a>
-                    </ul>
-                </li>
-                <li>导航</li>
-                <li>
-                    <ul>
-                        <a href="#dhl">
-                            <li>导航栏</li>
-                        </a>
-                        <a href="#dhcd">
-                            <li>导航菜单</li>
-                        </a>
-                        <a href="#ejdh">
-                            <li>二级导航</li>
-                        </a>
-                    </ul>
-                </li>
-                <a href="#bg">
-                    <li>表格</li>
-                </a>
-                <a href="#bd">
-                    <li>表单</li>
-                </a>
-                <li>功能</li>
-                <li>
-                    <ul>
-                        <a href="#cdn">
-                            <li>CDN服务</li>
-                        </a>
-                        <a href="#yfw">
-                            <li>云服务</li>
-                        </a>
-                         <a href="#mbyq">
-                            <li>模板引擎</li>
-                        </a>
-                        <a href="#phyd">
-                            <li>平滑移动</li>
-                        </a>
-                        <a href="#gdjk">
-                            <li>滚动监控</li>
-                        </a>
-                        <a href="#tcshb">
-                            <li>弹出式画布</li>
-                        </a>
-                        <a href="#ctsdh">
-                            <li>抽屉式导航</li>
-                        </a>
-                        <a href="#tpycjz">
-                            <li>图片延迟加载</li>
-                        </a>
-                        <a href="#cljyz">
-                            <li>超链接预载</li>
-                        </a>
-                        <a href="#qpgd">
-                            <li>全屏滚动</li>
-                        </a>
-                        <a href="#scxg">
-                            <li>视差效果</li>
-                        </a>
-                        <a href="#bdcc">
-                            <li>本地存储</li>
-                        </a>
-
-                    </ul>
-                </li>
-                <a href="#tb">
-                    <li>图标</li>
-                </a>
-            </ul>
-        </div>
-        <!--/导航菜单-->
-        <!--主体-->
-        <div class="ice-div ice-div-8-10 ice-div-last" id="rhsy">
-            <!--如何使用-->
-            <div class="ice-panel-original">
-                <p class="ice-title">如何使用</p>
-                <p> ICECSS是由BESD设计实验室基于Less和Jquery开发的一个轻量级的CSS框架。 所以ICECSS支持通过Less引用也支持普通方式
-                </p>
-                <p>--普通方式调用--</p>
-                <p>在html文件头部引用ICECSS的CSS</p>
-                <pre> <code>&lt;link rel="stylesheet" href="css/icecss.css&gt;</code></pre>
-                <p>在html文件尾部引用ICECSS的JS（注意，ICECSS是基于Jquery的，所以在引用ICECSS的JS文件前请先导入Jquery）</p>
-                <pre> <code>&lt;script src="js/jquery.min.js"&gt;&lt;/script&gt;
- &lt;script src="js/icecss.js"&gt;&lt;/script&gt;</code></pre>
-                <p>--Less调用--</p>
-                <pre> <code>&lt;link rel="stylesheet/less" href="css/icecss.less&gt;</code></pre>
-                <p>在html文件尾部多引用一个less.min.js即可。<a href="http://less.bootcss.com/">更多有关Less用法</a>
-                </p>
-                <p>你也可以加入我们的交流群：320283384</p>
-            </div>
-            <!--/如何使用-->
-            <!--基础元素-->
-            <div class="ice-panel-original" id="jcys">
-                <p class="ice-title">基础元素</p>
-                <p>所有的基础元素如h1等，我们要求必须在ice-div下才会生效。</p>
-                <p>同理，ice-div下基础元素都不需要额外的增加class。</p>
-                <p>如：</p>
-                <pre><code>&lt;div class="ice-div"&gt;&lt;h1&gt;TEST&lt;/h1&gt;&lt;/div&gt;</code></pre>
-                <p>基础元素包含：</p>
-                <ul>
-                    <li>h1</li>
-                    <li>h2</li>
-                    <li>h3</li>
-                    <li>h4</li>
-                    <li>h5</li>
-                    <li>h6</li>
-                    <li>p</li>
-                    <li>ul</li>
-                    <li>li</li>
-                    <li>ol</li>
-                    <li>dl</li>
-                    <li>dt</li>
-                    <li>dd</li>
-                    <li>a</li>
-                    <li>blockquote</li>
-                    <li>hr（分割线）</li>
-                    <li>pre</li>
-                    <li>code</li>
-                </ul>
-                <p>如果你需要有引用标题的效果，可以这么做：</p>
-                <pre><code>&lt;p class="ice-title"&gttest&lt;/p&gt</code></pre>
-                <p>面板：</p>
-                <p>您可以使用ice-panel这个class来建立一个面板，这个是默认的样式，是灰框白底。 </p>
-                <p>不需要任何边框和背景的话，可以使用ice-panel-original这个class。</p>
-                <p> ICECSS专门为您提供了用于提示的ice-panel-point面板。 还提供了用于关闭父元素的ice-close，您可以将这个用于关闭提示面板。</p>
-                <pre><code>&ltdiv class="ice-panel"&gt这是一个面板&lt/div&gt
-
-&ltdiv class="ice-panel ice-color-blue-2"&gt&ltp&gt测试&lt/p&gt&lt/div&gt
-
-&ltdiv class="ice-panel-point ice-color-green-2"&gt
-
-&ltdiv class="ice-close"&gt&lt/div&gt
-
-&ltp&gt这是一个可关闭的提示面板&lt/p&gt
-
-&lt/div&gt</code></pre>
-            </div>
-            <!--/基础元素-->
-
-            <!--预置颜色-->
-            <div class="ice-panel-original" id="yzys">
-                <p class="ice-title">预置颜色</p>
-                <p>我们在ICECSS的Less中预置了一些颜色。</p>
-                <pre><code> @color-common: #297fb8;
+ <head>
+  <link rel="stylesheet" type="text/css" href="../css/icecss.css" /> 
+  <link rel="stylesheet" href="custom.css" /> 
+  <link rel="stylesheet" href="../plugin/ice_code/ice_code.css" /> 
+  <link rel="stylesheet" href="../plugin/ice_tab/ice_tab.css" /> 
+  <link rel="stylesheet" href="../plugin/ice_date/ice_date.css" /> 
+  <!--/CSS-->    
+  <meta charset="utf-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+  <title>ICECSS</title> 
+ </head> 
+ <body> 
+  <div class="ding sll">
+   <a href="#rhsy">顶</a> 
+  </div> 
+  <!--抽屉式导航--> 
+  <nav class="ice-menu-sp ice-menu-sp-right"> 
+   <ul> 
+    <li>test1</li> 
+    <li>test2</li> 
+    <li>test3</li> 
+    <li>test4</li> 
+    <li>test5</li> 
+   </ul> 
+  </nav> 
+  <!--导航栏--> 
+  <header class="ice-menu  ice-menu-hover ice-fixed"> 
+   <div class="ice-menu-logo" style="background-color: inherit;"> 
+    <img src="../img/mlogo.png" style="height: 100%;" /> 
+   </div> 
+   <nav class="ice-main-nav"> 
+    <ul> 
+     <li><a href="http://besdlab.cn">Home</a> </li> 
+     <li><a href="http://blog.besdlab.cn">BLOG</a> </li> 
+     <li><a href="http://cloud.besdlab.cn/">CLOUD</a> </li> 
+     <li><a href="#">ICECSS</a> </li> 
+     <li><a href="http://besdlab.cn/cdn">CDN</a> </li> 
+    </ul> 
+   </nav> 
+  </header> 
+  <!--/导航栏--> 
+  <!--导航菜单--> 
+  <div class="ice-div ice-div-2-10 ice-nav-plus"> 
+   <ul class="ice-nav ice-nav-accordion ice-text-left sll"> 
+    <a href="#rhsy"> <li>如何使用</li> </a> 
+    <a href="#jcys"> <li>基础元素</li> </a> 
+    <a href="#yzys"> <li>预置颜色</li> </a> 
+    <a href="#bj"> <li>布局</li> </a>  
+    <li class="ice-nav-f">组件</li> 
+    <li> 
+     <ul> 
+      <a href="#wz"> <li>文字</li> </a> 
+      <a href="#an"> <li>按钮</li> </a> 
+      <a href="#buttoncolor"> <li>按钮颜色</li> </a> 
+      <a href="#kg"> <li>开关</li> </a> 
+      <a href="#jdt"> <li>进度条</li> </a> 
+      <a href="#fy"> <li>分页</li> </a> 
+     </ul> </li> 
+    <li class="ice-nav-f">导航</li> 
+    <li> 
+     <ul> 
+      <a href="#dhl"> <li>导航栏</li> </a> 
+      <a href="#dhcd"> <li>导航菜单</li> </a> 
+      <a href="#ejdh"> <li>二级导航</li> </a> 
+     </ul> </li> 
+    <a href="#bg"> <li>表格</li> </a> 
+    <a href="#bd"> <li>表单</li> </a> 
+    <li class="ice-nav-f">插件&amp;功能</li> 
+    <li> 
+     <ul> 
+      <a href="#cdn"> <li>CDN服务</li> </a> 
+      <a href="#rqxz"> <li>日期选择</li> </a> 
+      <a href="#xxk"> <li>选项卡</li> </a> 
+      <a href="#dmgl"> <li>代码高亮</li> </a> 
+      <a href="#zwyh"> <li>中文优化</li> </a> 
+      <a href="#yfw"> <li>云服务</li> </a> 
+      <a href="#mbyq"> <li>模板引擎</li> </a> 
+      <a href="#phyd"> <li>平滑移动</li> </a> 
+      <a href="#gdjk"> <li>滚动监控</li> </a> 
+      <a href="#tcshb"> <li>弹出式画布</li> </a> 
+      <a href="#ctsdh"> <li>抽屉式导航</li> </a> 
+      <a href="#tpycjz"> <li>图片延迟加载</li> </a> 
+      <a href="#cljyz"> <li>超链接预载</li> </a> 
+      <a href="#qpgd"> <li>全屏滚动</li> </a> 
+      <a href="#scxg"> <li>视差效果</li> </a> 
+      <a href="#bdcc"> <li>本地存储</li> </a> 
+     </ul> </li> 
+    <a href="#tb"> <li>图标</li> </a> 
+   </ul> 
+  </div> 
+  <!--/导航菜单--> 
+  <!--主体--> 
+  <div class="ice-div ice-div-8-10 ice-div-last ice-chinese ice-nav-panel" id="rhsy"> 
+   <!--如何使用--> 
+   <div class="ice-panel-original"> 
+    <p class="ice-title">如何使用</p> 
+    <img src="../logo.png" alt="" style="width:300px">
+    <p> ICECSS是一个以冰山为灵感的开源高效的基于JQuery的CSS框架，不仅有着开发快速、美观易用等特点，官方本身还提供CDN服务、快速开发demo和测试的云服务等等。ICECSS支持通过less引用也支持普通方式 </p> 
+    <p>您可以通过直接下载的方式<a href="https://github.com/T-baby/ICECSS">获取</a>，也可以通过bower：</p>
+    <pre><code  class="language-markup">bower install icecss</code></pre>
+    <p>或者</p>
+     <pre><code  class="language-markup">bower install besd-icecss</code></pre>
+    <p>--普通方式调用--</p> 
+    <p>在html文件头部引用ICECSS的CSS</p> 
+    <pre> <code class="language-markup">&lt;link rel=&quot;stylesheet&quot; href=&quot;css/icecss.css&gt;</code></pre> 
+    <p>在html文件尾部引用ICECSS的JS（注意，ICECSS是基于JQuery的，所以在引用ICECSS的相关JS文件前请先导入Jquery）</p> 
+    <pre> <code class="language-markup">&lt;script src=&quot;js/jquery.min.js&quot;&gt;&lt;/script&gt;
+ &lt;script src=&quot;js/icecss.js&quot;&gt;&lt;/script&gt;</code></pre> 
+    <p>--Less调用--</p> 
+    <pre> <code class="language-markup">&lt;link rel=&quot;stylesheet/less&quot; href=&quot;css/icecss.less&gt;</code></pre> 
+    <p>在html文件尾部多引用一个less.min.js即可。<a href="http://less.bootcss.com/">更多有关Less用法</a> </p> 
+    <p>你也可以加入我们的交流群：<b style="color:#3598DC">320283384</b></p>
+    <p>感谢很多的开源项目，如jquery、normalize.css等等，因为有了你们才有ICECSS。另外有些插件是我们基于一些开源项目封装的，一般都有注释封装自哪个项目。如果您认为的项目在ICECSS中侵犯了您的权益，可以与我们联系：<b style="color:#3598DC">t-baby@besdlab.cn</b>。</p> 
+    <p>如果您想要赞助ICECSS的研发，也可以通过邮件与我们联系。</p>
+   </div> 
+   <!--/如何使用--> 
+   <!--基础元素--> 
+   <div class="ice-panel-original" id="jcys"> 
+    <p class="ice-title">基础元素</p> 
+    <p>所有的基础元素如h1等，我们要求必须在ice-div下才会生效。</p> 
+    <p>同理，ice-div下基础元素都不需要额外的增加class。</p> 
+    <p>如：</p> 
+    <pre><code class="language-markup">&lt;div class=&quot;ice-div&quot;&gt;&lt;h1&gt;TEST&lt;/h1&gt;&lt;/div&gt;</code></pre> 
+    <p>基础元素包含：</p> 
+    <ul> 
+     <li>h1</li> 
+     <li>h2</li> 
+     <li>h3</li> 
+     <li>h4</li> 
+     <li>h5</li> 
+     <li>h6</li> 
+     <li>p</li> 
+     <li>ul</li> 
+     <li>li</li> 
+     <li>ol</li> 
+     <li>dl</li> 
+     <li>dt</li> 
+     <li>dd</li> 
+     <li>a</li> 
+     <li>blockquote</li> 
+     <li>hr（分割线）</li> 
+    </ul> 
+    <p>如果你需要有引用标题的效果，可以这么做：</p> 
+    <pre><code class="language-markup">&lt;p class=&quot;ice-title&quot;&gt;test&lt;/p&gt;</code></pre> 
+    <p>面板：</p> 
+    <p>您可以使用ice-panel这个class来建立一个面板，这个是默认的样式，是灰框白底。 </p> 
+    <p>不需要任何边框和背景的话，可以使用ice-panel-original这个class。</p> 
+    <p> ICECSS专门为您提供了用于提示的ice-panel-point面板。 还提供了用于关闭父元素的ice-close，您可以将这个用于关闭提示面板。</p> 
+    <pre><code class="language-markup">&lt;div class=&quot;ice-panel-point&quot;&gt;
+    &lt;span class=&quot;ice-close&quot;&gt;&lt;/span&gt;
+    &lt;p&gt;这是一个可关闭的提示面板&lt;/p&gt;
+&lt;/div&gt;</code></pre> 
+   </div> 
+   <!--/基础元素--> 
+   <!--预置颜色--> 
+   <div class="ice-panel-original" id="yzys"> 
+    <p class="ice-title">预置颜色</p> 
+    <p>我们在ICECSS的Less中预置了一些颜色。</p> 
+    <pre><code class="language-markup"> @color-common: #297fb8;
  @color-white: #FFFFFF;
  @color-blue-1: #3598DC;
  @color-blue-2: #2A80B9;
@@ -250,977 +173,919 @@
  @color-red-1: #E84C3D;
  @color-red-2: #C1392B;
  @color-purple-1: #9C59B8;
- @color-purple-2: #8F44AD;</code></pre>
-                <p>而主体颜色都是通过引用@color-common这个变量的，如果需要改变主题颜色可以直接将颜色代码替换到变量后面。</p>
-                <p>如我要替换成黄色：@color-common: #F1C40F;</p>
-                <p>当然你也可以直接通过CSS来使用，我们在CSS中提前准了一些类，可以通过ice-color-颜色名来使用。如果是边框请用ice-color-b+颜色名。</p>
-                <p>如.ice-color-blue-1和.ice-color-bblue-1</p>
-            </div>
-            <!--/预置颜色-->
-            <!--布局-->
-            <div class="ice-panel-original" id="bj">
-                <p class="ice-title">布局</p>
-                <p>ICECSS的布局会自动适应屏幕。<b>但是请不要把导航栏放在ICECSS的布局中</b>，因为ICECSS的导航栏有自己独有的自适应能力。</p>
-                <p>我们为您提供了三种宽度限制：ice-common、ice-widescreen、ice-full 。分别宽度限制是1020px、1220px和100%。 当然您也可以不增加宽度限制，直接使用ice-div。</p>
-                <p>ICECSS的DIV组件提供如下几种class，第一个数字为分子，第二个数字为分母。每排可以容纳100%。</p>
-                <ul>
-                    <li>ice-div-1-1</li>
-                    <li>ice-div-1-2</li>
-                    <li>ice-div-1-3</li>
-                    <li>ice-div-1-4</li>
-                    <li>ice-div-1-6</li>
-                    <li>ice-div-4-10、ice-div-6-10</li>
-                    <li>ice-div-7-10、ice-div-3-10</li>
-                    <li>ice-div-2-10、ice-div-8-10</li>
-                    <li>ice-div-9-10、ice-div-1-10</li>
-                </ul>
-                <p>你需要在每个class前加入ice-div才能使用，如 :</p>
-                <pre><code>&ltdiv class="ice-div ice-div-1-1"&gt&lt/div&gt</code></pre>
-                <p>并且你需要在每行的最后面的div那里加入ice-div-last，来换行。如:</p>
-                <pre><code>&ltdiv class="ice-div ice-div-1-1 ice-div-last"&gt&lt/div&gt</code></pre>
-                <p>在ice-div下图片也是会自动适应的，不需要增加额外的class。</p>
-                <p>水平居中请使用.ice-center-plane；绝对居中的话在父元素使用 .ice-center，子元素使用.ice-center-abs 。</p>
-
-            </div>
-            <!--/布局-->
-
-            <!--文字-->
-            <div class="ice-panel-original" id="wz">
-                <p class="ice-title">文字</p>
-                <p><b>（1）水平对齐</b>
-                </p>
-
-                <p>文本的水平对齐样式有（使子元素对齐）</p>
-
-                <p>ice-text-left 左对齐</p>
-
-                <p>ice-text-right 右对齐</p>
-
-                <p>ice-text-center 水平居中对齐</p>
-
-                <p><b>（2）垂直对齐</b>
-                </p>
-
-                <p>文本的垂直对齐样式有（使子元素对齐）</p>
-
-                <p>ice-text-top 垂直顶部对齐</p>
-
-                <p>ice-text-middle 垂直居中对齐</p>
-
-                <p>ice-text-bottom 垂直底部对齐</p>
-
-                <p><b>（3）换行控制</b>
-                </p>
-
-                <p>ice-text-break 强制换行</p>
-
-                <p>ice-text-truncate 隐藏超出的文字</p>
-
-                <p>ice-text-nowrap 让文字随意超出，不做限制</p>
-
-            </div>
-            <!--/文字-->
-
-            <!--按钮-->
-            <div class="ice-panel-original" id="an">
-                <p class="ice-title">按钮</p>
-                <p>在0.7版后，只要是在ice-div下的button标签和type="button"的标签都会自动加上样式。</p>
-                <p>不用额外的增加标签</p>
-                <button>我是一个可爱的按钮</button>
-                <p>如果要变大，可以增加ice-button-big。变小可以增加ice-button-mini</p>
-                <p>幽灵按钮则是增加ice-button-ghost</p>
-                <button class="ice-button-big">大按钮</button>
-                <button>普通按钮</button>
-                <button class="ice-button-mini">小按钮</button>
-                <br />
-                <button class="ice-button-big ice-button-ghost">大按钮</button>
-                <button class="ice-button-ghost">普通按钮</button>
-                <button class="ice-button-mini ice-button-ghost">小按钮</button>
-
-            </div>
-            <!--/按钮-->
-
-                        <!--按钮颜色-->
-            <div class="ice-panel-original" id="buttoncolor">
-                <p class="ice-title">按钮颜色</p>
-                <button class="ice-button-green">green</button>
-                <button class="ice-button-red">red</button>
-                <button class="ice-button-yellow">yellow</button>
-                <button class="ice-button-orange">orange</button>
-
-            </div>
-            <!--/颜色-->
-
-            <!--开关-->
-            <div class="ice-panel-original" id="kg">
-                <p class="ice-title">开关</p>
-                <div class="ice-switch">
-
-                    <input type="checkbox" class="ice-switch-checkbox" id="switch" checked>
-
-                    <label class="ice-switch-label " for="switch">
-
-                        <div class="ice-switch-inner">
-
-                            <div class="ice-switch-active"></div>
-
-                            <div class="ice-switch-inactive"></div>
-
-                        </div>
-
-                        <div class="ice-switch-bottom"></div>
-
-                    </label>
-
-                </div>
-                <br />
-                <pre><code>&ltdiv class="ice-switch"&gt
-
-&ltinput type="checkbox"  class="ice-switch-checkbox" id="switch" checked&gt
-
-&ltlabel class="ice-switch-label " for="switch"&gt
-
-&ltdiv class="ice-switch-inner"&gt
-
-&ltdiv class="ice-switch-active"&gt&lt/div&gt
-
-&ltdiv class="ice-switch-inactive"&gt&lt/div&gt
-
-&lt/div&gt
-
-&ltdiv class="ice-switch-bottom"&gt&lt/div&gt
-
-&lt/label&gt
-
-&lt/div&gt</code></pre>
-
-
-            </div>
-            <!--/开关-->
-
-            <!--进度条-->
-            <div class="ice-panel-original" id="jdt">
-                <p class="ice-title">进度条</p>
-                <p>您可以通过修改ice-bar下的div的宽度来达到进度的效果。</p>
-                <div class="ice-bar">
-                    <div style="width:80%"></div>
-                </div>
-                <br/>
-                <pre><code>&ltdiv class="ice-bar"&gt
-
-&ltdiv style="width:80%"&gt&lt/div&gt
-
-&lt/div&gt</code></pre>
-
-            </div>
-            <!--/进度条-->
-            <!--分页-->
-            <div class="ice-panel-original" id="fy">
-                <p class="ice-title">分页</p>
-
-                <ul class="ice-page">
-
-                    <li>1</li>
-
-                    <li class="active">2</li>
-
-                    <li>3</li>
-
-                    <li class="disabled">4</li>
-
-                </ul>
-
-                <pre><code>&ltul class="ice-page"&gt
-
-    &ltli&gt1&lt/li&gt
-
-    &ltli class="active"&gt2&lt/li&gt
-
-    &ltli&gt3&lt/li&gt
-
-    &ltli class="disabled"&gt4&lt/li&gt
-
-&lt/ul&gt</code></pre>
-
-            </div>
-            <!--/分页-->
-
-            <!--导航栏-->
-            <div class="ice-panel-original" id="dhl">
-                <p class="ice-title">导航栏</p>
-                <p>（1）菜单简介 </p>
-                <p>在ICECSS中，导航栏是Menu组件。可以自适应屏幕。我们建议在header标签中放置Menu组件，建议不要放在ICECSS的布局组件中。</p>
-                <p>（2）基本菜单 例子：</p>
-                <pre><code>  &ltheader class="ice-menu"&gt
-&ltnav class="ice-main-nav"&gt
-&ltul&gt
-&ltli&gt&lta href="#0"&gtHome&lt/a&gt
-&lt/li&gt
-&ltli&gt&lta href="#0"&gtHome&lt/a&gt
-&lt/li&gt
-&lt/ul&gt
-&lt/nav&gt
-&lt/header&gt </code></pre>
-                <p>（3）在导航栏左侧增加LOGO：</p>
-                <pre><code>&ltdiv class="ice-menu-logo"&gtLOGO名字&lt/div&gt</code></pre>
-                <p>把代码增加到header下面的第一行。 使导航栏固定： 在ice-menu后面追加 ice-fixed</p>
-                <pre><code>&ltheader class="ice-menu ice-fixed"&gt</code></pre>
-                <p>3.使导航栏透明，去掉背景色： 在ice-menu后追加ice-menu-lucency</p>
-                <pre><code> &ltheader class="ice-menu ice-fixed ice-menu-lucency"&gt</code></pre>
-                <p>4.使导航栏在鼠标悬浮时有效果： 追加ice-menu-hover</p>
-                <pre><code>&ltheader class="ice-menu ice-fixed ice-menu-lucency ice-menu-hover"&gt</code></pre>
-                <p>（4）全屏大图 我们在菜单组件中额外的增加了一个全屏大图用的组件ice-intro-big，可以搭配其它组件一起使用。 </p>
-                <p>提示：为了达到最好的效果，不建议放在ICECSS布局系统的宽度限制下。 使用例子：</p>
-                <pre><code>&ltdiv class="ice-div ice-intro-big ice-center" style="background-image:url('img/bg.jpg')"&gt
-&ltdiv class="ice-center-abs"&gt
-&lth1 style="color:#fff"&gtICECSS is a good css.&lt/h1&gt
-&ltbutton class="ice-button-big"&gtMore&lt/button&gt
-&lt/div&gt &lt/div&gt</code></pre>
-            </div>
-            <!--/导航栏-->
-            <!--导航菜单-->
-            <div class="ice-panel-original" id="dhcd">
-                <p class="ice-title">导航菜单</p>
-                <pre><code> &ltul class="ice-nav"&gt
-&ltli class="active"&gt这是个被按下的&lt/li&gt
-&ltli&gt
-&ltul&gt
-&ltli&gt这是个二级菜单项&lt/li&gt
-&ltli&gt这是个二级菜单项&lt/li&gt
-&lt/ul&gt
-&lt/li&gt
-&ltli&gt这是个一级菜单项&lt/li&gt
-&ltli&gt这是个一级菜单项&lt/li&gt
-&lt/ul&gt</code></pre>
-
-                <p>您也可以通过增加iice-nav-accordion使导航菜单具有手风琴的功能。</p>
-
-            </div>
-            <!--/导航菜单-->
-
-            <!--二级导航-->
-            <div class="ice-panel-original" id="ejdh">
-                <p class="ice-title">二级导航</p>
-                <ul class="ice-subnav">
-
-                    <li class="active"><a>hello</a>
-                    </li>
-
-                    <li>world</li>
-
-                </ul>
-                <pre><code>&ltul class="ice-subnav"&gt        &lt!--你也可以通过追加ice-subnav-line来增加分割线--&gt
-
-&ltli class="active"&gt&lta&gthello&lt/a&gt&lt/li&gt 
-
-&ltli&gtworld&lt/li&gt
-
-&lt/ul&gt</code></pre>
-
-
-            </div>
-            <!--/二级导航-->
-
-            <!--表格-->
-            <div class="ice-panel-original" id="bg">
-                <p class="ice-title">表格</p>
-
-                <p>在table标签中增加ice-table这个class即可。</p>
-                <p>你可以在ice-table下使用</p>
-                <p>来充当二级标题或注释什么的。</p>
-                <pre><code>&lttable class="ice-table"&gt&ltcaption&gt二级标题&lt/caption&gt&lt/table&gt</code></pre>
-                <p>可以通过添加ice-table-striped来达到斑马纹效果。</p>
-                <pre><code>&lttable class="ice-table ice-table-striped"&gt&lt/table&gt</code></pre>
-                <p>在没有使用ice-table-striped的情况下，可以增加ice-table-hover使表单在鼠标悬浮时有效果。</p>
-                <pre><code>&lttable class="ice-table ice-table-hover"&gt&lt/table&gt</code></pre>
-                <table class="ice-table ice-table-striped">
-                    <thead>
-                        <tr>
-                            <th>姓名</th>
-                            <th>Email</th>
-                            <th>订阅时间</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tfoot>
-                        <tr>
-                            <td>小计</td>
-                            <td></td>
-                            <td>6人</td>
-                            <td> </td>
-
-                        </tr>
-                    </tfoot>
-                    <tbody>
-                        <tr>
-                            <td>小明</td>
-                            <td>qqq@qq.com</td>
-                            <td>2014年12月01日</td>
-                            <td><i class="ice-icon-pencil"></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>小红</td>
-                            <td>ssss@163.com</td>
-                            <td>2014年12月01日</td>
-                            <td><i class="ice-icon-pencil"></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>小明</td>
-                            <td>qqq@qq.com</td>
-                            <td>2014年12月01日</td>
-                            <td><i class="ice-icon-pencil"></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>小红</td>
-                            <td>ssss@163.com</td>
-                            <td>2014年12月01日</td>
-                            <td><i class="ice-icon-pencil"></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>小明</td>
-                            <td>qqq@qq.com</td>
-                            <td>2014年12月01日</td>
-                            <td><i class="ice-icon-pencil"></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>小红</td>
-                            <td>ssss@163.com</td>
-                            <td>2014年12月01日</td>
-                            <td><i class="ice-icon-pencil"></i>
-                            </td>
-                        </tr>
-
-                    </tbody>
-                </table>
-
-            </div>
-            <!--/表格-->
-
-
-            <!--表单-->
-            <div class="ice-panel-original" id="bd">
-                <p class="ice-title">表单</p>
-
-                <p>（1）基本表单</p>
-                <p>在form标签中增加ice-form类即可。</p>
-                <pre><code>&ltform class="ice-form"&gt</code></pre>
-                <p>（2）强制换行</p>
-                <p>可以使用</p>
-                <pre><code>&ltdiv class="ice-onerow"&gt&ltdiv&gt</code></pre>
-                <p>来包裹内容。</p>
-                <p>（3）表单标签</p>
-                <p>可以在表单元素的前面增加一个ice-form-label。</p>
-                <pre><code>&ltlabel class="ice-form-label"&gttest&lt/label&gt
-&ltinput type="text"&gt</code></pre>
-                <p>（4）增加图标</p>
-                <pre><code>&ltdiv class="ice-form-icon"&gt   &lt!--这个是必须的--&gt
-&lti class="ice-icon-pencil"&gt&lt/i&gt &lt!--这里可以换成其它图标--&gt
-&ltinput type="text"&gt
-&lt/div&gt</code></pre>
-                <div class="ice-panel-original">
-                    <form class="ice-form">
-                        <div class="ice-onerow">
-                            <label class="ice-form-label">Username</label>
-                            <input type="text">
-                        </div>
-                        <div class="ice-onerow">
-                            <label class="ice-form-label">Password</label>
-                            <input type="text">
-                        </div>
-                        <br>
-
-
-                        <div class="ice-form-icon">
-                            <label class="ice-form-label">Card</label>
-                            <i class="ice-icon-pencil"></i>
-                            <input type="text">
-                        </div>
-
-
-
-
-
-
-                        <div class="ice-onerow">
-                            <input type="radio" name="sex"> man
-                            <input type="radio" name="sex"> woman
-                        </div>
-                        <div class="ice-onerow">
-                            <input type="checkbox"> Remeber Me
-                        </div>
-                        <div class="ice-onerow">
-                            <button>Login</button>
-                        </div>
-
-
-                    </form>
-                </div>
-                <!--/表单-->
-
-                <!--CDN服务-->
-                <div class="ice-panel-original" id="cdn">
-                    <p class="ice-title">CDN服务</p>
-                    <p>BESD本身有提供CDN服务：</p>
-                    <p>http://cdn.besdlab.cn/jquery/2.1.1/jquery.2.1.1.min.js</p>
-                    <p>http://cdn.besdlab.cn/icecss/icecss.css</p>
-                    <p>http://cdn.besdlab.cn/icecss/icecss.min.css</p>
-                    <p>http://cdn.besdlab.cn/icecss/icecss.less</p>
-                    <p>http://cdn.besdlab.cn/icecss/icecss.js</p>
-                    <p>http://cdn.besdlab.cn/icecss/less.min.js</p>
-                    <p>http://cdn.besdlab.cn/icecss/plugin/插件文件名</p>
-                </div>
-                <!--/CDN服务-->
-
-
-                <!--云服务-->
-                <div class="ice-panel-original" id="yfw">
-                    <p class="ice-title">云服务</p>
-                    <p>BESD云服务是用于帮助快速开发DEMO和测试用的云服务平台，ICECSS0.8版本后已经附带了JS版的SDK。通过BESD云服务可以在不写后端代码的情况下快速完成DEMO或简单程序的开发。如果您是要在ICECSS中使用，请将将plugin/ice_cloud.js引入</p>
-                    <p>说明文档：<a href="https://github.com/T-baby/BesdCloud" target="_blank">https://github.com/T-baby/BesdCloud</a>
-                    </p>
-                </div>
-                <!--/云服务-->
-
-                  <!--模板引擎-->
-                <div class="ice-panel-original" id="mbyq">
-                    <p class="ice-title">模板引擎</p>
-                    <p>ICECSS自带一个简单的模板引擎，可以使用户界面与业务数据（内容）分离，从而在前端开发出动态渲染的网站。同时可以更好的帮助前端处理json数据。如果您是要在ICECSS中使用，请将将plugin/ice_tmpl/ice_tmpl.js引入</p>
-                    <p>文档地址：<a href="https://github.com/T-baby/ICECSS/tree/master/plugin/ice_tmpl/help.md" target="_blank">https://github.com/T-baby/ICECSS/tree/master/Docs/ice_tmpl/readme.md</a></p>
-
-                </div>
-                <!--/模板引擎-->
-
-                <!--平滑移动-->
-                <div class="ice-panel-original" id="phyd">
-                    <p class="ice-title">平滑移动</p>
-                    <p>在需要平滑移动效果的超链接的父类那里增加<b>sll</b>,然后在script里增加：</p>
-                    <code><pre> $(".sll").ice_scroll(700)</pre></code>
-
-                </div>
-                <!--/平滑移动-->
-
-                <!--滚动监控-->
-                <div class="ice-panel-original" id="gdjk">
-                    <p class="ice-title">滚动监控</p>
-                    <p>在script中使用这个命令来监控：</p>
-                    <pre><code> $('监控对象').waypoint(function() {
-});</code></pre>
-                    <p>可以使用下面的代码进行设置：</p>
-                    <pre><code>$.fn.waypoint.defaults = {
+ @color-purple-2: #8F44AD;</code></pre> 
+    <p>而主体颜色都是通过引用@color-common这个变量的，如果需要改变主题颜色可以直接将颜色代码替换到变量后面。</p> 
+    <p>如我要替换成黄色：@color-common: #F1C40F;</p> 
+    <p>当然你也可以直接通过CSS来使用，我们在CSS中提前准了一些类，可以通过ice-color-颜色名来使用。如果是边框请用ice-color-b+颜色名。</p> 
+    <p>如.ice-color-blue-1和.ice-color-bblue-1</p> 
+   </div> 
+   <!--/预置颜色--> 
+   <!--布局--> 
+   <div class="ice-panel-original" id="bj"> 
+    <p class="ice-title">布局</p> 
+    <p>ICECSS的布局会自动适应屏幕。<b>但是请不要把导航栏放在ICECSS的布局中</b>，因为ICECSS的导航栏有自己独有的自适应能力。</p> 
+    <p>我们为您提供了三种宽度限制：ice-common、ice-widescreen、ice-full 。分别宽度限制是1020px、1220px和100%。 当然您也可以不增加宽度限制，直接使用ice-div。</p> 
+    <p>ICECSS的DIV组件提供如下几种class，第一个数字为分子，第二个数字为分母。每排可以容纳100%。</p> 
+    <ul> 
+     <li>ice-div-1-1</li> 
+     <li>ice-div-1-2</li> 
+     <li>ice-div-1-3</li> 
+     <li>ice-div-1-4</li> 
+     <li>ice-div-1-6</li> 
+     <li>ice-div-4-10、ice-div-6-10</li> 
+     <li>ice-div-7-10、ice-div-3-10</li> 
+     <li>ice-div-2-10、ice-div-8-10</li> 
+     <li>ice-div-9-10、ice-div-1-10</li> 
+    </ul> 
+    <p>你需要在每个class前加入ice-div才能使用，如 :</p> 
+    <pre><code class="language-markup">&lt;div class=&quot;ice-div ice-div-1-1&quot;&gt;&lt;/div&gt;</code></pre> 
+    <p>并且你需要在每行的最后面的div那里加入ice-div-last，来换行。如:</p> 
+    <pre><code class="language-markup">&lt;div class=&quot;ice-div ice-div-1-1 ice-div-last&quot;&gt;&lt;/div&gt;</code></pre> 
+    <p>在ice-div下图片也是会自动适应的，不需要增加额外的class。</p> 
+    <p>水平居中请使用.ice-center-plane；绝对居中的话在父元素使用 .ice-center，子元素使用.ice-center-abs 。</p> 
+   </div> 
+   <!--/布局--> 
+   <!--文字--> 
+   <div class="ice-panel-original" id="wz"> 
+    <p class="ice-title">文字</p> 
+    <p><b>（1）水平对齐</b> </p> 
+    <p>文本的水平对齐样式有（使子元素对齐）</p> 
+    <p>ice-text-left 左对齐</p> 
+    <p>ice-text-right 右对齐</p> 
+    <p>ice-text-center 水平居中对齐</p> 
+    <p><b>（2）垂直对齐</b> </p> 
+    <p>文本的垂直对齐样式有（使子元素对齐）</p> 
+    <p>ice-text-top 垂直顶部对齐</p> 
+    <p>ice-text-middle 垂直居中对齐</p> 
+    <p>ice-text-bottom 垂直底部对齐</p> 
+    <p><b>（3）换行控制</b> </p> 
+    <p>ice-text-break 强制换行</p> 
+    <p>ice-text-truncate 隐藏超出的文字</p> 
+    <p>ice-text-nowrap 让文字随意超出，不做限制</p> 
+   </div> 
+   <!--/文字--> 
+   <!--按钮--> 
+   <div class="ice-panel-original" id="an"> 
+    <p class="ice-title">按钮</p> 
+    <p>在0.7版后，只要是在ice-div下的button标签和type=&quot;button&quot;的标签都会自动加上样式。</p> 
+    <p>不用额外的增加标签</p> 
+    <button>我是一个可爱的按钮</button> 
+    <p>如果要变大，可以增加ice-button-big。变小可以增加ice-button-mini</p> 
+    <p>幽灵按钮则是增加ice-button-ghost</p> 
+    <button class="ice-button-big">大按钮</button> 
+    <button>普通按钮</button> 
+    <button class="ice-button-mini">小按钮</button> 
+    <br /> 
+    <button class="ice-button-big ice-button-ghost">大按钮</button> 
+    <button class="ice-button-ghost">普通按钮</button> 
+    <button class="ice-button-mini ice-button-ghost">小按钮</button> 
+   </div> 
+   <!--/按钮--> 
+   <!--按钮颜色--> 
+   <div class="ice-panel-original" id="buttoncolor"> 
+    <p class="ice-title">按钮颜色</p> 
+    <button class="ice-button-green">green</button> 
+    <button class="ice-button-red">red</button> 
+    <button class="ice-button-yellow">yellow</button> 
+    <button class="ice-button-orange">orange</button> 
+   </div> 
+   <!--/颜色--> 
+   <!--开关--> 
+   <div class="ice-panel-original" id="kg"> 
+    <p class="ice-title">开关</p> 
+    <div class="ice-switch"> 
+     <input type="checkbox" class="ice-switch-checkbox" id="switch" checked="" /> 
+     <label class="ice-switch-label " for="switch"> 
+      <div class="ice-switch-inner"> 
+       <div class="ice-switch-active"></div> 
+       <div class="ice-switch-inactive"></div> 
+      </div> 
+      <div class="ice-switch-bottom"></div> </label> 
+    </div> 
+    <br /> 
+    <pre><code class="language-markup">&lt;div class=&quot;ice-switch&quot;&gt;
+
+&lt;input type=&quot;checkbox&quot;  class=&quot;ice-switch-checkbox&quot; id=&quot;switch&quot; checked&gt;
+
+&lt;label class=&quot;ice-switch-label &quot; for=&quot;switch&quot;&gt;
+
+&lt;div class=&quot;ice-switch-inner&quot;&gt;
+
+&lt;div class=&quot;ice-switch-active&quot;&gt;&lt;/div&gt;
+
+&lt;div class=&quot;ice-switch-inactive&quot;&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div class=&quot;ice-switch-bottom&quot;&gt;&lt;/div&gt;
+
+&lt;/label&gt;
+
+&lt;/div&gt;</code></pre> 
+   </div> 
+   <!--/开关--> 
+   <!--进度条--> 
+   <div class="ice-panel-original" id="jdt"> 
+    <p class="ice-title">进度条</p> 
+    <p>您可以通过修改ice-bar下的div的宽度来达到进度的效果。</p> 
+    <div class="ice-bar"> 
+     <div style="width:80%"></div> 
+    </div> 
+    <br /> 
+    <pre><code class="language-markup">&lt;div class=&quot;ice-bar&quot;&gt;
+
+&lt;div style=&quot;width:80%&quot;&gt;&lt;/div&gt;
+
+&lt;/div&gt;</code></pre> 
+   </div> 
+   <!--/进度条--> 
+   <!--分页--> 
+   <div class="ice-panel-original" id="fy"> 
+    <p class="ice-title">分页</p> 
+    <ul class="ice-page"> 
+     <li>1</li> 
+     <li class="active">2</li> 
+     <li>3</li> 
+     <li class="disabled">4</li> 
+    </ul> 
+    <pre><code class="language-markup">&lt;ul class=&quot;ice-page&quot;&gt;
+
+    &lt;li&gt;1&lt;/li&gt;
+
+    &lt;li class=&quot;active&quot;&gt;2&lt;/li&gt;
+
+    &lt;li&gt;3&lt;/li&gt;
+
+    &lt;li class=&quot;disabled&quot;&gt;4&lt;/li&gt;
+
+&lt;/ul&gt;</code></pre> 
+   </div> 
+   <!--/分页--> 
+   <!--导航栏--> 
+   <div class="ice-panel-original" id="dhl"> 
+    <p class="ice-title">导航栏</p> 
+    <p>（1）菜单简介 </p> 
+    <p>在ICECSS中，导航栏是Menu组件。可以自适应屏幕。我们建议在header标签中放置Menu组件，建议不要放在ICECSS的布局组件中。</p> 
+    <p>（2）基本菜单 例子：</p> 
+    <pre><code class="language-markup">  &lt;header class=&quot;ice-menu&quot;&gt;
+&lt;nav class=&quot;ice-main-nav&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#0&quot;&gt;Home&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#0&quot;&gt;Home&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/header&gt; </code></pre> 
+    <p>（3）在导航栏左侧增加LOGO：</p> 
+    <pre><code class="language-markup">&lt;div class=&quot;ice-menu-logo&quot;&gt;LOGO名字&lt;/div&gt;</code></pre> 
+    <p>把代码增加到header下面的第一行。 使导航栏固定： 在ice-menu后面追加 ice-fixed</p> 
+    <pre><code class="language-markup">&lt;header class=&quot;ice-menu ice-fixed&quot;&gt;</code></pre> 
+    <p>3.使导航栏透明，去掉背景色： 在ice-menu后追加ice-menu-lucency</p> 
+    <pre><code class="language-markup"> &lt;header class=&quot;ice-menu ice-fixed ice-menu-lucency&quot;&gt;</code></pre> 
+    <p>4.使导航栏在鼠标悬浮时有效果： 追加ice-menu-hover</p> 
+    <pre><code class="language-markup">&lt;header class=&quot;ice-menu ice-fixed ice-menu-lucency ice-menu-hover&quot;&gt;</code></pre> 
+    <p>（4）全屏大图 我们在菜单组件中额外的增加了一个全屏大图用的组件ice-intro-big，可以搭配其它组件一起使用。 </p> 
+    <p>提示：为了达到最好的效果，不建议放在ICECSS布局系统的宽度限制下。 使用例子：</p> 
+    <pre><code class="language-markup">&lt;div class=&quot;ice-div ice-intro-big ice-center&quot; style=&quot;background-image:url('img/bg.jpg')&quot;&gt;
+&lt;div class=&quot;ice-center-abs&quot;&gt;
+&lt;h1 style=&quot;color:#fff&quot;&gt;ICECSS is a good css.&lt;/h1&gt;
+&lt;button class=&quot;ice-button-big&quot;&gt;More&lt;/button&gt;
+&lt;/div&gt; &lt;/div&gt;</code></pre> 
+   </div> 
+   <!--/导航栏--> 
+   <!--导航菜单--> 
+   <div class="ice-panel-original" id="dhcd"> 
+    <p class="ice-title">导航菜单</p> 
+    <pre><code class="language-markup"> &lt;ul class=&quot;ice-nav&quot;&gt;
+&lt;li class=&quot;active&quot;&gt;这是个被按下的&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;这是个二级菜单项&lt;/li&gt;
+&lt;li&gt;这是个二级菜单项&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;这是个一级菜单项&lt;/li&gt;
+&lt;li&gt;这是个一级菜单项&lt;/li&gt;
+&lt;/ul&gt;</code></pre> 
+    <p>您也可以通过增加ice-nav-accordion使导航菜单具有手风琴的功能。</p> 
+    <p>如果您想实现像本网页左侧一样的效果，您可以看看下面的例子。（推荐使用2、8的布局搭配）</p> 
+    <pre><code class="language-markup">&lt;!--左侧--&gt;
+&lt;div class=&quot;ice-div ice-div-2-10 ice-nav-plus&quot; &gt;
+    &lt;ul class=&quot;ice-nav ice-nav-accordion ice-text-left sll&quot;&gt;
+                &lt;li&gt;我是一个单身&lt;/li&gt;
+                &lt;li class=&quot;ice-nav-f&quot;&gt;我是有孩子的菜单&lt;/li&gt;
+                &lt;li&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;我是孩子&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;!--右侧--&gt;
+&lt;div class=&quot;ice-div ice-div-8-10 ice-div-last ice-chinese ice-nav-panel&quot; 
+
+id=&quot;rhsy&quot;&gt;
+&lt;/div&gt;               
+</code></pre> 
+   </div> 
+   <!--/导航菜单--> 
+   <!--二级导航--> 
+   <div class="ice-panel-original" id="ejdh"> 
+    <p class="ice-title">二级导航</p> 
+    <ul class="ice-subnav"> 
+     <li class="active"><a>hello</a> </li> 
+     <li>world</li> 
+    </ul> 
+    <pre><code class="language-markup">&lt;ul class=&quot;ice-subnav&quot;&gt;        &lt;!--你也可以通过追加ice-subnav-line来增加分割线--&gt;
+
+&lt;li class=&quot;active&quot;&gt;&lt;a&gt;hello&lt;/a&gt;&lt;/li&gt; 
+
+&lt;li&gt;world&lt;/li&gt;
+
+&lt;/ul&gt;</code></pre> 
+   </div> 
+   <!--/二级导航--> 
+   <!--表格--> 
+   <div class="ice-panel-original" id="bg"> 
+    <p class="ice-title">表格</p> 
+    <p>在table标签中增加ice-table这个class即可。</p> 
+    <p>你可以在ice-table下使用</p> 
+    <p>来充当二级标题或注释什么的。</p> 
+    <pre><code class="language-markup">&lt;table class=&quot;ice-table&quot;&gt;&lt;caption&gt;二级标题&lt;/caption&gt;&lt;/table&gt;</code></pre> 
+    <p>可以通过添加ice-table-striped来达到斑马纹效果。</p> 
+    <pre><code class="language-markup">&lt;table class=&quot;ice-table ice-table-striped&quot;&gt;&lt;/table&gt;</code></pre> 
+    <p>在没有使用ice-table-striped的情况下，可以增加ice-table-hover使表单在鼠标悬浮时有效果。</p> 
+    <pre><code class="language-markup">&lt;table class=&quot;ice-table ice-table-hover&quot;&gt;&lt;/table&gt;</code></pre> 
+    <table class="ice-table ice-table-striped"> 
+     <thead> 
+      <tr> 
+       <th>姓名</th> 
+       <th>Email</th> 
+       <th>订阅时间</th> 
+       <th></th> 
+      </tr> 
+     </thead> 
+     <tfoot> 
+      <tr> 
+       <td>小计</td> 
+       <td></td> 
+       <td>6人</td> 
+       <td> </td> 
+      </tr> 
+     </tfoot> 
+     <tbody> 
+      <tr> 
+       <td>小明</td> 
+       <td>qqq@qq.com</td> 
+       <td>2014年12月01日</td> 
+       <td><i class="ice-icon-pencil"></i> </td> 
+      </tr> 
+      <tr> 
+       <td>小红</td> 
+       <td>ssss@163.com</td> 
+       <td>2014年12月01日</td> 
+       <td><i class="ice-icon-pencil"></i> </td> 
+      </tr> 
+      <tr> 
+       <td>小明</td> 
+       <td>qqq@qq.com</td> 
+       <td>2014年12月01日</td> 
+       <td><i class="ice-icon-pencil"></i> </td> 
+      </tr> 
+      <tr> 
+       <td>小红</td> 
+       <td>ssss@163.com</td> 
+       <td>2014年12月01日</td> 
+       <td><i class="ice-icon-pencil"></i> </td> 
+      </tr> 
+      <tr> 
+       <td>小明</td> 
+       <td>qqq@qq.com</td> 
+       <td>2014年12月01日</td> 
+       <td><i class="ice-icon-pencil"></i> </td> 
+      </tr> 
+      <tr> 
+       <td>小红</td> 
+       <td>ssss@163.com</td> 
+       <td>2014年12月01日</td> 
+       <td><i class="ice-icon-pencil"></i> </td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <!--/表格--> 
+   <!--表单--> 
+   <div class="ice-panel-original" id="bd"> 
+    <p class="ice-title">表单</p> 
+    <p>（1）基本表单</p> 
+    <p>在form标签中增加ice-form类即可。</p> 
+    <pre><code class="language-markup">&lt;form class=&quot;ice-form&quot;&gt;</code></pre> 
+    <p>（2）强制换行</p> 
+    <p>可以使用</p> 
+    <pre><code class="language-markup">&lt;div class=&quot;ice-onerow&quot;&gt;&lt;div&gt;</code></pre> 
+    <p>来包裹内容。</p> 
+    <p>（3）表单标签</p> 
+    <p>可以在表单元素的前面增加一个ice-form-label。</p> 
+    <pre><code class="language-markup">&lt;label class=&quot;ice-form-label&quot;&gt;test&lt;/label&gt;
+&lt;input type=&quot;text&quot;&gt;</code></pre> 
+    <p>（4）增加图标</p> 
+    <pre><code class="language-markup">&lt;div class=&quot;ice-form-icon&quot;&gt;   &lt;!--这个是必须的--&gt;
+&lt;i class=&quot;ice-icon-pencil&quot;&gt;&lt;/i&gt; &lt;!--这里可以换成其它图标--&gt;
+&lt;input type=&quot;text&quot;&gt;
+&lt;/div&gt;</code></pre> 
+    <div class="ice-panel-original"> 
+     <form class="ice-form"> 
+      <div class="ice-onerow"> 
+       <label class="ice-form-label">Username</label> 
+       <input type="text" /> 
+      </div> 
+      <div class="ice-onerow"> 
+       <label class="ice-form-label">Password</label> 
+       <input type="text" /> 
+      </div> 
+      <br /> 
+      <div class="ice-form-icon"> 
+       <label class="ice-form-label">Card</label> 
+       <i class="ice-icon-pencil"></i> 
+       <input type="text" /> 
+      </div> 
+      <div class="ice-onerow"> 
+       <input type="radio" name="sex" /> man 
+       <input type="radio" name="sex" /> woman 
+      </div> 
+      <div class="ice-onerow"> 
+       <input type="checkbox" /> Remeber Me 
+      </div> 
+      <div class="ice-onerow"> 
+       <button>Login</button> 
+      </div> 
+     </form> 
+    </div> 
+    <!--/表单--> 
+    <!--CDN服务--> 
+    <div class="ice-panel-original" id="cdn"> 
+     <p class="ice-title">CDN服务</p> 
+     <p>BESD本身有提供CDN服务：</p> 
+     <p>http://cdn.besdlab.cn/jquery/2.1.1/jquery.2.1.1.min.js</p> 
+     <p>http://cdn.besdlab.cn/icecss/icecss.css</p> 
+     <p>http://cdn.besdlab.cn/icecss/icecss.min.css</p> 
+     <p>http://cdn.besdlab.cn/icecss/icecss.less</p> 
+     <p>http://cdn.besdlab.cn/icecss/icecss.js</p> 
+     <p>http://cdn.besdlab.cn/icecss/less.min.js</p> 
+     <p>http://cdn.besdlab.cn/icecss/plugin/插件文件名</p> 
+    </div> 
+    <!--/CDN服务--> 
+    <!--日期选择--> 
+    <div class="ice-panel-original ice-form" id="rqxz"> 
+     <p class="ice-title">日期选择</p> 
+     <p>使用前需要引入plugin/ice_date下的所有文件。然后在需要使用的网页中加入下面代码。</p> 
+     <pre><code class="language-javascript">$('.ice_date').ice_date();</code></pre> 
+     <input type="text" class="ice_date" /> 
+    </div> 
+    <!--/日期选择--> 
+    <!--选项卡--> 
+    <div class="ice-panel-original" id="xxk"> 
+     <p class="ice-title">选项卡</p> 
+     <p>使用前需要引入plugin/ice_tab下的所有文件。然后在需要使用的网页中加入下面代码初始化。</p> 
+     <pre><code class="language-javascript">$('.ice-tab').ice_tab();</code></pre> 
+     <!--DEMO--> 
+     <div class="ice-tab"> 
+      <ul> 
+       <li><a href="#tabs-1" title="">Tab 1</a></li> 
+       <li><a href="#tabs-2" title="">Tab 2</a></li> 
+       <li><a href="#tabs-3" title="">Tab 3</a></li> 
+      </ul> 
+      <div class="ice-tab-container"> 
+       <div id="tabs-1"> 
+        <p>ICECSS是一个非常好用的框架</p> 
+       </div> 
+       <div id="tabs-2"> 
+        <p>ICECSS是一个很简洁的框架</p> 
+       </div> 
+       <div id="tabs-3"> 
+        <p>你不觉得吗</p> 
+       </div> 
+      </div>
+      <!--End tabs container--> 
+     </div> 
+     <!--/DEMO--> 
+    </div> 
+    <!--/选项卡--> 
+    <!--代码高亮--> 
+    <div class="ice-panel-original ice-form" id="dmgl"> 
+     <p class="ice-title">代码高亮</p> 
+     <p>使用前需要引入plugin/ice_code下的文件，默认是支持html、css、js，如果需要更多语言请导入ice_code_expands.js，导入扩展包后增加了对c、go、php、ruby、java、markdown、git的代码高亮支持。</p> 
+     <pre><code class="language-markup">&lt;pre&gt;&lt;code class=&quot;language-这里填语言&quot;&gt;这里面放置代码&lt;/code&gt;&lt;/pre&gt;</code></pre> 
+    </div> 
+    <!--/代码高亮--> 
+    <!--中文优化--> 
+    <div class="ice-panel-original ice-form" id="zwyh"> 
+     <p class="ice-title">中文优化</p> 
+     <p>ICECSS针对中文适配了优化方案，只需要在需要优化显示的地方加上ice-chinese这个class。</p> 
+     <pre><code class="language-markup">&lt;div class=&quot;ice-chinese&quot;&gt;&lt;/div&gt;</code></pre> 
+    </div> 
+    <!--/中文优化--> 
+    <!--云服务--> 
+    <div class="ice-panel-original" id="yfw"> 
+     <p class="ice-title">云服务</p> 
+     <p>BESD云服务是用于帮助快速开发DEMO和测试用的云服务平台，ICECSS0.8版本后已经附带了JS版的SDK。通过BESD云服务可以在不写后端代码的情况下快速完成DEMO或简单程序的开发。如果您是要在ICECSS中使用，请将将plugin/ice_cloud.js引入</p> 
+     <p>说明文档：<a href="https://github.com/T-baby/BesdCloud" target="_blank">https://github.com/T-baby/BesdCloud</a> </p> 
+    </div> 
+    <!--/云服务--> 
+    <!--模板引擎--> 
+    <div class="ice-panel-original" id="mbyq"> 
+     <p class="ice-title">模板引擎</p> 
+     <p>ICECSS自带一个简单的模板引擎，可以使用户界面与业务数据（内容）分离，从而在前端开发出动态渲染的网站。同时可以更好的帮助前端处理json数据。如果您是要在ICECSS中使用，请将将plugin/ice_tmpl/ice_tmpl.js引入</p> 
+     <p>文档地址：<a href="https://github.com/T-baby/ICECSS/tree/master/plugin/ice_tmpl/help.md" target="_blank">https://github.com/T-baby/ICECSS/tree/master/Docs/ice_tmpl/readme.md</a></p> 
+    </div> 
+    <!--/模板引擎--> 
+    <!--平滑移动--> 
+    <div class="ice-panel-original" id="phyd"> 
+     <p class="ice-title">平滑移动</p> 
+     <p>在需要平滑移动效果的超链接的父类那里增加<b>sll</b>,然后在script里增加：</p> 
+     <pre><code class="language-javascript"> $(&quot;.sll&quot;).ice_scroll(700)</code></pre> 
+    </div> 
+    <!--/平滑移动--> 
+    <!--滚动监控--> 
+    <div class="ice-panel-original" id="gdjk"> 
+     <p class="ice-title">滚动监控</p> 
+     <p>在script中使用这个命令来监控：</p> 
+     <pre><code class="language-javascript"> $('监控对象').waypoint(function() {     });</code></pre> 
+     <p>可以使用下面的代码进行设置：</p> 
+     <pre><code class="language-javascript">$.fn.waypoint.defaults = {
 context: window,
 continuous: true,
 enabled: true,
 horizontal: false,
 offset: 100,
 triggerOnce: false
-}</code></pre>
-
-
-                </div>
-                <!--/滚动监控-->
-
-                <!--弹出式画布-->
-                <div class="ice-panel-original" id="tcshb">
-                    <p class="ice-title">弹出式画布</p>
-                    <p>现在js中使用</p>
-                    <code><pre> $('a[rel*=ice-eject]').ice_eject()</pre></code>
-                    <p>然后在html中增加弹出式画布所需要显示的内容</p>
-                    <code><pre>&ltdiv class="ice-div ice-eject-w ice-center-abs" id="窗口的ID"&gt
-&ltdiv class="ice-close ice-eject-close"&gt&lt/div&gt
-&lt/div&gt</pre></code>
-                    <p>使用时非常简单</p>
-                    <code><pre>&lta href="#login" rel="ice-eject"&gt</pre></code>
-                    <br/>
-                    <a href="#hbtest" rel="ice-eject">
-                        <button>测试</button>
-                    </a>
-                </div>
-                <!--/弹出式画布-->
-
-                <!--抽屉式导航-->
-                <div class="ice-panel-original" id="ctsdh">
-                    <p class="ice-title">抽屉式导航</p>
-                    <p>首先先在js中添加</p>
-                    <code><pre>$().ice_spmenu();</pre></code>
-                    <p>然后在html中增加一个nav</p>
-                    <code><pre> &ltnav class="ice-menu-sp ice-menu-sp-right"&gt</pre></code>
-                    <p>你可以用h3标签在里面增加一个标题栏，可以用ul li向抽屉式导航中增加内容：</p>
-                    <code><pre>&lth3&gt标题&lt/h3&gt
-&ltul&gt
-&ltli&gttest1&lt/li&gt
-&ltli&gttest2&lt/li&gt
-&ltli&gttest3&lt/li&gt
-&ltli&gttest4&lt/li&gt
-&ltli&gttest5&lt/li&gt
-&lt/ul&gt</pre></code>
-                    <p>可以用ice-sp-right来打开抽屉式导航</p>
-                    <code><pre>&ltbutton class="ice-sp-right"&gt打开导航&lt/button&gt</pre></code>
-                    <p>如果需要导航菜单从左边打开的话，可以将抽屉式导航nav和打开导航的button中的ice-sp-right改为ice-sp-left</p>
-                    <p>我们建议将抽屉式导航独立出来而不是放在布局系统下。另外抽屉式导航应当再header上面，如果在header下面就会默认与header结合展示。</p>
-                    <br/>
-                    <button class="ice-sp-right">测试</button>
-                </div>
-                <!--/抽屉式导航-->
-
-                   <!--图片延迟加载-->
-                <div class="ice-panel-original" id="tpycjz">
-                    <p class="ice-title">图片延迟加载</p>
-                    <p>图片延迟加载可以让网页在载入的时候不载入图片，当看到图片所在的部分的时候再载入。使用前需要引入plugin/ice_image.js。图片按照下面的方式加入到网页中，ajax.gif是等待加载的动画，后面的属性是需要加载的图片</p>
-                    <code><pre>&ltimg src="../img/ajax.gif" alt="" data-echo="../img/album-1.jpg"&gt</pre></code>
-                    <img src="../img/ajax.gif" alt="" data-echo="../img/logo.png" >
-                     <p>然后在js中添加方法</p>
-                    <code><pre>ice_echo.init()</pre></code>
-                 
-                </div>
-                <!--/图片延迟加载-->
-
-                <!--超链接预载-->
-                <div class="ice-panel-original" id="cljyz">
-                    <p class="ice-title">超链接预载</p>
-                    <p>超链接预载可以在鼠标悬浮在超链接上时提前加载网页，可以减少网页加载的等待时间。使用前需要引入plugin/ice_click.js。如果在导入脚本的script标签添加data-no-instant属性的话，超链接预载只会使用一次，去掉的话则每次都会使用。</p>
-                    <code><pre>&ltscript src="ice_click.js" data-no-instant&gt&lt/script&gt</pre></code>
-                     <p>然后在js中添加方法</p>
-                    <code><pre>ice_click.init();</pre></code>
-                 
-                </div>
-                <!--/超链接预载-->
-
-                  <!--全屏滚动-->
-                    <div class="ice-panel-original" id="qpgd">
-                    <p class="ice-title">全屏滚动</p>
-                    <p>使用前需要引入plugin/ice_fullpage下的js和css。</p>
-                    <code><pre>&ltdiv id="fullpage"&gt
-&ltdiv class="section"&gtSome section&lt/div&gt
-&ltdiv class="section"&gtSome section&lt/div&gt
-&ltdiv class="section"&gtSome section&lt/div&gt
-&ltdiv class="section"&gtSome section&lt/div&gt
-&lt/div&gt</pre></code>
-                     <p>然后在js中添加方法</p>
-                    <code><pre>$('#fullpage').ice_fullpage();</pre></code>
-                 
-                </div>
-                  <!--/全屏滚动-->
-
-                   <!--视差效果-->
-                    <div class="ice-panel-original" id="scxg">
-                    <p class="ice-title">视差效果</p>
-                    <p>使用前需要引入plugin/ice_scrolly/ice_scrolly.js。</p>
-                    <code><pre>具体使用方法请自行查看plugin/ice_scrolly下的example</pre></code>
-                 
-                 
-                </div>
-
-                  <!--/视差效果-->
-
-                  <!--本地存储-->
-                    <div class="ice-panel-original" id="bdcc">
-                    <p class="ice-title">本地存储</p>
-                    <p>ice_storedb是一个基于localStorage的本地储存库，通过模拟MongoDB的一些API和概念（如“集(collection)”和“文档(document)”），使你能使用 localStorage 储存复杂数据。使用前需要引入plugin/ice_storedb.js。</p>
-                    <p>插入（Insert）</p>
-                    <p>向名为players的集合中插入一条文档：</p>
-                    <code><pre>
-ice_storedb('players').insert({"name":"Randy","sex":"male","score":20},function(err,result){
+}</code></pre> 
+    </div> 
+    <!--/滚动监控--> 
+    <!--弹出式画布--> 
+    <div class="ice-panel-original" id="tcshb"> 
+     <p class="ice-title">弹出式画布</p> 
+     <p>现在js中使用</p> 
+     <pre><code class="language-markup"> $('a[rel*=ice-eject]').ice_eject()</code></pre> 
+     <p>然后在html中增加弹出式画布所需要显示的内容</p> 
+     <pre><code class="language-markup">&lt;div class=&quot;ice-div ice-eject-w ice-center-abs&quot; id=&quot;窗口的ID&quot;&gt;
+&lt;div class=&quot;ice-close ice-eject-close&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre> 
+     <p>使用时非常简单</p> 
+     <pre><code class="language-markup">&lt;a href=&quot;#login&quot; rel=&quot;ice-eject&quot;&gt;</code></pre> 
+     <br /> 
+     <a href="#hbtest" rel="ice-eject"> <button>测试</button> </a> 
+    </div> 
+    <!--/弹出式画布--> 
+    <!--抽屉式导航--> 
+    <div class="ice-panel-original" id="ctsdh"> 
+     <p class="ice-title">抽屉式导航</p> 
+     <p>首先先在js中添加</p> 
+     <pre><code class="language-javascript">$().ice_spmenu();</code></pre> 
+     <p>然后在html中增加一个nav</p> 
+     <pre><code class="language-markup"> &lt;nav class=&quot;ice-menu-sp ice-menu-sp-right&quot;&gt;</code></pre> 
+     <p>你可以用h3标签在里面增加一个标题栏，可以用ul li向抽屉式导航中增加内容：</p> 
+     <pre><code class="language-markup">&lt;h3&gt;标题&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;test1&lt;/li&gt;
+&lt;li&gt;test2&lt;/li&gt;
+&lt;li&gt;test3&lt;/li&gt;
+&lt;li&gt;test4&lt;/li&gt;
+&lt;li&gt;test5&lt;/li&gt;
+&lt;/ul&gt;</code></pre> 
+     <p>可以用ice-sp-right来打开抽屉式导航</p> 
+     <pre><code class="language-markup">&lt;button class=&quot;ice-sp-right&quot;&gt;打开导航&lt;/button&gt;</code></pre> 
+     <p>如果需要导航菜单从左边打开的话，可以将抽屉式导航nav和打开导航的button中的ice-sp-right改为ice-sp-left</p> 
+     <p>我们建议将抽屉式导航独立出来而不是放在布局系统下。另外抽屉式导航应当再header上面，如果在header下面就会默认与header结合展示。</p> 
+     <br /> 
+     <button class="ice-sp-right">测试</button> 
+    </div> 
+    <!--/抽屉式导航--> 
+    <!--图片延迟加载--> 
+    <div class="ice-panel-original" id="tpycjz"> 
+     <p class="ice-title">图片延迟加载</p> 
+     <p>图片延迟加载可以让网页在载入的时候不载入图片，当看到图片所在的部分的时候再载入。使用前需要引入plugin/ice_image.js。图片按照下面的方式加入到网页中，ajax.gif是等待加载的动画，后面的属性是需要加载的图片</p> 
+     <pre><code class="language-markup">&lt;img src=&quot;../img/ajax.gif&quot; alt=&quot;&quot; data-echo=&quot;../img/album-1.jpg&quot;&gt;</code></pre> 
+     <img src="../img/ajax.gif" alt="" data-echo="../img/logo.png" /> 
+     <p>然后在js中添加方法</p> 
+     <pre><code class="language-javascript">ice_echo.init()</code></pre> 
+    </div> 
+    <!--/图片延迟加载--> 
+    <!--超链接预载--> 
+    <div class="ice-panel-original" id="cljyz"> 
+     <p class="ice-title">超链接预载</p> 
+     <p>超链接预载可以在鼠标悬浮在超链接上时提前加载网页，可以减少网页加载的等待时间。使用前需要引入plugin/ice_click.js。如果在导入脚本的script标签添加data-no-instant属性的话，超链接预载只会使用一次，去掉的话则每次都会使用。</p> 
+     <pre><code class="language-javascript">&lt;script src=&quot;ice_click.js&quot; data-no-instant&gt;&lt;/script&gt;</code></pre> 
+     <p>然后在js中添加方法</p> 
+     <pre><code class="language-javascript">ice_click.init();</code></pre> 
+    </div> 
+    <!--/超链接预载--> 
+    <!--全屏滚动--> 
+    <div class="ice-panel-original" id="qpgd"> 
+     <p class="ice-title">全屏滚动</p> 
+     <p>使用前需要引入plugin/ice_fullpage下的js和css。</p> 
+     <pre><code class="language-markup">&lt;div id=&quot;fullpage&quot;&gt;
+&lt;div class=&quot;section&quot;&gt;Some section&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;Some section&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;Some section&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;Some section&lt;/div&gt;
+&lt;/div&gt;</code></pre> 
+     <p>然后在js中添加方法</p> 
+     <pre><code class="language-javascript">$('#fullpage').ice_fullpage();</code></pre> 
+    </div> 
+    <!--/全屏滚动--> 
+    <!--视差效果--> 
+    <div class="ice-panel-original" id="scxg"> 
+     <p class="ice-title">视差效果</p> 
+     <p>使用前需要引入plugin/ice_scrolly/ice_scrolly.js。</p> 
+     <pre><code class="language-markup">具体使用方法请自行查看plugin/ice_scrolly下的example</code></pre> 
+    </div> 
+    <!--/视差效果--> 
+    <!--本地存储--> 
+    <div class="ice-panel-original" id="bdcc"> 
+     <p class="ice-title">本地存储</p> 
+     <p>ice_storedb是一个基于localStorage的本地储存库，通过模拟MongoDB的一些API和概念（如“集(collection)”和“文档(document)”），使你能使用 localStorage 储存复杂数据。使用前需要引入plugin/ice_storedb.js。</p> 
+     <p>插入（Insert）</p> 
+     <p>向名为players的集合中插入一条文档：</p> 
+     <pre><code class="language-javascript">
+ice_storedb('players').insert({&quot;name&quot;:&quot;Randy&quot;,&quot;sex&quot;:&quot;male&quot;,&quot;score&quot;:20},function(err,result){
   if(!err){
     //do sth...
   } else{} //do sth...
-})</pre></code>
-                 <p>查询（Find）</p>
-                 <p>查询players集合中name为Randy的文档：</p>
-<code><pre>
-ice_storedb('players').find({"name":"Randy"},function(err,result){
+})</code></pre> 
+     <p>查询（Find）</p> 
+     <p>查询players集合中name为Randy的文档：</p> 
+     <pre><code class="language-javascript">
+ice_storedb('players').find({&quot;name&quot;:&quot;Randy&quot;},function(err,result){
   if(!err){
     //use result to do sth...
   } else{} //do sth...
 })
-</pre></code>
-<p>如果需要查询集合中所有文档，将参数设置为空即可：</p>
-<code><pre>
+</code></pre> 
+     <p>如果需要查询集合中所有文档，将参数设置为空即可：</p> 
+     <pre><code class="language-javascript">
 ice_storedb('players').find()
-</pre></code>
-<p>函数将返回一个数组类型。</p>
-
-<p>更新（Update）</p>
-
-<p>为players集合中name为Randy的score增加10：</p>
-<code><pre>
-ice_storedb('players').update({"name":"Randy"},{"$inc":{"score":"10"}},function(err){
+</code></pre> 
+     <p>函数将返回一个数组类型。</p> 
+     <p>更新（Update）</p> 
+     <p>为players集合中name为Randy的score增加10：</p> 
+     <pre><code class="language-javascript">
+ice_storedb('players').update({&quot;name&quot;:&quot;Randy&quot;},{&quot;$inc&quot;:{&quot;score&quot;:&quot;10&quot;}},function(err){
   if(!err){
     //do sth...
   } else{} //do sth...
 })
-</pre></code>
-<p>你可能已经注意到，ice_StoreDB拥有和MongoDB一样的修改器！关于修改器类型请查看API。</p>
-<p>如果修改器为空，则默认为$set修改器：</p>
-<code><pre>
-ice_storedb('players').update({"name":"Randy"}, {"sex":"male","name":"kriss"})
-</pre></code>
-<p>删除（Remove）</p>
-<p>删除在players集合中name为Randy的一条文档：</p>
-<code><pre>
-ice_storedb('players').remove({"name":"Randy"},function(err){
+</code></pre> 
+     <p>你可能已经注意到，ice_StoreDB拥有和MongoDB一样的修改器！关于修改器类型请查看API。</p> 
+     <p>如果修改器为空，则默认为$set修改器：</p> 
+     <pre><code class="language-javascript">
+ice_storedb('players').update({&quot;name&quot;:&quot;Randy&quot;}, {&quot;sex&quot;:&quot;male&quot;,&quot;name&quot;:&quot;kriss&quot;})
+</code></pre> 
+     <p>删除（Remove）</p> 
+     <p>删除在players集合中name为Randy的一条文档：</p> 
+     <pre><code class="language-javascript">
+ice_storedb('players').remove({&quot;name&quot;:&quot;Randy&quot;},function(err){
   if(!err){
     //do sth...
   } else{} //do sth...
-})</pre></code>
-<p>如果要把整个集合删除，把参数设置为空：</p>
-<code><pre>
-ice_storedb('players').remove()</pre></code>
-                 
-                 
-                </div>
-
-                  <!--/本地存储-->
-
-
-
-
-                <!--图标-->
-                <div class="ice-panel-original" id="tb">
-                    <p class="ice-title">图标</p>
-                    <p>你可以这么使用图标：</p>
-                    <pre><code>&lti class="ice-icon-图标名字"&gt&lt/i&gt</code></pre>
-                    <ul class="ice-grid tm-icons">
-
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-adjust"></i> adjust</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-anchor"></i> anchor</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-archive"></i> archive</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-arrows"></i> arrows</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-arrows-h"></i> arrows-h</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-arrows-v"></i> arrows-v</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-asterisk"></i> asterisk</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-automobile"></i> automobile</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-ban"></i> ban</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-bank"></i> bank</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-bar-chart-o"></i> bar-chart-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-barcode"></i> barcode</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-bars"></i> bars</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-beer"></i> beer</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-bell"></i> bell</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-bell-o"></i> bell-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-bolt"></i> bolt</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-bomb"></i> bomb</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-book"></i> book</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-bookmark"></i> bookmark</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-bookmark-o"></i> bookmark-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-briefcase"></i> briefcase</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-bug"></i> bug</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-building"></i> building</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-building-o"></i> building-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-bullhorn"></i> bullhorn</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-bullseye"></i> bullseye</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-cab"></i> cab</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-calendar"></i> calendar</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-calendar-o"></i> calendar-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-camera"></i> camera</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-camera-retro"></i> camera-retro</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-car"></i> car</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-caret-square-o-down"></i> caret-square-o-down</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-caret-square-o-left"></i> caret-square-o-left</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-caret-square-o-right"></i> caret-square-o-right</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-caret-square-o-up"></i> caret-square-o-up</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-certificate"></i> certificate</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-check"></i> check</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-check-circle"></i> check-circle</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-check-circle-o"></i> check-circle-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-check-square"></i> check-square</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-check-square-o"></i> check-square-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-child"></i> child</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-circle"></i> circle</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-circle-o"></i> circle-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-circle-o-notch"></i> circle-o-notch</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-circle-thin"></i> circle-thin</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-clock-o"></i> clock-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-cloud"></i> cloud</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-cloud-download"></i> cloud-download</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-cloud-upload"></i> cloud-upload</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-code"></i> code</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-code-fork"></i> code-fork</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-coffee"></i> coffee</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-cog"></i> cog</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-cogs"></i> cogs</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-comment"></i> comment</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-comment-o"></i> comment-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-comments"></i> comments</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-comments-o"></i> comments-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-compass"></i> compass</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-credit-card"></i> credit-card</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-crop"></i> crop</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-crosshairs"></i> crosshairs</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-cube"></i> cube</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-cubes"></i> cubes</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-cutlery"></i> cutlery</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-dashboard"></i> dashboard</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-database"></i> database</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-desktop"></i> desktop</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-dot-circle-o"></i> dot-circle-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-download"></i> download</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-edit"></i> edit</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-ellipsis-h"></i> ellipsis-h</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-ellipsis-v"></i> ellipsis-v</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-envelope"></i> envelope</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-envelope-o"></i> envelope-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-envelope-square"></i> envelope-square</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-eraser"></i> eraser</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-exchange"></i> exchange</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-exclamation"></i> exclamation</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-exclamation-circle"></i> exclamation-circle</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-exclamation-triangle"></i> exclamation-triangle</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-external-link"></i> external-link</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-external-link-square"></i> external-link-square</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-eye"></i> eye</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-eye-slash"></i> eye-slash</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-fax"></i> fax</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-female"></i> female</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-fighter-jet"></i> fighter-jet</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-file-archive-o"></i> file-archive-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-file-audio-o"></i> file-audio-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-file-code-o"></i> file-code-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-file-excel-o"></i> file-excel-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-file-image-o"></i> file-image-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-file-movie-o"></i> file-movie-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-file-pdf-o"></i> file-pdf-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-file-photo-o"></i> file-photo-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-file-picture-o"></i> file-picture-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-file-powerpoint-o"></i> file-powerpoint-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-file-sound-o"></i> file-sound-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-file-video-o"></i> file-video-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-file-word-o"></i> file-word-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-file-zip-o"></i> file-zip-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-film"></i> film</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-filter"></i> filter</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-fire"></i> fire</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-fire-extinguisher"></i> fire-extinguisher</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-flag"></i> flag</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-flag-checkered"></i> flag-checkered</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-flag-o"></i> flag-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-flash"></i> flash</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-flask"></i> flask</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-folder"></i> folder</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-folder-o"></i> folder-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-folder-open"></i> folder-open</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-folder-open-o"></i> folder-open-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-frown-o"></i> frown-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-gamepad"></i> gamepad</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-gavel"></i> gavel</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-gear"></i> gear</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-gears"></i> gears</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-gift"></i> gift</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-glass"></i> glass</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-globe"></i> globe</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-graduation-cap"></i> graduation-cap</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-group"></i> group</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-hdd-o"></i> hdd-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-headphones"></i> headphones</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-heart"></i> heart</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-heart-o"></i> heart-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-history"></i> history</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-home"></i> home</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-image"></i> image</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-inbox"></i> inbox</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-info"></i> info</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-info-circle"></i> info-circle</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-institution"></i> institution</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-key"></i> key</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-keyboard-o"></i> keyboard-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-language"></i> language</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-laptop"></i> laptop</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-leaf"></i> leaf</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-legal"></i> legal</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-lemon-o"></i> lemon-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-level-down"></i> level-down</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-level-up"></i> level-up</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-life-bouy"></i> life-bouy</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-life-ring"></i> life-ring</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-life-saver"></i> life-saver</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-lightbulb-o"></i> lightbulb-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-location-arrow"></i> location-arrow</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-lock"></i> lock</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-magic"></i> magic</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-magnet"></i> magnet</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-mail-forward"></i> mail-forward</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-mail-reply"></i> mail-reply</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-mail-reply-all"></i> mail-reply-all</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-male"></i> male</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-map-marker"></i> map-marker</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-meh-o"></i> meh-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-microphone"></i> microphone</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-microphone-slash"></i> microphone-slash</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-minus"></i> minus</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-minus-circle"></i> minus-circle</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-minus-square"></i> minus-square</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-minus-square-o"></i> minus-square-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-mobile"></i> mobile</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-mobile-phone"></i> mobile-phone</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-money"></i> money</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-moon-o"></i> moon-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-mortar-board"></i> mortar-board</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-music"></i> music</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-navicon"></i> navicon</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-paper-plane"></i> paper-plane</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-paper-plane-o"></i> paper-plane-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-paw"></i> paw</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-pencil"></i> pencil</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-pencil-square"></i> pencil-square</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-pencil-square-o"></i> pencil-square-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-phone"></i> phone</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-phone-square"></i> phone-square</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-photo"></i> photo</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-picture-o"></i> picture-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-plane"></i> plane</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-plus"></i> plus</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-plus-circle"></i> plus-circle</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-plus-square"></i> plus-square</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-plus-square-o"></i> plus-square-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-power-off"></i> power-off</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-print"></i> print</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-puzzle-piece"></i> puzzle-piece</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-qrcode"></i> qrcode</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-question"></i> question</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-question-circle"></i> question-circle</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-quote-left"></i> quote-left</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-quote-right"></i> quote-right</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-random"></i> random</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-recycle"></i> recycle</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-refresh"></i> refresh</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-reorder"></i> reorder</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-reply"></i> reply</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-reply-all"></i> reply-all</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-retweet"></i> retweet</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-road"></i> road</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-rocket"></i> rocket</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-rss"></i> rss</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-rss-square"></i> rss-square</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-search"></i> search</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-search-minus"></i> search-minus</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-search-plus"></i> search-plus</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-send"></i> send</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-send-o"></i> send-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-share"></i> share</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-share-alt"></i> share-alt</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-share-alt-square"></i> share-alt-square</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-share-square"></i> share-square</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-share-square-o"></i> share-square-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-shield"></i> shield</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-shopping-cart"></i> shopping-cart</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-sign-in"></i> sign-in</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-sign-out"></i> sign-out</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-signal"></i> signal</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-sitemap"></i> sitemap</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-sliders"></i> sliders</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-smile-o"></i> smile-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-sort"></i> sort</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-sort-alpha-asc"></i> sort-alpha-asc</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-sort-alpha-desc"></i> sort-alpha-desc</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-sort-amount-asc"></i> sort-amount-asc</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-sort-amount-desc"></i> sort-amount-desc</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-sort-asc"></i> sort-asc</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-sort-desc"></i> sort-desc</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-sort-down"></i> sort-down</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-sort-numeric-asc"></i> sort-numeric-asc</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-sort-numeric-desc"></i> sort-numeric-desc</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-sort-up"></i> sort-up</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-space-shuttle"></i> space-shuttle</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-spinner"></i> spinner</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-spoon"></i> spoon</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-square"></i> square</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-square-o"></i> square-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-star"></i> star</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-star-half"></i> star-half</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-star-half-empty"></i> star-half-empty</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-star-half-full"></i> star-half-full</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-star-half-o"></i> star-half-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-star-o"></i> star-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-suitcase"></i> suitcase</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-sun-o"></i> sun-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-support"></i> support</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-tablet"></i> tablet</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-tachometer"></i> tachometer</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-tag"></i> tag</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-tags"></i> tags</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-tasks"></i> tasks</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-taxi"></i> taxi</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-terminal"></i> terminal</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-thumb-tack"></i> thumb-tack</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-thumbs-down"></i> thumbs-down</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-thumbs-o-down"></i> thumbs-o-down</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-thumbs-o-up"></i> thumbs-o-up</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-thumbs-up"></i> thumbs-up</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-ticket"></i> ticket</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-times"></i> times</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-times-circle"></i> times-circle</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-times-circle-o"></i> times-circle-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-tint"></i> tint</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-toggle-down"></i> toggle-down</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-toggle-left"></i> toggle-left</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-toggle-right"></i> toggle-right</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-toggle-up"></i> toggle-up</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-trash-o"></i> trash-o</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-tree"></i> tree</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-trophy"></i> trophy</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-truck"></i> truck</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-umbrella"></i> umbrella</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-university"></i> university</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-unlock"></i> unlock</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-unlock-alt"></i> unlock-alt</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-unsorted"></i> unsorted</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-upload"></i> upload</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-user"></i> user</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-users"></i> users</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-video-camera"></i> video-camera</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-volume-down"></i> volume-down</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-volume-off"></i> volume-off</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-volume-up"></i> volume-up</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-warning"></i> warning</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-wheelchair"></i> wheelchair</li>
-                        <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-wrench"></i> wrench</li>
-
-                    </ul>
-
-
-
-                </div>
-                <!--/图标-->
-
-
-            </div>
-            <!--/主体-->
-        </div>
-        <!--/宽度限制-->
-
-        <!--测试例-->
-        <!--弹出式画布-->
-        <div class="ice-div ice-eject-w ice-center-abs" id="hbtest">
-            <div class="ice-close ice-eject-close"></div>
-            <p>我是一个高冷的弹出式画布</p>
-        </div>
-    
-
-
-</body>
-
-</html>
-
-<!--JS-->
-
-<script src="../js/jquery.min.js"></script>
-<script src="../js/icecss.js"></script>
-<script src="../plugin/ice_image.js"></script>
-<script src="../plugin/ice_click.js"></script>
-
-
-<script>
+})</code></pre> 
+     <p>如果要把整个集合删除，把参数设置为空：</p> 
+     <pre><code class="language-javascript">
+ice_storedb('players').remove()</code></pre> 
+    </div> 
+    <!--/本地存储--> 
+    <!--图标--> 
+    <div class="ice-panel-original" id="tb"> 
+     <p class="ice-title">图标</p> 
+     <p>你可以这么使用图标：</p> 
+     <pre><code class="language-markup">&lt;i class=&quot;ice-icon-图标名字&quot;&gt;&lt;/i&gt;</code></pre> 
+     <ul class="ice-grid tm-icons"> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-adjust"></i> adjust</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-anchor"></i> anchor</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-archive"></i> archive</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-arrows"></i> arrows</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-arrows-h"></i> arrows-h</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-arrows-v"></i> arrows-v</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-asterisk"></i> asterisk</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-automobile"></i> automobile</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-ban"></i> ban</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-bank"></i> bank</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-bar-chart-o"></i> bar-chart-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-barcode"></i> barcode</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-bars"></i> bars</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-beer"></i> beer</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-bell"></i> bell</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-bell-o"></i> bell-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-bolt"></i> bolt</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-bomb"></i> bomb</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-book"></i> book</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-bookmark"></i> bookmark</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-bookmark-o"></i> bookmark-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-briefcase"></i> briefcase</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-bug"></i> bug</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-building"></i> building</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-building-o"></i> building-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-bullhorn"></i> bullhorn</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-bullseye"></i> bullseye</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-cab"></i> cab</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-calendar"></i> calendar</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-calendar-o"></i> calendar-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-camera"></i> camera</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-camera-retro"></i> camera-retro</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-car"></i> car</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-caret-square-o-down"></i> caret-square-o-down</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-caret-square-o-left"></i> caret-square-o-left</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-caret-square-o-right"></i> caret-square-o-right</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-caret-square-o-up"></i> caret-square-o-up</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-certificate"></i> certificate</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-check"></i> check</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-check-circle"></i> check-circle</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-check-circle-o"></i> check-circle-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-check-square"></i> check-square</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-check-square-o"></i> check-square-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-child"></i> child</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-circle"></i> circle</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-circle-o"></i> circle-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-circle-o-notch"></i> circle-o-notch</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-circle-thin"></i> circle-thin</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-clock-o"></i> clock-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-cloud"></i> cloud</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-cloud-download"></i> cloud-download</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-cloud-upload"></i> cloud-upload</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-code"></i> code</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-code-fork"></i> code-fork</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-coffee"></i> coffee</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-cog"></i> cog</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-cogs"></i> cogs</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-comment"></i> comment</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-comment-o"></i> comment-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-comments"></i> comments</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-comments-o"></i> comments-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-compass"></i> compass</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-credit-card"></i> credit-card</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-crop"></i> crop</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-crosshairs"></i> crosshairs</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-cube"></i> cube</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-cubes"></i> cubes</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-cutlery"></i> cutlery</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-dashboard"></i> dashboard</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-database"></i> database</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-desktop"></i> desktop</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-dot-circle-o"></i> dot-circle-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-download"></i> download</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-edit"></i> edit</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-ellipsis-h"></i> ellipsis-h</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-ellipsis-v"></i> ellipsis-v</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-envelope"></i> envelope</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-envelope-o"></i> envelope-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-envelope-square"></i> envelope-square</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-eraser"></i> eraser</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-exchange"></i> exchange</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-exclamation"></i> exclamation</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-exclamation-circle"></i> exclamation-circle</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-exclamation-triangle"></i> exclamation-triangle</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-external-link"></i> external-link</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-external-link-square"></i> external-link-square</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-eye"></i> eye</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-eye-slash"></i> eye-slash</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-fax"></i> fax</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-female"></i> female</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-fighter-jet"></i> fighter-jet</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-file-archive-o"></i> file-archive-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-file-audio-o"></i> file-audio-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-file-code-o"></i> file-code-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-file-excel-o"></i> file-excel-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-file-image-o"></i> file-image-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-file-movie-o"></i> file-movie-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-file-pdf-o"></i> file-pdf-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-file-photo-o"></i> file-photo-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-file-picture-o"></i> file-picture-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-file-powerpoint-o"></i> file-powerpoint-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-file-sound-o"></i> file-sound-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-file-video-o"></i> file-video-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-file-word-o"></i> file-word-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-file-zip-o"></i> file-zip-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-film"></i> film</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-filter"></i> filter</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-fire"></i> fire</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-fire-extinguisher"></i> fire-extinguisher</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-flag"></i> flag</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-flag-checkered"></i> flag-checkered</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-flag-o"></i> flag-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-flash"></i> flash</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-flask"></i> flask</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-folder"></i> folder</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-folder-o"></i> folder-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-folder-open"></i> folder-open</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-folder-open-o"></i> folder-open-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-frown-o"></i> frown-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-gamepad"></i> gamepad</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-gavel"></i> gavel</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-gear"></i> gear</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-gears"></i> gears</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-gift"></i> gift</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-glass"></i> glass</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-globe"></i> globe</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-graduation-cap"></i> graduation-cap</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-group"></i> group</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-hdd-o"></i> hdd-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-headphones"></i> headphones</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-heart"></i> heart</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-heart-o"></i> heart-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-history"></i> history</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-home"></i> home</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-image"></i> image</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-inbox"></i> inbox</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-info"></i> info</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-info-circle"></i> info-circle</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-institution"></i> institution</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-key"></i> key</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-keyboard-o"></i> keyboard-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-language"></i> language</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-laptop"></i> laptop</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-leaf"></i> leaf</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-legal"></i> legal</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-lemon-o"></i> lemon-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-level-down"></i> level-down</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-level-up"></i> level-up</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-life-bouy"></i> life-bouy</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-life-ring"></i> life-ring</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-life-saver"></i> life-saver</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-lightbulb-o"></i> lightbulb-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-location-arrow"></i> location-arrow</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-lock"></i> lock</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-magic"></i> magic</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-magnet"></i> magnet</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-mail-forward"></i> mail-forward</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-mail-reply"></i> mail-reply</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-mail-reply-all"></i> mail-reply-all</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-male"></i> male</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-map-marker"></i> map-marker</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-meh-o"></i> meh-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-microphone"></i> microphone</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-microphone-slash"></i> microphone-slash</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-minus"></i> minus</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-minus-circle"></i> minus-circle</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-minus-square"></i> minus-square</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-minus-square-o"></i> minus-square-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-mobile"></i> mobile</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-mobile-phone"></i> mobile-phone</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-money"></i> money</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-moon-o"></i> moon-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-mortar-board"></i> mortar-board</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-music"></i> music</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-navicon"></i> navicon</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-paper-plane"></i> paper-plane</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-paper-plane-o"></i> paper-plane-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-paw"></i> paw</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-pencil"></i> pencil</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-pencil-square"></i> pencil-square</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-pencil-square-o"></i> pencil-square-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-phone"></i> phone</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-phone-square"></i> phone-square</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-photo"></i> photo</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-picture-o"></i> picture-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-plane"></i> plane</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-plus"></i> plus</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-plus-circle"></i> plus-circle</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-plus-square"></i> plus-square</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-plus-square-o"></i> plus-square-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-power-off"></i> power-off</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-print"></i> print</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-puzzle-piece"></i> puzzle-piece</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-qrcode"></i> qrcode</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-question"></i> question</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-question-circle"></i> question-circle</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-quote-left"></i> quote-left</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-quote-right"></i> quote-right</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-random"></i> random</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-recycle"></i> recycle</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-refresh"></i> refresh</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-reorder"></i> reorder</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-reply"></i> reply</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-reply-all"></i> reply-all</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-retweet"></i> retweet</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-road"></i> road</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-rocket"></i> rocket</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-rss"></i> rss</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-rss-square"></i> rss-square</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-search"></i> search</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-search-minus"></i> search-minus</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-search-plus"></i> search-plus</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-send"></i> send</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-send-o"></i> send-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-share"></i> share</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-share-alt"></i> share-alt</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-share-alt-square"></i> share-alt-square</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-share-square"></i> share-square</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-share-square-o"></i> share-square-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-shield"></i> shield</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-shopping-cart"></i> shopping-cart</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-sign-in"></i> sign-in</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-sign-out"></i> sign-out</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-signal"></i> signal</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-sitemap"></i> sitemap</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-sliders"></i> sliders</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-smile-o"></i> smile-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-sort"></i> sort</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-sort-alpha-asc"></i> sort-alpha-asc</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-sort-alpha-desc"></i> sort-alpha-desc</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-sort-amount-asc"></i> sort-amount-asc</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-sort-amount-desc"></i> sort-amount-desc</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-sort-asc"></i> sort-asc</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-sort-desc"></i> sort-desc</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-sort-down"></i> sort-down</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-sort-numeric-asc"></i> sort-numeric-asc</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-sort-numeric-desc"></i> sort-numeric-desc</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-sort-up"></i> sort-up</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-space-shuttle"></i> space-shuttle</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-spinner"></i> spinner</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-spoon"></i> spoon</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-square"></i> square</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-square-o"></i> square-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-star"></i> star</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-star-half"></i> star-half</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-star-half-empty"></i> star-half-empty</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-star-half-full"></i> star-half-full</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-star-half-o"></i> star-half-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-star-o"></i> star-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-suitcase"></i> suitcase</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-sun-o"></i> sun-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-support"></i> support</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-tablet"></i> tablet</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-tachometer"></i> tachometer</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-tag"></i> tag</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-tags"></i> tags</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-tasks"></i> tasks</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-taxi"></i> taxi</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-terminal"></i> terminal</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-thumb-tack"></i> thumb-tack</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-thumbs-down"></i> thumbs-down</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-thumbs-o-down"></i> thumbs-o-down</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-thumbs-o-up"></i> thumbs-o-up</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-thumbs-up"></i> thumbs-up</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-ticket"></i> ticket</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-times"></i> times</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-times-circle"></i> times-circle</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-times-circle-o"></i> times-circle-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-tint"></i> tint</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-toggle-down"></i> toggle-down</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-toggle-left"></i> toggle-left</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-toggle-right"></i> toggle-right</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-toggle-up"></i> toggle-up</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-trash-o"></i> trash-o</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-tree"></i> tree</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-trophy"></i> trophy</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-truck"></i> truck</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-umbrella"></i> umbrella</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-university"></i> university</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-unlock"></i> unlock</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-unlock-alt"></i> unlock-alt</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-unsorted"></i> unsorted</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-upload"></i> upload</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-user"></i> user</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-users"></i> users</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-video-camera"></i> video-camera</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-volume-down"></i> volume-down</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-volume-off"></i> volume-off</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-volume-up"></i> volume-up</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-warning"></i> warning</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-wheelchair"></i> wheelchair</li> 
+      <li class="ice-width-1-2 ice-width-medium-1-4"><i class="ice-icon-wrench"></i> wrench</li> 
+     </ul> 
+    </div> 
+    <!--/图标--> 
+   </div> 
+   <!--/主体--> 
+   <!--测试例--> 
+   <!--弹出式画布--> 
+   <div class="ice-div ice-eject-w ice-center-abs" id="hbtest"> 
+    <div class="ice-close ice-eject-close"></div> 
+    <p>我是一个高冷的弹出式画布</p> 
+   </div>   
+   <!--JS--> 
+   <script src="../js/jquery.min.js"></script> 
+   <script src="../js/icecss.js"></script> 
+   <script src="../plugin/ice_image.js"></script> 
+   <script src="../plugin/ice_click.js"></script> 
+   <script src="../plugin/ice_code/ice_code.js"></script> 
+   <script src="../plugin/ice_tab/ice_tab.js"></script> 
+   <script src="../plugin/ice_date/ice_date.js"></script> 
+   <script>
     jQuery(document).ready(function($) {
        $(".sll").ice_scroll(700);
 $('a[rel*=ice-eject]').ice_eject();
 $().ice_spmenu();
 ice_echo.init();
 ice_click.init();
+$('.ice-tab').ice_tab();
+$('.ice_date').ice_date();
     });
 
-</script>
-<!--/JS-->
+</script> 
+   <!--/JS--> 
+  </div>
+ </body>
+</html>

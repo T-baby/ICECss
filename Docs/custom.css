@@ -4,9 +4,7 @@ body {
 .ice-div a {
     text-decoration: none;
 }
-.ice-div ul {
-    padding-left: 0;
-}
+
 .ice-nav li {
     padding-left: 5px;
     line-height: 2.5em;
@@ -58,4 +56,13 @@ body {
 .ding a {
     color: #fff;
     text-decoration: none;
+}
+.ice-nav-plus{
+    margin-top: 70px;
+}
+.ice-nav-panel{
+    padding-top: 70px;
+}
+.ice-div .ice-title{
+    font-weight: bold;
 }

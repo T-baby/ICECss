@@ -434,24 +434,6 @@ body {
   border-left: 3px solid #297fb8;
   line-height: 22px;
 }
-.ice-div pre {
-  margin: 0 15px;
-  padding: 10px;
-  background: #ffffff;
-  color: #297fb8;
-  font-size: 12px;
-  line-height: 18px;
-  -moz-tab-size: 4;
-  tab-size: 4;
-  border: 1px solid #e5e5e5;
-}
-.ice-div pre code {
-  color: inherit;
-  white-space: pre-wrap;
-  padding: 0;
-  border: 0;
-  background: 0 0;
-}
 .ice-div img {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -623,6 +605,7 @@ body {
   height: 50px;
   background: #2c3d4f;
   z-index: 3;
+  -webkit-transition: all 0.5s ease-in-out;
 }
 .ice-menu a {
   text-decoration: none;
@@ -680,6 +663,7 @@ body {
   min-height: 50px;
   color: #ffffff;
   background-color: #297fb8;
+  -webkit-transition: all 0.5s ease-in-out;
 }
 .ice-main-nav ul.is-visible {
   -webkit-transform: translatey(50px);
@@ -808,6 +792,21 @@ body {
   padding-left: 20px;
   text-align: center;
   background: #ffffff;
+}
+.ice-nav .ice-nav-f .ice-icon-sort-down {
+  margin-left: 20px;
+}
+.ice-nav-plus {
+  position: fixed;
+  overflow: scroll;
+  background-color: #FFFFFF;
+  height: 100%;
+}
+.ice-nav-plus .ice-nav {
+  padding-left: 10%;
+}
+.ice-nav-panel {
+  margin-left: 20%;
 }
 /*导航菜单 结束*/
 /*开关 开始*/
@@ -1096,104 +1095,6 @@ body {
   min-height: 80px;
 }
 /*表单 结束*/
-/*布局自适应 开始*/
-@media all and (min-width: 1024px) {
-  .onepcssgrid-1000 {
-  max-width: 1000px;
-}
-.ice-div .onerow {
-  padding: 0;
-}
-
-}
-@media all and (max-width: 768px) {
-  .ice-div {
-  float: none;
-  width: 100%;
-}
-.ice-nav {
-  display: none;
-}
-
-}
-/*导航栏自适应*/
-@media only screen and (min-width: 768px) {
-  .ice-menu {
-  height: 70px;
-}
-.ice-menu-logo {
-  line-height: 70px;
-  height: 70px;
-}
-.ice-main-nav {
-  width: auto;
-  height: auto;
-  background: none;
-  cursor: auto;
-}
-.ice-main-nav ul {
-  position: static;
-  width: auto;
-  -webkit-transform: translatey(0);
-  -moz-transform: translatey(0);
-  -ms-transform: translatey(0);
-  -o-transform: translatey(0);
-  transform: translatey(0);
-  line-height: 70px;
-}
-.ice-main-nav ul.is-visible {
-  -webkit-transform: translatey(0);
-  -moz-transform: translatey(0);
-  -ms-transform: translatey(0);
-  -o-transform: translatey(0);
-  transform: translatey(0);
-}
-.ice-main-nav li {
-  display: inline-block;
-  margin-left: 1em;
-  font-size: 13px;
-  cursor: pointer;
-  -webkit-transition: padding .05s linear;
-  -moz-transition: padding .05s linear;
-  -ms-transition: padding .05s linear;
-  -o-transition: padding .05s linear;
-  transition: padding .05s linear;
-}
-.ice-main-nav a {
-  display: inline-block;
-  height: auto;
-  line-height: normal;
-  background: transparent;
-  padding: .6em 1em;
-  border-top: none;
-  font-size: 13px;
-  text-transform: uppercase;
-}
-.ice-main-nav a:hover {
-  background: none;
-}
-
-}
-@media only screen and (min-width: 1170px) {
-  .ice-content {
-  position: relative;
-  padding: 2em 0;
-  line-height: 1.6;
-  z-index: 2;
-}
-.ice-content::before {
-  content: '';
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  width: 100%;
-  height: 50px;
-  background: -webkit-linear-gradient(bottom, rgba(46, 49, 61, 0.5), rgba(46, 49, 61, 0));
-  background: linear-gradient(to top, rgba(46, 49, 61, 0.5), rgba(46, 49, 61, 0));
-}
-
-}
-/*布局自适应 结束*/
 /*解决CSS污染问题*/
 .ice-nav {
   padding: 0;
@@ -3123,3 +3024,267 @@ body {
   color: #ffffff;
 }
 /*按钮颜色 结束*/
+/*中文优化 开始 开源自typo*/
+/* 保证块/段落之间的空白隔行 */
+.serif {
+  font-family: Palatino, Optima, Georgia, serif;
+}
+.ice-chinese p,
+.ice-chinese pre,
+.ice-chinese ul,
+.ice-chinese ol,
+.ice-chinese dl,
+.ice-chinese form,
+.ice-chinese hr,
+.ice-chinese table,
+.ice-chinese-p,
+.ice-chinese-pre,
+.ice-chinese-ul,
+.ice-chinese-ol,
+.ice-chinese-dl,
+.ice-chinese-form,
+.ice-chinese-hr,
+.ice-chinese-table,
+blockquote {
+  margin-bottom: 1.8em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Helvetica Neue', 'Microsoft Yahei', 'Hiragino Sans GB', 'Microsoft Sans Serif', 'WenQuanYi Micro Hei', sans-serif;
+  font-weight: 200;
+  color: #000;
+}
+/* 标题应该更贴紧内容，并与其他块区分，margin 值要相应做优化 */
+.ice-chinese h1,
+.ice-chinese h2,
+.ice-chinese h3,
+.ice-chinese h4,
+.ice-chinese h5,
+.ice-chinese h6,
+.ice-chinese-h1,
+.ice-chinese-h2,
+.ice-chinese-h3,
+.ice-chinese-h4,
+.ice-chinese-h5,
+.ice-chinese-h6 {
+  margin-bottom: 0.4em;
+  line-height: 1.5;
+}
+.ice-chinese h1,
+.ice-chinese-h1 {
+  font-size: 2em;
+}
+.ice-chinese h2,
+.ice-chinese-h2 {
+  font-size: 1.8em;
+}
+.ice-chinese h3,
+.ice-chinese-h3 {
+  font-size: 1.6em;
+}
+.ice-chinese h4,
+.ice-chinese-h4 {
+  font-size: 1.4em;
+}
+.ice-chinese h5,
+.ice-chinese h6,
+.ice-chinese-h5,
+.ice-chinese-h6 {
+  font-size: 1.2em;
+}
+/* 在文章中，应该还原 ul 和 ol 的样式 */
+.ice-chinese ul,
+.ice-chinese-ul {
+  margin-left: 1.3em;
+  list-style: disc;
+}
+.ice-chinese ol,
+.ice-chinese-ol {
+  list-style: decimal;
+  margin-left: 1.9em;
+}
+.ice-chinese li ul,
+.ice-chinese li ol,
+.ice-chinese-ul ul,
+.ice-chinese-ul ol,
+.ice-chinese-ol ul,
+.ice-chinese-ol ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 2em;
+}
+.ice-chinese li ul,
+.ice-chinese-ul ul,
+.ice-chinese-ol ul {
+  list-style: circle;
+}
+/* 同 ul/ol，在文章中应用 table 基本格式 */
+.ice-chinese table th,
+.ice-chinese table td,
+.ice-chinese-table th,
+.ice-chinese-table td .ice-chinese table caption {
+  border: 1px solid #ddd;
+  padding: 0.5em 1em;
+  color: #666;
+}
+.ice-chinese table th,
+.ice-chinese-table th {
+  background: #fbfbfb;
+}
+.ice-chinese table thead th,
+.ice-chinese-table thead th {
+  background: #f1f1f1;
+}
+.ice-chinese table caption {
+  border-bottom: none;
+}
+/* 去除 webkit 中 input 和 textarea 的默认样式  */
+.ice-chinese-input,
+.ice-chinese-textarea {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+/* 高亮选中 */
+::-moz-selection {
+  background: #08c;
+  color: #fff;
+}
+::selection {
+  background: #08c;
+  color: #fff;
+}
+.ice-chinese-em,
+.ice-chinese em,
+legend,
+caption {
+  color: #000;
+  font-weight: inherit;
+}
+/* 着重号，只能在少量（少于100个字符）且全是全角字符的情况下使用 */
+.ice-chinese-em {
+  position: relative;
+}
+.ice-chinese-em:after {
+  position: absolute;
+  top: 0.65em;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  content: "・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・";
+}
+/* Responsive images */
+.ice-chinese img {
+  max-width: 100%;
+}
+/*中文优化 结束*/
+/*布局自适应 开始*/
+@media all and (min-width: 1024px) {
+  .onepcssgrid-1000 {
+  max-width: 1000px;
+}
+.ice-div .onerow {
+  padding: 0;
+}
+
+}
+@media all and (max-width: 768px) {
+  .ice-div {
+  float: none;
+  width: 100%;
+}
+.ice-nav {
+  display: none;
+}
+.ice-nav-plus {
+  display: none;
+  overflow: hidden;
+}
+.ice-nav-panel {
+  margin-left: 0;
+}
+
+}
+/*导航栏自适应*/
+@media only screen and (min-width: 768px) {
+  .ice-menu {
+  height: 70px;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.ice-menu-logo {
+  line-height: 70px;
+  height: 70px;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+.ice-main-nav {
+  width: auto;
+  height: auto;
+  background: none;
+  cursor: auto;
+}
+.ice-main-nav ul {
+  position: static;
+  width: auto;
+  -webkit-transform: translatey(0);
+  -moz-transform: translatey(0);
+  -ms-transform: translatey(0);
+  -o-transform: translatey(0);
+  transform: translatey(0);
+  line-height: 70px;
+}
+.ice-main-nav ul.is-visible {
+  -webkit-transform: translatey(0);
+  -moz-transform: translatey(0);
+  -ms-transform: translatey(0);
+  -o-transform: translatey(0);
+  transform: translatey(0);
+}
+.ice-main-nav li {
+  display: inline-block;
+  margin-left: 1em;
+  font-size: 13px;
+  cursor: pointer;
+  -webkit-transition: padding .05s linear;
+  -moz-transition: padding .05s linear;
+  -ms-transition: padding .05s linear;
+  -o-transition: padding .05s linear;
+  transition: padding .05s linear;
+}
+.ice-main-nav a {
+  display: inline-block;
+  height: auto;
+  line-height: normal;
+  background: transparent;
+  padding: .6em 1em;
+  border-top: none;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.ice-main-nav a:hover {
+  background: none;
+}
+
+}
+@media only screen and (min-width: 1170px) {
+  .ice-content {
+  position: relative;
+  padding: 2em 0;
+  line-height: 1.6;
+  z-index: 2;
+}
+.ice-content::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: -webkit-linear-gradient(bottom, rgba(46, 49, 61, 0.5), rgba(46, 49, 61, 0));
+  background: linear-gradient(to top, rgba(46, 49, 61, 0.5), rgba(46, 49, 61, 0));
+}
+
+}
+/*布局自适应 结束*/

@@ -1,0 +1,136 @@
+/* 日期选择组件 开始 */
+
+.ice_date-container {
+    position: absolute;
+    z-index: 201312;
+    float: left;
+    font-family: 'Microsoft Yahei';
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.ice_date-arrow,
+.ice_date-arrow:after {
+    display: block;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+}
+
+.ice_date-arrow {
+    position: relative;
+    margin: 0 10px;
+    border-bottom-color: #9cf;
+}
+
+.ice_date-arrow:after {
+    position: absolute;
+    top: -4px;
+    left: -5px;
+    content: " ";
+    border-bottom-color: #fff;
+}
+
+.ice_date-content {
+    width: 210px;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    border: 1px solid #ccc;
+    border-top-color: #9cf;
+    -webkit-box-shadow: 0 0 3px #ccc;
+            box-shadow: 0 0 3px #ccc;
+}
+
+.ice_date-prev,
+.ice_date-next {
+    font-size: 18px;
+}
+
+.ice_date-content ul:before,
+.ice_date-content ul:after {
+    display: table;
+    content: "";
+}
+
+.ice_date-content ul:after {
+    clear: both;
+}
+
+.ice_date-content ul {
+    width: 102%;
+    padding: 0;
+    margin: 0;
+
+    *zoom: 1;
+}
+
+.ice_date-content li {
+    float: left;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    list-style: none;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.ice_date-content .col-1 {
+    width: 30px;
+}
+
+.ice_date-content .col-2 {
+    width: 60px;
+}
+
+.ice_date-content .col-3 {
+    width: 90px;
+}
+
+.ice_date-content .col-4 {
+    width: 120px;
+}
+
+.ice_date-content .col-5 {
+    width: 150px;
+}
+
+.ice_date-content .col-6 {
+    width: 180px;
+}
+
+.ice_date-content .col-7 {
+    width: 210px;
+}
+
+.ice_date-content li:hover {
+    color: #FFFFFF;
+    background-color: #3598DC;
+}
+
+.ice_date-content .selected {
+    color: #3598DC;
+}
+.ice_date-content .selected:hover {
+    color: #FFFFFF;
+}
+
+.ice_date-content .disabled,
+.ice_date-content .disabled:hover {
+    color: #ccc;
+}
+
+.ice_date-years li,
+.ice_date-months li {
+    width: 52.5px;
+    height: 52.5px;
+    line-height: 52.5px;
+}
+
+.ice_date-week li,
+.ice_date-week li:hover {
+    background-color: #2A80B9;
+    color: #FFFFFF;
+}
+/* 日期选择组件 结束 */

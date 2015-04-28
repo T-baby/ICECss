@@ -1,0 +1,123 @@
+html{
+	       font-family: 'Microsoft Yahei';
+}
+.ice-tab  a:active,a:focus {
+	outline: expression(hideFocus='true');
+}
+
+.ice-tab p {
+	margin-bottom: 20px;
+}
+
+
+.ice-tab{
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.ice-tab li {
+	float: left;
+	margin-right: 2px;
+}
+
+.ice-tab li a {
+	position: relative;
+	display: block;
+	padding: 17px 30px;
+	text-decoration: none;
+	background-color: #e5e5e5;
+	color: #484848;
+}
+
+.ice-tab li a:hover {
+	background: #2A80B9;
+	color: #ffffff;
+}
+
+.ice-tab-container{
+	padding: 40px;
+	overflow: hidden;
+	position: relative;
+	border:1px solid #cecece;
+	background: white;
+	height: auto;
+}
+
+.ice-tab-container div {
+	margin-right: 40px;
+}
+
+.transition {
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+
+	-webkit-transition-delay: .3s;
+	-moz-transition-delay: .3s;
+	-o-transition-delay: .3s;
+	-ms-transition-delay: .3s;
+	transition-delay: .3s;
+}
+
+.make_transist {
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.hideleft {
+	-webkit-transform: translateX(-100%);
+	-moz-transform: translateX(-100%);
+	-o-transform: translateX(-100%);
+	-ms-transform: translateX(-100%);
+	transform: translateX(-100%);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+.showleft {
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-o-transform: translateX(0px);
+	-ms-transform: translateX(0px);
+	transform: translateX(0px);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+
+	-webkit-transition-delay: .3s;
+	-moz-transition-delay: .3s;
+	-o-transition-delay: .3s;
+	-ms-transition-delay: .3s;
+	transition-delay: .3s;
+}
+
+
+.tabulous_active {
+	background: #ffffff !important;
+	color: #3598DC !important;
+	border-bottom: 1px solid #ffffff;
+	border-left: 1px solid #cecece;
+	border-right: 1px solid #cecece;
+	border-top: 1px solid #3598DC;
+	z-index: 2;
+	top: 1;
+}
+
+.tabulousclear {
+	display: block;
+	clear: both;
+}
+/*解决CSS污染问题*/
+.ice-tab ul{
+	margin:0;
+	padding: 0;
+}
+.ice-tab ul li{
+	margin-bottom:0;
+}

@@ -1,5 +1,8 @@
 jQuery(document).ready(function($) {
 
+    //对导航菜单增加下拉图标
+    $('.ice-nav-f').append("<i class='ice-icon-sort-down'></i>");
+
     //导航栏操作
     $('.ice-main-nav').on('click', function(event) {
         if ($(event.target).is('.ice-main-nav')) $(this).children('ul').toggleClass('is-visible');
